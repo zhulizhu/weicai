@@ -1,0 +1,25 @@
+<ion-view view-title="注册就送">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content id="register-send">
+        <div class="top">
+            <img ng-src="{{mess.img}}">
+        </div>
+        <div class="text-box">
+            <img src="img/home/top1.jpg">
+            <div class="cont" >
+                <h4 ng-bind="mess.title"></h4>
+                <p><span class="f1">◆</span> 新会员注册赠送金额：<span ng-bind="mess.money"></span></p>
+                <p><span class="f1">◆</span> 活动对象：<span ng-bind="mess.object">平台所有会员</span></p>
+                <p class="f2"><span class="f1">◆</span> 活动时间：<span >{{mess.start_time*1000 | date:'yyyy-MM-dd'}} ~ {{mess.end_time*1000 | date:'yyyy-MM-dd'}}</span></p>
+                <div class="text1" ng-bind-html="content"></div>
+            </div>
+            <img src="img/home/top2.jpg">
+        </div>
+
+
+
+    </ion-content>
+
+</ion-view>

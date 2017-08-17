@@ -1,0 +1,55 @@
+
+<ion-view view-title="新增会员">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right" >
+        <button class="button button-clear nav-btn btn-right" style="color:#fff;font-size: 14px;" ui-sref="referral-links">
+            推广链接获取
+        </button>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" style="background-color: #f1f1f1;">
+        <ul class="search info ">
+            <li class="bank-type game-type" >
+                <div>用户类型</div>
+                <div>
+                    <select  ng-model="member.userTypeId" ng-options="type.id as type.title  for type in userType"></select>
+                    <span >  </span>
+                </div>
+            </li>
+            <li class="bank-type game-type">
+                <div>登录账号</div>
+                <div>
+                    <input  ng-model="member.name" type="text" name="end-date"  placeholder="请填写登录账号" maxlength="12"/>
+                    <span>*会员登录平台所用的名称</span>
+                </div>
+            </li>
+            <li class="bank-type game-type">
+                <div>登录密码</div>
+                <div>
+                    <input ng-model="member.passWord"  type="text" name="end-date"  placeholder="请填写登录密码" maxlength="12" />
+                    <span>*会员用户登录时使用的密码</span>
+                </div>
+            </li>
+            <li class="bank-type game-type" ng-show="member.userTypeId == 1">
+                <div>返点</div>
+                <div>
+                    <input ng-model="member.fandian" type="tel" name="end-date"  placeholder="请填写返点" />
+                    <span >  </span>
+                </div>
+            </li>
+            <li class="bank-type game-type">
+                <div>提款密码</div>
+                <div>
+                    <input ng-model="member.coinPassword" type="tel" name="end-date"  placeholder="请填写提款密码" maxlength="12" />
+                </div>
+            </li>
+
+        </ul>
+        <div class="submit sub" >
+            <div><button   ng-click="memberaddMember()">立即添加</button></div>
+        </div>
+    </ion-content>
+
+</ion-view>
+

@@ -1,0 +1,29 @@
+<ion-view view-title="手机换绑">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" class="con-bag padding">
+        <ul>
+            <li>
+                <div>原手机号</div>
+                <div><input type="tel" placeholder="请输入原手机号" ng-model="user.old_phone" maxlength="11"></div>
+            </li>
+          <li>
+            <div>新手机号</div>
+            <div><input type="tel" placeholder="请输入新手机号" ng-model="user.phone" maxlength="11"></div>
+          </li>
+            <li class="code">
+                <div>验证码</div>
+                <div>
+                    <input type="number" placeholder="请输入验证码" ng-model="user.code" maxlength="6">
+                    <button class="fr" ng-click="sendMsg()" id="send-msg">获取验证码</button>
+                </div>
+            </li>
+
+            <li class="submit">
+                <div ><button  ng-click="bindPhone()">确定</button></div>
+            </li>
+        </ul>
+    </ion-content>
+
+</ion-view>

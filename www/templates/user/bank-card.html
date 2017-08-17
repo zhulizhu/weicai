@@ -1,0 +1,39 @@
+<ion-view view-title="银行卡">
+  <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+  </ion-nav-buttons>
+  <ion-content id="retrieve-password" class="con-bag padding bank-card" scroll="false">
+    <ul>
+      <li>
+        <div>开户姓名</div>
+        <div>
+          <input type="text" placeholder="输入您的真实姓名" ng-model="formValue.accountName" maxlength="4">
+        </div>
+      </li>
+      <li class="bank-type">
+        <div>银行名称</div>
+        <div>
+          <select ng-options="bank.id as bank.name  for bank in banks" ng-model="formValue.bankId"></select>
+        </div>
+      </li>
+      <li>
+        <div>银行卡号</div>
+        <div><input type="tel" placeholder="输入您的银行卡账号" ng-model="formValue.bankCardNub" maxlength="19"></div>
+      </li>
+      <li>
+        <div>开户地址</div>
+        <div><input type="text" placeholder="输入您的银行卡开户地址" ng-model="formValue.accountAddress"></div>
+      </li>
+      <li>
+        <div>提现密码</div>
+        <div><input type="password" placeholder="输入您的提现密码" maxlength="12" ng-model="formValue.presentPassword"></div>
+      </li>
+      <li class="submit">
+        <div>
+          <button class="fr submit" ng-click="bindBankCard()">确定</button>
+        </div>
+      </li>
+    </ul>
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view view-title="银行卡列表">
+  <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+  </ion-nav-buttons>
+  <ion-content class="con-bag" id="banksList" scroll="true">
+    <!--银行卡列表-->
+    <div class="account_header"
+         ng-repeat="userbank in userBanks track by $index">
+      <div>
+        <div class="fl radios" >
+          <i class="icon"   ng-class="userbank.isDefault == 1 ? 'ion-ios-checkmark':'ion-ios-circle-outline'"
+          ng-click="bankDefaults(userbank)">
+          </i>
+        </div>
+        <div class="fl">
+          <h5 ng-bind="userbank.bankName" ng-click="bankDefaults(userbank)"></h5>
+          <p>
+            <span style="font-size: 18px" ng-bind="userbank.account"></span>
+          </p>
+        </div>
+        <div class="fr" ng-click="removeBinding(userbank.id,$index)">
+          <a style="color: #ffffff">解除绑定</a>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 10px;" ng-show="userBanks.length == 0">
+      暂无银行卡</p>
+  </ion-content>
+
+</ion-view>
+

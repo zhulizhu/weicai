@@ -1,0 +1,37 @@
+<ion-view view-title="登陆" hide-nav-bar="true">
+    <ion-content  id="login" scroll="false">
+        <div class="login-box">
+            <!--<button class="button button-clear close" ng-click="goBack()">-->
+                <!--<img src="img/login/close.png"/>-->
+            <!--</button>-->
+            <h5>登录</h5>
+            <label>
+                <input type="text" placeholder="请输入帐号" ng-model="formValue.userName" maxlength="12">
+            </label>
+            <label>
+                <input type="password" placeholder="请输入密码" ng-model="formValue.pwd" maxlength="12">
+            </label>
+            <div>
+              <span class="fl" ui-sref="register">马上注册</span>
+                <span class="fr" ui-sref="zdy-customer-service" nav-direction="forward">联系客服</span>
+              <!--<span class="fr" ui-sref="retrieve-password">忘记密码</span>-->
+            </div>
+
+            <button class="submit" ng-click="login()">登录</button>
+        </div>
+        <!--<div class="third-party">-->
+            <!--<h5>-->
+                <!--授权登陆-->
+            <!--</h5>-->
+            <!--<div>-->
+                <!--<button class="butoon button-clear" ng-click="wtchetLogin()">-->
+                    <!--<img src="img/login/wechat.png"/>-->
+                <!--</button>-->
+                <!--&lt;!&ndash;<button class="butoon button-clear">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<img src="img/login/qq.png"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;</button>&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    </ion-content>
+
+</ion-view>

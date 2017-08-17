@@ -1,0 +1,34 @@
+
+<ion-modal-view id="vote" class="award-grade">
+    <ion-content scroll="false">
+        <div ></div>
+
+        <div class="vote-for debt-record-details" >
+            <img src="img/home/grade-top.png" >
+
+           <div class="cont" >
+               <h4>奖励等级</h4>
+               <table >
+                   <col style="width: 33%" />
+                   <col style="width: 33%" />
+                   <col style="width: 33%" />
+                   <tr style="background-color: #f1f1f1;">
+                       <th style="font-size: 14px;">奖励等级</th>
+                       <th style="font-size: 14px;">首存金额</th>
+                       <th style="font-size: 14px;">奖励金额</th>
+                   </tr>
+                   <tr ng-repeat="list in mess.details">
+                       <td ng-bind="list.name">1</td>
+                       <td ng-bind="list.money">达到500</td>
+                       <td ng-bind="list.send">500</td>
+                   </tr>
+               </table>
+               <div class="btnBox">
+                   <button class="button"  ng-click="closeModal()">我知道了</button>
+               </div>
+           </div>
+
+        </div>
+    </ion-content>
+
+</ion-modal-view>

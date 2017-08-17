@@ -1,0 +1,14 @@
+<ion-view view-title="{{titles[type]}}">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content class="padding con-bag" id="message-details">
+        <div class="bt">
+            <h5>{{data.title}}</h5>
+            <p><span>{{data.creation_time*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</span><span>来源：{{titles[type]}}</span></p>
+        </div>
+        <div class="cont" ng-bind-html="data.content"></div>
+    </ion-content>
+
+</ion-view>
+

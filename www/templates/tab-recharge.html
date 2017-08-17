@@ -1,0 +1,41 @@
+<ion-view view-title="充值">
+  <ion-content class="con-bag" id="recharge" style="  background: url('img/home/bgtu.jpg') no-repeat;
+  background-size: 100%;">
+    <!--<div class="online_recharge">-->
+      <!--<h5>线上充值</h5>-->
+      <!--<ul class="on-line" ng-click="tishi()">-->
+        <!--<li>支付宝支付-->
+          <!--<div class="fr">-->
+            <!--<input type="radio" name="radio" id="alipay" checked="checked">-->
+            <!--<label for="alipay"></label>-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--微信支付-->
+          <!--<div class="fr">-->
+            <!--<input type="radio" name="radio" id="wechat">-->
+            <!--<label for="wechat"></label>-->
+          <!--</div>-->
+        <!--</li>-->
+      <!--</ul>-->
+      <!--<div class="operation">-->
+        <!--<button ui-sref="transfer-accounts" nav-direction="forward">查看充值记录</button>-->
+        <!--<button ui-sref="zdy-customer-service" nav-direction="forward">联系在线客服</button>-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="online_recharge online_recharge_t">
+      <h5>线下充值</h5>
+      <ul ng-repeat="img in imgss track by img.id">
+        <li ui-sref="choice-alipay({id:img.id})" style="background: url({{img.imgUrl}}) left center no-repeat;background-size: 90px 46px;" nav-direction="forward">
+          <div class="rigth" style="width:35%;height:50px;float:left">{{img.name}}</div>
+        </li>
+      </ul>
+      <div class="operation">
+        <button ui-sref="transfer-accounts" nav-direction="forward">查看充值记录</button>
+        <button ui-sref="zdy-customer-service" nav-direction="forward">联系在线客服</button>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

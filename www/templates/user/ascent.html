@@ -1,0 +1,38 @@
+<ion-view view-title="我的回水">
+ <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+     <ion-nav-buttons side="right" >
+    <button class="button button-clear nav-btn btn-right" ui-sref="customer-service">
+      <img src="img/home/service.png"/>
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="padding con-bag" id="ascent">
+<div class="top-box">
+<p class="pull-left">自动回水，客服审核（满足条件）</p>
+<p class="pull-right" ui-sref="ascent-ruler"><a href="#">回水规则是什么?</a></p>
+</div>
+      <div class="time-food">
+          <div class="time-food-left">时间</div>
+          <div class="time-food-right"><input type="text" name="start-date" class="time"/></div>
+      </div>
+      <table class="debt-header">
+          <tr>
+              <td>日期</td>
+              <td>回水</td>
+              <td>游戏</td>
+          </tr>
+      </table>
+      <table class="debt-content" ng-repeat="index in records">
+          <tr>
+              <td>
+              <p>{{index.time*1000| date :'yyyy-MM-dd'}}</p>
+              </td>
+              <td>{{index.money}}</td>
+              <td>{{index.project}}</td>
+          </tr>
+      </table>
+    <p ng-show="records.length == 0" style="padding-top: 30%;text-align: center" ng-cloak>暂无回水</p>
+  </ion-content>
+
+</ion-view>

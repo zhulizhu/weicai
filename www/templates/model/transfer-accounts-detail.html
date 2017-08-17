@@ -1,0 +1,41 @@
+
+<ion-modal-view id="vote">
+    <ion-content scroll="false">
+        <div ></div>
+        <div class="vote-for debt-record-details" style="padding:0px;">
+            <h4 style="text-align: center;background-color: #f9f9f9;margin: 0!important;padding:10px 0;border-radius: 8px;">充值详情</h4>
+            <table style="padding: 0 10px;">
+                <col style="width: 36%" />
+                <col style="width: 64%" />
+                <tr>
+                    <td>充值方式：</td>
+                    <td>{{recordDtail.Pre_paid}}</td>
+                </tr>
+                <tr>
+                    <td>充值金额：</td>
+                    <td>{{recordDtail.amount}}</td>
+                </tr>
+                <tr>
+                    <td>实际到账：</td>
+                    <td>{{recordDtail.rechargeAmount}}</td>
+                </tr>
+                <tr>
+                    <td>充值时间：</td>
+                    <td>{{recordDtail.rechargeTime}}</td>
+                </tr>
+                <tr>
+                    <td>充值状态：</td>
+                    <td>{{state[recordDtail.state]}}</td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td>{{recordDtail.info}}</td>
+                </tr>
+            </table>
+            <div class="btnBox">
+               <button class="button" style="width: 40%;float: left;margin: 20px 10px;" ng-click="goPage(recordDtail.receiver)">再次充值</button> <button class="button" style="width: 40%;float: right;  margin: 20px 10px;" ng-click="closeModal()">关闭</button>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-modal-view>

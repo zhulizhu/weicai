@@ -1,0 +1,664 @@
+/*快三*/
+.fast-myion{
+  background-size: 22px 22px;
+  position: relative;
+  margin-right: 10px;
+  background:none;
+  border: 0;
+  color: #fff;
+  font-size: 15px !important;
+}
+.fast-myion-nav{
+  width: 22px;
+  background: url("../img/fast-three/fast-icon_05.png") no-repeat center center;
+  background-size: 16px 16px;
+  position: relative;
+}
+.fast-menu{
+  background-color:#393a3f;
+  border: none;
+  outline: none;
+  color:#00bed7;
+  font-size: 24px !important;
+}
+#fast-head{
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+#fast-head .head-top{
+  width: 100%;
+  height:auto;
+  text-align: center;
+  overflow: hidden;
+}
+#fast-head .head-top .fast-row{
+  position:relative;
+  z-index:3;
+  border-bottom: 1px solid #eee;
+  box-shadow: 2px 1px 0px #c8e5e9;
+  background-color: #fffcfc;
+  margin-bottom: 0px;
+}
+#fast-head .head-top .fast-col span{
+  color: #758ffe;
+}
+#fast-head .head-top .fast-col i{
+  color: #ff6a29;
+  font-size: 18px;
+}
+#fast-head .head-top .fast-yb span{
+  font-size: 18px;
+  color: #fead00;
+}
+#fast-head .head-top .fast-col{
+  border-right: 1px solid #dddcdc;
+}
+#fast-head .fast-list{
+  height: 60px;
+  background-color: #ddfaff;
+  text-align: center;
+  line-height: 50px;
+}
+#fast-head .fast-list .fast-per i{
+  color:#e76260;
+  font-size: 16px;
+}
+.fast-list .fast-img img{
+  display: block;
+  line-height: 0px;
+  max-height: 40px;
+  max-width: 40px;
+  margin-top:-5px;
+}
+.fast-list .fast-img.not{margin-top: -8px}
+.fast-list .down-list{
+  position: absolute;
+  z-index:2;
+  left:0;
+  width: 100%;
+  background-color: #ddfaff;
+  transform:translate3d(0,-200px,0);
+  -webkit-transform:translate3d(0,-200px,0);
+  transition: transform 0.35s;
+  -webkit-transition:-webkit-transform 0.35s;
+}
+.fast-list .down-list-show{
+  transform:translate3d(0,0px,0);
+}
+#fast-head .fast-line{
+  text-align:center;
+  border-top:1px solid #bff1f9;
+  margin:0 !important;
+}
+#fast-head .fast-line .myion-up{
+  display:inline-block;
+  width: 16px;
+  height: 16px;
+  background:url("../img/fast-three/fast-icon_03.png") no-repeat center center;
+  background-size: 16px 16px;
+  vertical-align: middle;
+}
+#fast-head  .myion-down{
+  display:inline-block;
+  width: 16px;
+  height: 16px;
+  background:url("../img/fast-three/fast-icon_09.png") no-repeat center center;
+  background-size: 16px 16px;
+  vertical-align: middle;
+}
+#future_value .future{
+  padding: 20px 0;
+  background-color:#f9f6f0;
+  top:160px;
+}
+#future_value .future .fast-number{
+  font-size:18px;
+  margin: 0 auto;
+  width:36px;
+  height:36px;
+  border-radius: 50%;
+  border: 1px solid;
+  text-align: center;
+  line-height:36px;
+  color:#ffae00;
+}
+#future_value .future .fast-col1{
+  border: 1px solid #c1913b;
+}
+#future_value .future .fast-col2{
+  border: 1px solid #6ac8ef;
+}
+#future_value .future .fast-col3{
+  border: 1px solid #f57c74;
+}
+#future_value .future .fast-col4{
+  border: 1px solid #5f9f8a;
+}
+#future_value .future .fast-check{
+  background-color: #ffae00;
+  border: 1px solid #ffae00 !important;
+  color: #fff;
+}
+#future_value .future .fast-reward{
+  margin: 0px auto;
+  padding-top: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+#future_value .future .fast-reward i{
+  color:#ff7e7b;
+  font-size: 10px;
+}
+#future_value .future .cont-row{
+  margin-bottom:5px;
+}
+#future_value .future .cont-row .col:nth-child(2n+0) p:first-child{
+  border:1px solid #5f9f8a;
+}
+#fast-footer{
+  border:none;
+  padding:0;
+  background-color: #008ca0;
+  color: #fff;
+  font-size:16px;
+  padding-left:10px;
+  line-height: 44px;
+}
+#fast-footer .row,#fast-footer .row .col{
+  padding: 0;
+  text-align: center;
+}
+#fast-footer .fast-cut{
+  font-size: 30px;
+  color: #fff;
+  line-height: 44px;
+}
+#fast-footer .fast-input{
+}
+#fast-footer  input{
+  text-align: center;
+  border-radius: 4px;
+  width:55px;
+  height: 30px;
+  border: 1px solid #96d6e7;
+  background-color: #bce1e6;
+  margin: 8px 10px;
+}
+#fast-footer .col-50 div{
+  width: 145px;
+  height: auto;
+  overflow: hidden;
+  margin:0 auto;
+}
+#fast-footer .col-50 span{
+  padding-left: 5px;
+}
+#fast-footer .fast-open{
+  text-align: center;
+  background-color: #ffae00;
+  font-size: 16px;
+}
+/*eight图标*/
+.fast-eight-menu{
+  background-color:#c4f0fd;
+  position: relative;
+  margin-top: 44px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.fast-eight-menu:before{
+  content: '';
+  position: absolute;
+  top:-10px;
+  right:44px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom:13px solid #baeefa;
+  border-top: 0;
+}
+.fast-eight-menu .row{
+  margin:10px 0;
+}
+.fast-eight-menu .col button{
+  background: #00a3e4;
+  color: #fff;
+  border: 0;
+  width: 95%;
+  border-radius:5px;
+  height: 28px;
+}
+.fast-eight-menu .col-33{
+  -webkit-flex:auto;
+  flex: auto;
+}
+/*nav菜单*/
+.fast-nav-menu{
+  background-color: rgba(0,136,166,1);
+  position: absolute;
+  top: 44px;
+  width:32%;
+  right:5px;
+}
+.fast-nav-menu:before{
+  content: '';
+  position: absolute;
+  top:-10px;
+  right:4px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom:13px solid #0085a1;
+  border-top: 0;
+}
+
+
+.fast-nav-menu div{
+  padding-left:5px;
+  margin:10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.fast-nav-menu div i{
+  font-size: 18px;margin-right:3px;
+}
+.fast-nav-menu .fast-record{
+  padding-left: 6px;
+}
+.fast-nav-menu .fast-record i{
+  font-size:20px;
+}
+/*二同号*/
+#two_game .two-game{
+  padding: 20px 0 20px;
+  top:160px;
+  background: url("../img/fast-three/three_bg.jpg")no-repeat bottom;
+}
+.two-game .fast-game-up{
+  position: relative;
+  border-bottom:1px solid #fff;
+  height: 196px;
+}
+.two-game .fast-game-up .all{text-align: center}
+.two-game .fast-game-up .all button{
+  width: 50%;height: 50px;
+  margin-top: 50px;
+  display: inline-block;
+  border: 0;
+  border-radius:8px;
+  background: #008CA0;
+  color: #fff;
+}
+.two-game .fast-game-up .all button.all-active{background: #FFAE00}
+.two-game .fast-game-up .all.special button{width:60%;height: 40px}
+.two-game .fast-game-up .together{
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.two-game .fast-game-down{
+  position: relative;
+  padding-left: 70px
+}
+.two-game .fast-tip{
+  position: absolute;
+  background:none;
+  background-size:24px 24px;
+  top:0;
+  width: 40px;height: 40px;
+  left:10px;
+  z-index: 10;
+    border: 0;
+}
+.two-game .fast-tip i{
+    background: url("../img/fast-three/info.png") no-repeat center center;
+    background-size:24px 24px;
+    width: 24px;height: 24px;
+    display: block;
+}
+.two-game .fast-tip-title:before{
+  content:'';
+  position: absolute;
+  top:5px;
+  left:-12px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-right: 12px solid rgba(3,3,3,0.7);
+  border-bottom:6px solid transparent;
+}
+.two-game .fast-tip-title{
+  position: absolute;
+  z-index:2;
+  left:40px;
+  min-width:160px;
+  font-size:0.95em;
+  background-color: rgba(3,3,3,0.7);
+  border-radius:5px;
+  color:#f5f5f5;
+  padding:10px 5px 30px 10px;
+  text-align: left;
+}
+.two-game .fast-tip-title-hov{
+  transform:translate3d(0px,0,0);
+  -webkit-transform:translate3d(0px,0,0);
+}
+.two-game .fast-text{
+  position: absolute;
+  top:67px;
+  left: 10px;
+  color: #0fabc2;
+}
+.two-game .fast-ftext{
+  position: absolute;
+  top:70px;
+  left: 10px;
+  color: #1e7885;
+}
+.two-game .fast-dice{
+  padding-left: 70px;
+}
+.two-game .two-col{
+  height:80px;
+  text-align: center;
+}
+.two-game .two-col  img{display: block;width: 48px;height: 48px;margin: 0 auto}
+/*开奖*/
+#fast-three-trend .list .item .top{
+  overflow: hidden;
+}
+#fast-three-trend .list .item .top .pull-left{
+  float: left;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+#fast-three-trend .list .item .top .pull-right{
+  float: right;
+  color: #757575;
+  font-size: 13px;
+}
+#fast-three-trend .list .item{
+  padding:10px;
+  margin-bottom: 5px;
+  border:none;
+}
+#fast-three-trend .list .item .num{
+  padding:8px 0;
+  overflow: hidden;
+}
+#fast-three-trend .list .item .num>div{
+  width: 28px;
+  height: 28px;
+  float: left;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 28px;
+  background-color: #e72f17;
+  text-align: center;
+  margin-right:5px;
+  margin-bottom: 5px;
+}
+#fast-three-trend .list .item .num span{
+  display: block;
+  float: left;
+  color: #000;
+}
+/*走势图*/
+#fast-three-trend .bar-subheader{padding: 0;display: block}
+#fast-three-trend .bar-subheader .issue{width: 32%;background: #F0E5C6;text-align: center;line-height: 44px;border-right: 1px solid #fff;float: left}
+#fast-three-trend .bar-subheader ion-scroll{width:68%;float: left}
+#fast-three-trend .bar-subheader ul{width: 393px;display: flex;display: -webkit-flex;font-size: 13px}
+#fast-three-trend .bar-subheader ul li{border-right: 1px solid #fff;width: 139px;background: #F0E5C6;text-align: center;}
+#fast-three-trend .bar-subheader ul li > div{border-top: 1px solid #fff}
+#fast-three-trend .bar-subheader ul li div div {float: left;width:23px;height: 23px;border-right: 1px solid #fff;line-height: 23px}
+#fast-three-trend .bar-subheader ul li > div div:last-child{border: 0}
+#fast-three-trend .bar-subheader ul li:last-child{width: 254px}
+#fast-three-trend .bar-subheader ul li:last-child{border: 0}
+#fast-three-trend .content{background: #F7F7F7;}
+#fast-three-trend .content .content-issue{width: 32%;height:auto;overflow:hidden;float: left;border-right: 1px solid #fff;text-align: center;border-top: 1px solid #fff}
+#fast-three-trend .content .content-issue div{border-bottom: 1px solid #fff;height: 23px;line-height: 23px}
+#fast-three-trend .content ul{width: 393px;height:auto;overflow:hidden;display: flex;display: -webkit-flex;font-size: 13px;border-top: 1px solid #fff}
+#fast-three-trend .content ul li{border-right: 1px solid #fff;width: 139px;text-align: center;}
+#fast-three-trend .content ul li > div{width:100%;height:auto;overflow:hidden;}
+#fast-three-trend .content ul li div div {float: left;width:23px;height: 23px;border-right: 1px solid #fff;line-height: 23px;border-bottom: 1px solid #fff;position: relative}
+#fast-three-trend .content ul li > div div:last-child{border-right: 0}
+#fast-three-trend .content ul li:last-child{width: 254px}
+#fast-three-trend .content ul li:last-child{border: 0}
+#fast-three-trend .bar-footer{font-size: 13px;height: 93px;display: block;padding: 0}
+#fast-three-trend .bar-footer ion-scroll{width: 68%;float: left}
+#fast-three-trend .bar-footer .content-issue div:nth-child(2n+0){background: #E8F0F9;}
+#fast-three-trend .bar-footer .content-issue div:last-child{border: 0}
+#fast-three-trend .bar-footer ul li > div:nth-child(2n+0){background: #E8F0F9;}
+#fast-three-trend .bar-footer ul{margin-top: 1px}
+#fast-three-trend .bar-footer ul li > div div:last-child{border: 0}
+#fast-three-trend ul li > div div span.lottery-active{display:block;width: 20px;height: 20px;border-radius: 50%;background: #C84C59;color: #fff;line-height: 20px;
+  position: absolute;left: 50%;margin-left: -10px;top: 50%;margin-top: -10px}
+#fast-three-trend ul li > div div span.lottery-active span{position: absolute;display: block;background: #FCAC14;top: -2px;right: -10px;width: 15px;height: 15px;border-radius: 50%;line-height: 15px;
+font-size:12px;}
+#fast-three-trend ul li > div div span.value-active{display:inline-block;width: 20px;height: 20px;background: #8DBCBD;color: #fff;line-height: 20px;
+  position: absolute;left: 50%;margin-left: -10px;top: 50%;margin-top: -10px;z-index: 4}
+.recently-periods {-webkit-appearance:none;appearance:none;color: #fff;border: 0;background: url("../img/fast-three/subscript.png") right 12px no-repeat;background-size:13px 13px;  width: 80px;}
+.recently-periods  option{color: #000}
+#mycanvas{position: absolute;z-index: 3}
+/*结算model*/
+.showShade{
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+.fast-backed{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  width:80%;
+  height: auto;
+  background-color:#fff;
+  transform: translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  border-radius:10px;
+  color:#5a5a5a;
+  padding:20px 0;
+}
+ .two-game .fast-game-up.fast-two .fast-dice{padding-left: 0;margin-top: 30px}
+.two-game .fast-game-up.fast-two{border: 0}
+.fast-backed .backed-close{
+  position: absolute;
+  background-color:#6e6e6e;
+  top:0;
+  right:0;
+  padding:5px;
+  font-size: 24px;
+  color:#fff;
+  border-radius:10px 10px 10px 10px/1px 10px 1px 10px;
+}
+.fast-backed .backed-cont{
+ padding:20px 10px 5px;
+  color:#5a5a5a;
+}
+.fast-backed .backed-cont p{
+  margin-bottom:10px;
+}
+.fast-backed .backed-cont span{
+  color: #efa700;
+}
+.fast-backed .backed-cont i{
+  color: #32cb62;
+}
+.fast-backed .backed-money{
+  margin: 0 auto;
+  text-align: center;
+}
+.fast-backed .backed-confirm{
+  width: 60%;
+  height: 40px;
+  margin:10px auto;
+  text-align: center;
+  background-color: #ffae00;
+  line-height:40px;
+  border-radius:6px;
+  color: #fff;
+}
+#fast-head .pk-list{margin-top: 5px;padding: 0 10px}
+#fast-head .pk-list,#fast-head .pk-list li{width: 100%;height: auto}
+#fast-head .pk-list li .periods{display: flex;display: -webkit-flex;padding: 5px 0;}
+#fast-head .pk-list li .periods div{width: 25px;height: 25px;border-radius: 50%;background: #ff0000;color: #fff;line-height: 25px;margin-left: 5px}
+#fast-head .pk-list li .periods div:first-child{margin: 0}
+#fast-head .pk-list .pk-list{padding: 0}
+#two_game .pk-play-content{width: 100%;height: auto;overflow: hidden}
+#two_game .pk .play-list{width: 100%;height: auto;overflow: hidden;border-bottom: 1px solid #c1913b;padding-bottom: 5px;margin-bottom: 10px }
+#two_game .pk .play-list .row{padding: 0}
+#two_game .pk .play-list .row  .col-20{text-align: center}
+#two_game .pk .play-list .row  .col-20 span{padding: 2px 6px;background: #e6e6e6;font-size: 13px;border-radius: 16px;display: block}
+#two_game .pk .play-list .row ul{width: 100%;display: flex;display: -webkit-flex;flex-wrap:wrap;}
+#two_game .pk .play-list .row ul li{width:30px;height: 30px;border: 1px solid #c1913b;border-radius: 50%;text-align: center;line-height: 30px;margin:0 5px 5px 5px}
+#two_game .pk .play-list .row ul li.pk-active{background: #ff0000;border: 1px solid #ff0000;color: #fff}
+#two_game .pk .play-list .play-operation{width: 100%;display: flex;display: -webkit-flex;justify-content:center}
+#two_game .pk .play-list .play-operation div{width: 16%;height: 30px;line-height:30px;text-align: center;border-right: 1px solid #c1913b;
+  font-size: 16px}
+#two_game .pk .play-list .play-operation div:last-child{border: 0}
+#two_game .pk .play-list .play-operation div.operation-bg{color:#ff0000;font-weight: bold }
+  /*PK10玩法列表*/
+#pk-play-list ul,#pk-play-list ul li{width: 100%;height: auto;overflow: hidden;}
+#pk-play-list ul li{padding: 10px}
+#pk-play-list ul li .row{background: #fff;margin-top: 10px;border-radius: 10px}
+#pk-play-list ul li .row .col-33 button{background: #3dadec;color: #fff;height:30px;border: 0;width: 100%;display: block;margin: 0 auto;border-radius: 8px;white-space:nowrap; }
+/*PK10走势图*/
+/*开奖走势*/
+.movements .row{padding: 0}
+.movements .col-20{font-size: 13px;padding: 0;text-align: center;line-height: 34px}
+.movements-periods{border: 0;color: #fff;appearance:none;  -webkit-appearance:none;background: url(../img/account/tm_arrows.png) right center no-repeat;background-size:10px 10px;
+width: 80px}
+.movements-periods option{color: #000}
+.heading{margin-top: 44px;padding: 0}
+.heading > div{color: #fff;border-right:1px solid #fff;font-size: 13px}
+.heading > div:nth-child(1){width: 23%;background-color: #36C4F8;line-height: 40px;text-align: center;}
+.heading > div:nth-child(2){width: 15%;background-color: #36C4F8;line-height: 40px;text-align: center;}
+.heading > div:nth-child(3){width: 62%;background-color: #36C4F8;border: 0}
+.heading > div:nth-child(3) h1{width: 100%;height: 20px;margin: 0;padding: 0;border-bottom: 1px solid #fff;line-height: 20px;color: #fff;font-size: 13px;text-align: center}
+.heading > div:nth-child(3) div{width: 100%;height: 24px;overflow: hidden;}
+.heading > div:nth-child(3) div span{display:inline-block;width: 10%;height: 24px;line-height: 24px;border-right: 1px solid #fff;text-align: center;}
+.heading > div:nth-child(3) div span:last-child{border: 0}
+#movements .container{width: 100%;height: auto;overflow: hidden;padding-top: 88px}
+#movements ul{width: 100%;height: auto;overflow: hidden;padding: 0; border-bottom: 1px solid #d3d3d3}
+#movements ul li{width: 100%;height: 24px;border-bottom: 1px solid #f1f1f1}
+#movements ul li > div{border-right:1px solid #f1f1f1;height: 24px}
+#movements ul li > div:nth-child(1){width: 23%;line-height: 24px;text-align: center;}
+#movements ul li > div:nth-child(2){width: 15%;line-height: 24px;text-align: center;}
+#movements  ul li > div:nth-child(3){width:62%;height: 24px;overflow: hidden;}
+#movements  ul li > div:nth-child(3) > span{display:inline-block;width: 10%;height: 24px;line-height: 24px;border-right: 1px solid #f1f1f1;text-align: center;position: relative}
+#movements ul li > div:nth-child(3) > span:last-child{border: 0}
+.span-active{display: inline-block;width:20px; height:20px;background-color: #E3B56E; line-height: 20px; border-radius: 50%;color: #fff;position: absolute;  left:0;top: 2px;
+  z-index:4  }
+#movements ul:last-child{border-bottom: 0}.movements-active{ color: #36C4F8 !important;}
+.ms{padding: 0;display: block;width: 100%;height:72px}
+.ms > div{width: 100%;height: 24px;}
+.ms > div div:first-child{width:38%;height: 24px; text-align: center;background-color: #36C4F8; color: #fff;border-bottom: 1px solid #fff;line-height: 24px }
+.ms > div div:last-child{width:62%;height: 24px; border-bottom: 1px solid #d3d3d3}
+.ms > div div:last-child > span{display:inline-block;width: 10%;height: 24px;line-height: 24px;border-right: 1px solid #f1f1f1;text-align: center;}
+.ms > div div:last-child > span:last-child{border: 0}
+.ms > div:nth-child(1) div:last-child span{color:#1c1c8e}
+.ms > div:nth-child(2) div:last-child span{color:#ce5968}
+.ms > div:nth-child(3) div:last-child span{color:#80bbbf}
+#mycanvas{position: absolute;top: 88px;z-index: 3}
+.bg-red{width:30px;height: 30px;border-radius: 50%;background-color: #e72f17;
+  color: #fff;line-height: 30px;}
+/*fast-three新页面的style样式*/
+#room-head div.top-list  ul.list{position:absolute;left:0;padding-left:10px;background-color:#fff;margin-top:0;}
+#room-head .question-mark{padding-top: 10px}
+/*和值modal样式*/
+#fast-three-modal .swiper-box{width:90%;height:auto;margin:0 5%;z-index:3;position:absolute;bottom:0;left:0;}
+#fast-three-modal .top-content{width:100%;height:auto;position:absolute;top:20px;left:0;text-align:center;}
+#fast-three-modal .center-content{width:96%;margin:0 2%;position:absolute;top:15%;left:0;text-align:center;}
+/*#fast-three-modal .btn-content{width:96%;margin:0 2%;position:absolute;left:0;bottom:10px;}*/
+#fast-three-modal .swiper-container{height:400px;}
+.fast-three-number{width:34px;height:34px;border-radius:50%;color:#ffae00;text-align:center;line-height:36px;font-size:18px;margin:0 auto;}
+.fast-three-number-even{border:1px solid #c1913b;}
+.fast-three-number-odd{border:1px solid #5f9f8a}
+#fast-three-modal .sw-con{text-align:center;}
+.fast-three-money i{color:#ff7e7b;}
+.three-tong-select{background:url("../img/fast-three/three_bg.png")no-repeat bottom;}
+.hezhi-select{background-color:#F9F6F0;}
+#fast-three-modal .hezhi-select .top span{
+  display:block;
+  padding-left:20%;
+  font-size:18px;
+}
+/*#fast-three-modal .btn-top{margin:8px 0;}
+#fast-three-modal .btn-top:after{content:"";display:block;clear:both;}
+#fast-three-modal .btn-top .sec{float:right;border-radius:2px;border:1px solid #ddd;margin-right:16px;}
+#fast-three-modal .btn-top button{padding:2px 4px;font-size:12px;}*/
+/*#fast-three-modal .btn-bottom span{float:left;width:73%;}
+#fast-three-modal .btn-bottom span input{border-radius:4px;height:23px;display:inline-block;width:68%;}
+#fast-three-modal .btn-bottom button{float:left;width:27%;border-radius:4px;font-size:12px;border:0;}
+#fast-three-modal .btn-bottom:after{content:"";display:block;clear:both;}*/
+  /*三同号通选*/
+#fast-three-modal .fast-tip i{background:url("../img/fast-three/info.png") no-repeat center center;width:24px;height:24px;display:block;border-radius:50%;}
+#fast-three-modal .fast-tip{position:absolute;top:5px;left:10px;border:0;background:none;background-size:24px 24px;}
+#fast-three-modal .three-tong{margin-top:50px;width:50%;height:50px;display:inline-block;border:0;border-radius:8px;background-color:#008CA0;color:#fff;}
+#fast-three-modal .fast-room-money{margin-top:20px;width:100%;text-align:center;}
+#fast-three-modal .room-main-content-button{height:196px;}
+#fast-three-modal .fast-tip .fast-tip-title{position:absolute;z-index:2;left:40px;min-width:160px;font-size:0.95em;background-color:rgba(3,3,3,0.7);border-radius:5px;color:#f5f5f5;padding:10px 20px 10px 20px;text-align:left;}
+#fast-three-modal .fast-tip .fast-tip-title:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-right: 12px solid rgba(3, 3, 3, 0.7);
+  border-bottom: 6px solid transparent;
+}
+/*fast-room公共样式*/
+#fast-three-modal .fast-room-content{position:absolute;top:0;left:0;z-index:10;width:100%;}
+/*前后modal按钮*/
+#fast-three-modal .swiper-box .swiper-container .swiper-button-next{background-image:url("../img/home/youjiantouyellow.png");background-size:20px 20px;top:2%;margin-top:0;right:30px;}
+#fast-three-modal .swiper-box .swiper-container .swiper-button-prev{background-image:url("../img/home/zuojiantouyellow.png");background-size:20px 20px;top:2%;margin-top:0;left:30px;}
+
+/*三同号单选*/
+#fast-three-modal .fast-room-saize{margin-top:35px;}
+#fast-three-modal .fast-room-saize img{display:block;width:48px;height:48px;margin:0 auto;}
+#fast-three-modal .fast-room-saize.dxds{margin-top:15px;}
+#fast-three-modal .fast-room-saize.dxds .three-tong{width: 80%}
+#fast-three-modal .fast-room-tow-border{border-bottom:1px solid #fff;}
+
+#fast-three-modal .big-box{height:100%;width:100%;position:absolute;bottom:0;left:0;z-index:2;}
+
+/*!*room-head编辑*!
+#room-head .fast-room-clearfix:after{content:"";display:block;clear:both;}*/
+
+
+/*#room-head .myion-down,#room-head .myion-up{display:inline-block;width:16px;height:25px;background-size:16px 25px;vertical-align:middle;}
+#room-head .myion-down{background:url("../img/fast-three/fast-icon_09.png") no-repeat center center;}
+#room-head .myion-up{background:url("../img/fast-three/fast-icon_03.png") no-repeat center center}*/
+#room-head .fast-room-result-inline{border-top:1px solid #bff1f9;}
+#room-head .pull-p i{color:#ff6a29;font-size:18px;font-weight:normal;}
+#room-head p.pull-p span{color:#e72f17;font-weight:normal;}
+
+/*投注时候得checked时候得style*/
+#fast-three-modal .sw-con .fast-check{background-color:#ffae00;border:1px solid #ffae00 !important;color:#fff;}
+#fast-three-modal .three-tong.fast-check{background-color:#FFAE00;border:1px solid #FFAE00;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

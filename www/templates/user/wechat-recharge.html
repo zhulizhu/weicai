@@ -1,0 +1,53 @@
+<ion-view view-title="微信充值">
+ <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+  <ion-content class=" con-bag" id="wechat-recharge">
+  <div class="num">
+    <div class="num-left">
+      账号：<span>456852</span>
+    </div>
+     <div class="num-right">
+      <img src="img/home/shuaxin.png">
+    </div>
+     <div class="num-right">
+      余额：<span>0.00</span> 元宝
+    </div>
+  </div>
+ <div class="list">
+  <label class="item item-input">
+    <span class="input-label">充值金额</span>
+    <input type="text" placeholder="请输入充值金额">
+    <span class="input-label mon">元</span>
+  </label>
+</div>
+    <div class="dynamic_list">
+      <div>
+        <a class="dynamic_active" ng-click="tabs(0)" ng-class="{'active':tab==0}">微信</a>
+        <a  ng-click="tabs(1)" ng-class="{'active':tab==1}">支付宝</a>
+      </div>
+     <div class="online_recharge" ng-show="tab==0">
+      <ul>
+        <li>支付宝支付（扫一扫直接到账）<br><span>金额范围:10-10000元,推荐使用,支付后立即到账</span>
+        <div class="fr">
+          <input type="radio" name="radio" id="alipay" checked>
+          <label for="alipay"></label>
+        </div>
+        </li>
+      </ul>
+    </div>
+      <div ng-show="tab==1">sdsfsddf</div>
+    </div>
+    <button class="button button-full">
+  下一步
+</button>
+<div class="text">
+  <p>温馨提示：</p>
+    <p>1.微信支付(扫一扫直接到账),方便快捷,支付完成立即到账。</p>
+    <p>2.支付宝支付(扫一扫直接到账),方便快捷,支付完成立即到账。</p>
+
+</div>
+
+  </ion-content>
+
+</ion-view>

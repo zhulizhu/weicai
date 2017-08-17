@@ -1,0 +1,265 @@
+<ion-view>
+ <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+ </ion-nav-buttons>
+  <ion-nav-title >
+  <h1  class="title"  ng-click="openPlay()">
+    <span ng-bind="state.name"></span>
+    <i class="ion-ios-arrow-down" style="font-size: 18px;margin-left: 5px;">
+    </i>
+  </h1>
+  </ion-nav-title>
+  <ion-nav-buttons side="right" >
+    <!--<button class="button button-clear nav-btn btn-right" style="color:#fff;" >-->
+      <!--<img src="img/home/shuzhan1.png">-->
+    <!--</button>-->
+    <!--<div class="list" style="background-color: #ebebeb!important;position: absolute;top:50px;right:20px;">-->
+      <!--<div class="item"  ui-sref="play-regulation({id:roomId})">游戏规则</div>-->
+      <!--<div class="item">历史开奖</div>-->
+      <!--<div class="item">游戏记录</div>-->
+    <!--</div>-->
+    <button class="button button-clear nav-btn" ng-click="openNav()">
+      <i class="icon ion-plus-round"></i>
+    </button>
+  </ion-nav-buttons>
+   <!-- 副标题 -->
+    <div class="bar bar-subheader ba" id="room-head">
+      <div class="head-top">
+        <div class="sub-periods">
+          <ul>
+            <li ng-click="userinfo()" style="padding: 5px; overflow: hidden;" >
+              <p class="pull-p" style="float: left"><span style="margin-right: 8px;font-weight: bold;color: #000;" ng-bind="messag.title">三分彩</span><span style="color: #000;font-size: 12px;">第<span style="font-size: 13px;color: #000;">{{messag.actionNo.actionNo}}</span>期</span></p>
+              <p class="pull-p" style="font-size: 12px;float: right">今日输赢：<span>{{lotteryBunko || '0.000'}}</span></p>
+            </li>
+            <li class="pull-right">
+              <p style="text-align: center">距截至下注</p>
+              <div  class="pull-p" style="width: 100%;margin: 0 auto 5px; display: -webkit-flex;display: flex;justify-content:center">
+                <div class="time" ng-bind="hour1">00</div>
+                <span>:</span>
+                <div class="time" ng-bind="minute1">00</div>
+                <span>:</span>
+                <div class="time" ng-bind="second1">00</div>
+              </div>
+            </li>
+            <li class="pull-left">
+              <p style="text-align:center;font-size: 12px;">开奖时间</p>
+              <div  class="pull-p" style="width: 100%;margin: 0 auto 5px; display: -webkit-flex;display: flex;justify-content:center">
+                <div class="time" ng-bind="hour">00</div>
+                <span>:</span>
+                <div class="time" ng-bind="minute">00</div>
+                <span>:</span>
+                <div class="time" ng-bind="second">00</div>
+              </div>
+            </li>
+          </ul>
+          <!-- 列表 -->
+          <div class="row fast-list fast-line fast-room-result-bg"  >
+            <div class="col fast-per" >
+              <p>第<i>{{messag.lastNo.actionNo}}</i>期开奖</p>
+            </div>
+          </div>
+          <div class="row">
+            <div  class="col col-10"  ng-repeat="item in messag.kjHao track by $index" ng-class="messag.type != 67  ? 'kjq' : ''" ng-if="roomId != 70">
+              <div class="bg-red"   ng-class="isRotaryHeader ? 'kjq-animation' : ''">{{item}}</div>
+            </div>
+            <div  class="col col-10 cqnc-kjh"  ng-repeat="item in messag.kjHao track by $index" ng-if="roomId == 70">
+              <div class="bg-red qcnc"   ng-class="isRotaryHeader ? 'kjq-animation' : ''">
+                <img ng-src="{{cqnc.ncImgs[item]}}" ng-show="messag.kjHao[0] != '?'"/>
+                <span ng-show="messag.kjHao[0] == '?'" class="bg-red">{{item}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div  ng-show="bet" class="bet-sub">
+        <!--投注-->
+        <div class="touzhu"  style="width:100%;height:auto;overflow:hidden;position: relative">
+          <!--投注方式-->
+          <div class="row chose" ng-show="bet">
+            <div class="col col-50 " ng-class="state.id==1?'active1':' '" ng-click="select(1)"><p>自选下注</p></div>
+            <div class="col col-50 " ng-class="state.id==0?'active1':' '" ng-click="select(0)"><p>快捷下注</p></div>
+          </div>
+          <!--自选下注-->
+          <div class="bet-chose" style="height: 258px;position: relative" ng-show="state.id==1 && bet">
+            <div class="swiper-container bet-chose-con">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="flex-wrap:wrap;height: auto;-webkit-box-sizing: border-box;box-sizing: border-box;" >
+                  <div  ng-repeat="List in quickList" style="width: 100%">
+                  <div class="fast" >
+                    <div class="acted" >
+                      <div class="row acted" ng-click="listShow(List)">
+                        <div class="col col-30"><p ng-bind="List.groupName"></p></div>
+                        <div class="col"  style="text-align: right;float: right">
+                          <div class="down_img">
+                            <i  ng-class="List.mxShow ? 'ion-chevron-up' : 'ion-chevron-down'" ng-click="listShow(List,$event)"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="acted-content" ng-show="List.mxShow">
+                        <div class="cont" ng-repeat="groups in List.group" >
+                          <div class="btn1 btn2">
+                            <p>
+                              <span ng-bind="cqnc.ncPlayNames[groups.name]" ng-if="List.id == cqnc.playGroup[List.id]">大</span>
+                              <span ng-bind="groups.name" ng-if="List.id != cqnc.playGroup[List.id]">大</span>
+                              <span ng-bind="groups.odds">1.985</span>
+                            </p>
+                            <p>
+                              <input ng-model="groups.value" type="tel" ng-disabled="groups.is_disabled" ng-change="changeBet()" ng-if="roomId != 70">
+                              <input ng-model="groups.value" type="tel" class="nc-input" ng-disabled="groups.is_disabled" ng-change="changeBet()"
+                                     ng-style="ncPlayStyle(List.id,groups.name)" ng-if="roomId == 70">
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                  <div style="width: 100%;height: 60px"></div>
+                </div>
+              </div>
+              <!-- Add Scroll Bar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+
+          <div ng-show="state.id==1 && bet" style="position: absolute;bottom: 30px;
+          background-color: #faf5db;height: 30px;line-height: 30px;font-size: 12px;width: 100%; z-index: 10">
+            <span ng-bind="guess.guess.length"></span>注共<span class="item-active" ng-bind="guess.money || '0.000'">36</span>元，最高奖金
+            <span ng-bind="(guess.bonus|| '0.000')"></span>元<!--，最高盈利<span class="item-active" ng-bind="guess.profit|| '0.000'">98.5</span>元-->
+          </div>
+          <!--快捷下注-->
+          <div class="bet-chose" style="height: 258px;position: relative" ng-show="state.id==0 && bet">
+          <div class="swiper-container bet-chose-con">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="flex-wrap:wrap;height: auto;-webkit-box-sizing: border-box;box-sizing: border-box;" >
+                <div  ng-repeat="List in quickList" style="width: 100%" >
+                  <div class="fast">
+                    <div class="acted" >
+                      <div class="row acted" ng-click="listShow(List)">
+                        <div class="col col-30"><p ng-bind="List.groupName">总和/龙虎</p></div>
+                        <div class="col"  style="text-align: right;float: right">
+                          <div class="down_img">
+                            <i ng-class="List.mxShow ? 'ion-chevron-up' : 'ion-chevron-down'" ng-click="listShow(List,$event)"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="acted-content"   ng-show="List.mxShow">
+                        <div class="cont" ng-repeat="groups in List.group">
+                          <div class="btn1 " ng-class="groups.checked ? 'active-btn1' : ''" ng-click="choseBetMenu(groups)" ng-if="roomId != 70">
+                            <p ng-bind="groups.name">总和大</p>
+                            <p ng-bind="groups.odds">1.985</p>
+                          </div>
+                          <div class="btn1 nc-btn" ng-class="groups.checked ? 'nc-active' : ''" ng-click="choseBetMenu(groups)" ng-if="roomId == 70">
+                            <p ng-bind="groups.name" ng-if="List.id != cqnc.playGroup[List.id]">总和大</p>
+                            <p ng-bind="groups.odds" ng-style="ncPlayStyle(List.id,groups.name)" ng-class="List.id == cqnc.playGroup[List.id] ? 'nc-p' : ''"></p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="width: 100%;height: 30px"></div>
+              </div>
+            </div>
+            <!-- Add Scroll Bar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    <!-- 内容 -->
+    <ion-content class="padding con-bag has-footer" id="room" style="margin-top: 175px" delegate-handle="mainScroll">
+      <div class="box-list">
+        <div class="bottom-pour-list" ng-repeat="bottomPour in bottomPourRecord track by $index" ng-class="roomClass(bottomPour)">
+          <div ng-if="bottomPour.type == 'bet'">
+            <img ng-src="{{bottomPour.img || 'img/account/user.png'}}">
+            <h5 ng-class="userInfo.uid != bottomPour.id ? 'fl' : 'fr'">{{bottomPour.client_name}}</h5>
+            <div class="grade" ng-class="user_level_show(bottomPour)"><img ng-src="{{bottomPour.level_img}}" ng-if="userInfo.is_open_levels == 1"/> </div>
+            <div class="me cl" ng-click="openVoteSameModal(bottomPour)">
+              <div class="fl">{{bottomPour.period}}期</div>
+              <div class="fr">最高奖金：{{bottomPour.bonus}}元</div>
+              <div class="cl">金额：{{bottomPour.money}}元</div>
+            </div>
+            <div class="time cl"><span>{{bottomPour.time}}</span></div>
+          </div>
+          <div class="mes" ng-if="bottomPour.type == 'fengpan'">
+            <span>【{{bottomPour.period}}期】</span>
+            已封盘，下注结果以系统开奖为准，如有异议，请联系客服
+          </div>
+          <div class="mes" ng-if="bottomPour.type == 'result'">
+            <div ng-if="roomId == 64 || roomId == 68">
+              <span>【{{bottomPour.period}}期】</span>
+              开奖[{{bottomPour.time*1000 | date:'HH:mm'}}]：
+              <div>
+                <span>{{bottomPour.kjHao[0]}}+{{bottomPour.kjHao[1]}}+{{bottomPour.kjHao[2]}}={{bottomPour.he}}</span>
+              </div>
+            </div>
+            <div ng-if="roomId == 65">
+              <span>【{{bottomPour.period}}期】</span>
+              开奖[{{bottomPour.time*1000 | date:'HH:mm'}}]：
+              <div>
+                <span ng-repeat="num in bottomPour.kjHao track by $index" ng-if="$index < 6">{{num+'  '}}</span>
+                <span>{{'+  '+bottomPour.kjHao[6]}}</span>
+              </div>
+            </div>
+            <div ng-if="roomId == 66 || roomId == 67 || roomId == 69">
+              <span>【{{bottomPour.period}}期】</span>
+              开奖[{{bottomPour.time*1000 | date:'HH:mm'}}]：
+              <div>
+                <span ng-repeat="num in bottomPour.kjHao track by $index">{{num+'  '}}</span>
+              </div>
+            </div>
+            <div ng-if="roomId == 70">
+              <span>【{{bottomPour.period}}期】</span>
+              开奖[{{bottomPour.time*1000 | date:'HH:mm'}}]：
+              <div>
+                <span ng-repeat="num in bottomPour.kjHao track by $index">
+                  <img ng-src="{{cqnc.ncImgs[num]}}" class="nc-img"/>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="greet" ng-if="bottomPour.type=='login'">
+                      <span>
+                        <span>欢迎</span>
+                        <img ng-src="{{bottomPour.level_img}}" ng-if="userInfo.is_open_levels == 1"/>
+                        <span class="user-name">{{bottomPour.client_name}}</span>
+                        <span >进入房间</span>
+                    </span>
+          </div>
+          <div ng-if="bottomPour.type == 'say'" style="min-height: 50px">
+            <img ng-src="{{bottomPour.img || 'img/account/user.png'}}">
+            <h5 ng-class="userInfo.uid != bottomPour.id ? 'fl' : 'fr'">{{bottomPour.client_name}}</h5>
+            <div class="grade"  ng-class="user_level_show(bottomPour)"><img ng-src="{{bottomPour.level_img}}" ng-if="userInfo.is_open_levels == 1" /> </div>
+            <div class="me cl">
+              <p>{{bottomPour.content}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-content>
+<div class="bar bar-footer item-input-inset" id="room-footer" ng-hide="bet">
+  <button class="button ico" ng-click="touzhuShow()">投注</button>
+    <form action="" ng-submit="sendChat($event)">
+      <label class="item-input-wrapper" style="margin-right: 10px!important;">
+        <input type="text" ng-model="message.content" ng-disabled="messag.jinyan == 1 ? true : false" placeholder="{{messag.bear}}">
+      </label>
+    </form>
+  <button class="button ico say" ng-click="sendChat()">发送</button>
+</div>
+<div class="bar bar-footer item-input-inset footer1" ng-show="bet">
+  <div class="row row-footer">
+    <div class="col col-25" ng-click="emptySelect()">清空选项</div>
+    <div class="col col-25" ng-click="betzs()">{{is_betzs ? '展开投注' : '收缩投注'}}</div>
+    <div class="col col-25" ng-click="touzhuShow()">聊天室</div>
+    <div class="col col-25 active-btn1"  ng-click="oneBetting()">下注</div>
+  </div>
+</div>
+
+</ion-view>
+

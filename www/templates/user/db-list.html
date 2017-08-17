@@ -1,0 +1,15 @@
+<ion-view view-title="双面长龙排行">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content id='db_list'>
+        <div class="list" ng-show="state==1">
+            <div class="item item-divider">排行信息</div>
+            <div class="item" ng-repeat="list in mess">
+                <p class="pull-left" ng-bind="list.name">冠军一单</p><p class="pull-right"><span ng-bind="list.num"></span>期</p>
+            </div>
+        </div>
+        <p ng-show="state==0" style="text-align: center;margin:60px 0">没有双面长龙排列数据</p>
+    </ion-content>
+
+</ion-view>

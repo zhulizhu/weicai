@@ -1,0 +1,30 @@
+<ion-view view-title="客服">
+  <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+  </ion-nav-buttons>
+  <!-- 内容 -->
+  <ion-content class="padding con-bag has-footer customer-service" id="room"  delegate-handle="mainScroll">
+    <div class="box-list">
+      <div class="bottom-pour-list " ng-repeat="ne in news" ng-class="ne.type == 'left' ? 'bottom-pour-speak' : 'bottom-pour-speak-r' ">
+        <div>
+          <img ng-src="{{ne.img || 'img/account/user.png'}}">
+          <h5>{{ne.name}}</h5>
+          <div class="me">
+            <p ng-bind-html="ne.content"></p>
+          </div>
+        </div>
+        <div class="time cl"><span>{{ne.time}}</span></div>
+      </div>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer item-input-inset" id="customer-service-footer">
+    <form action="" ng-submit="fasong($event)" class="fl">
+      <label class="item-input-wrapper">
+        <input type="search" ng-model="formValue.text">
+      </label>
+    </form>
+    <button class="button  ico fr" ng-click="fasong(n.type)">发送</button>
+  </div>
+
+</ion-view>
+

@@ -1,0 +1,18 @@
+<ion-view view-title="选择账号">
+  <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+  </ion-nav-buttons>
+  <ion-content class="padding con-bag" id="choice-alipay">
+    <div class="list">
+
+      <a class="item " href="#" ui-sref="alipay-transfer({id:list.id})" ng-repeat="list in account">
+        <div class="left">
+          <p>收款账号：<span class="one">{{list.name}}</span></p>
+          <p>收款户名：<span class="two">{{list.open_name}}</span></p>
+        </div>
+        <i class="ion-chevron-right"></i>
+      </a>
+    </div>
+  </ion-content>
+
+</ion-view>

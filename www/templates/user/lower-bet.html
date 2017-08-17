@@ -1,0 +1,94 @@
+<ion-view view-title="下级投注">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" class="has-footer">
+        <ion-refresher pulling-icon="ion-load-d" on-refresh="refresh()" refreshing-text="正在加载中.." refreshing-icon="ion-loading-b">
+        </ion-refresher>
+        <ul class="search">
+            <li class="bank-type game-type">
+                <div>时间选择</div>
+                <div>
+                    <input style="background-color: #ebebeb;width: 44%;display:inline-block;float: left" type="text" name="start-date" id="start-date1" placeholder="请选择开始时间" onfocus="this.blur()" >
+                    至
+                    <input style="background-color: #ebebeb;width:44%;display:inline-block;float: right" type="text" name="end-date" id="end-date1" placeholder="请选择结束时间" onfocus="this.blur()">
+                </div>
+            </li>
+            <!--<li class="bank-type game-type">-->
+                <!--<div>快捷选时</div>-->
+                <!--<div>-->
+                    <!--<select ng-model="game.id" ng-options="game.id as game.title  for game in gameType"></select>-->
+                <!--</div>-->
+            <!--</li>-->
+            <li class="bank-type game-type">
+                <div>用户账号</div>
+                <div>
+                    <input ng-model="member.name" style="background-color: #ebebeb" type="text" placeholder="请填写登录账号">
+                </div>
+            </li>
+            <li class="bank-type game-type">
+                <div>投注彩种</div>
+                <div>
+                    <select ng-model="member.gameId" ng-options="game.id as game.name  for game in gameList"></select>
+                </div>
+            </li>
+            <!--<li class="bank-type game-type">-->
+                <!--<div>投注玩法</div>-->
+                <!--<div>-->
+                    <!--<select ng-model="game.id" ng-options="game.id as game.title  for game in gameType"></select>-->
+                <!--</div>-->
+            <!--</li>-->
+            <li class="bank-type game-type">
+                <div>投注状态</div>
+                <div>
+                    <select ng-model="member.stateId" ng-options="state.id as state.name  for state in gameState"></select>
+                </div>
+            </li>
+            <li class="submit">
+                <div style="width: 88%;padding-right: 0;margin:0 5%;height: auto!important;"><button style="height: auto!important;border-radius: 4px;"  ng-click="clickSelect()">点击查询<i class="ion-ios-search-strong" style="font-size: 16px;margin-left: 5px;line-height: 35px;"></i></button></div>
+            </li>
+        </ul>
+        <div class="record">
+            <div class="row row1" style="font-size: 13px;background-color: #f9f9f9">
+                <div class="col col-25" >登录账号</div>
+                <div class="col col-25">类型</div>
+                <div class="col col-25">投注金额</div>
+                <div class="col col-25">投注时间</div>
+            </div>
+            <div class="list">
+                <div class="item" ng-repeat="record in records"   ng-click="openModal(record)" >
+                    <p ng-bind="record.username">12333</p>
+                    <p ng-bind="record.state">未开奖 未中奖 中奖</p>
+                    <p style="color:#e62f15" ng-bind="record.money">-20</p>
+                    <p >{{record.create_time*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</p>
+                </div>
+            </div>
+        </div>
+        <p ng-show="records.length == 0 || records ==null" style="padding-top: 30%;text-align: center">暂无下级投注</p>
+        <p style="text-align: center; margin-top: 10px;" ng-hide="!noMoreItemsAvailable || records.length == 0 || records ==null">已加载完全部数据</p>
+        <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+    </ion-content>
+
+    <div class="tabs tabs-icon-top">
+        <a class="tab-item" href="#/tab/account">
+            <i class="icon ion-turn"></i>
+            个人中心
+        </a>
+        <a class="tab-item" href="#/team-statistics">
+            <i class="icon ion-team"></i>
+            团队统计
+        </a>
+        <a class="tab-item " href="#/member-list">
+            <i class="icon ion-member"></i>
+            会员列表
+        </a>
+        <a class="tab-item tab-active" href="#/lower-money">
+            <i class="icon ion-money-active"></i>
+            资金流水
+        </a>
+        <!--<a class="tab-item" href="#">-->
+            <!--<i class="icon ion-turn"></i>-->
+            <!--下级转点-->
+        <!--</a>-->
+    </div>
+</ion-view>

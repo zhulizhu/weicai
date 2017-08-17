@@ -1,0 +1,35 @@
+<ion-view view-title="绑定注册">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" style="background-color: #f1f1f1;">
+
+        <ul class="search info links"  >
+            <li class="bank-type game-type">
+                <div>用户账号</div>
+                <div>
+                    <input ng-model="formValue.userName" style="background-color: #ebebeb" type="text" maxlength="12" placeholder="请填写用户账号">
+                </div>
+            </li>
+            <li class="bank-type game-type">
+                <div>密码</div>
+                <div>
+                    <input ng-model="formValue.passWord" style="background-color: #ebebeb" type="text" maxlength="12" placeholder="请填写用户密码">
+                </div>
+            </li>
+            <li class="bank-type game-type">
+                <div>确认密码</div>
+                <div>
+                    <input ng-model="formValue.confirmPassWord" style="background-color: #ebebeb" type="text" maxlength="12" placeholder="请确认用户密码">
+                </div>
+            </li>
+            <li class="submit sub"  style="overflow: hidden">
+                <div style="width: 100%!important;float: left;" ng-click="register()"><button  >注册</button></div>
+                <div style="width: 100%!important;float: right;" ui-sref="binding-account"><button >绑定已有账号</button></div>
+
+            </li>
+        </ul>
+
+    </ion-content>
+
+</ion-view>

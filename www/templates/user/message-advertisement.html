@@ -1,0 +1,30 @@
+<ion-view view-title="消息公告">
+  <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+  </ion-nav-buttons>
+  <div class="bar bar-subheader meg-ad">
+    <div ng-class="types == 0? 'msg-border-line' : ''" ng-click="selectType(0)">消息</div>
+    <div ng-class="types == 1? 'msg-border-line' : ''" ng-click="selectType(1)">公告</div>
+  </div>
+  <ion-content class="has-subheader con-bag" id="meg-ad">
+    <ion-refresher pulling-icon="ion-load-d"
+                   on-refresh="refresh()"
+                   refreshing-text="正在加载中.."
+                   refreshing-icon="ion-loading-b">
+    </ion-refresher>
+    <ul>
+      <li ng-repeat="msg in data" ui-sref="message-details({id:msg.id,type:types})">
+        <h5>
+          <span>{{titles[types]}}</span>
+          <span>{{msg.creation_time*1000 | date : 'MM-dd'}}</span>
+        </h5>
+        <p>{{msg.title}}</p>
+      </li>
+    </ul>
+    <p ng-show="data.length == 0" style="padding-top: 30%;text-align: center">暂无消息</p>
+    <p style="text-align: center; margin-top: 10px;" ng-hide="!noMoreItemsAvailable || data.length == 0">
+      已加载完全部数据</p>
+    <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>
+

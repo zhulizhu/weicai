@@ -1,0 +1,17 @@
+<ion-view view-title="二维码提现">
+  <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+  </ion-nav-buttons>
+  <ion-content  id="code">
+     <div class="text">
+       请上传支付宝或者微信收款二维码用于<br>平台小额快捷转账，谢谢支持！
+     </div>
+    <div class="box" ng-if="images">
+      <img image-lazy-src="{{images}}" image-lazy-loader="dots"/>
+    </div>
+    <button ng-click="pickImage()">上传</button>
+    <!--<button ngf-pattern="image/*" accept="image/*"-->
+            <!--ngf-max-size="10MB" ngf-resize="{width: 500, height: 500}" ngf-select="upload($file)">上传</button>-->
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,48 @@
+<ion-view view-title="红包扫雷">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="red-details" class="con-bag" has-bouncing="true">
+      <div class="details-top">
+         <div class="bg"><img src="img/home/hongbao-bg.png"></div>
+         <div class="cont">
+           <img class="one" ng-src="{{reds.red.img || 'img/account/user.png'}}">
+           <p class="text"><span>{{reds.red.name || reds.red.user_name}}</span>的红包</p>
+           <p class="text1">雷值：{{reds.red.leiz}}</p>
+           <p class="text2" ng-show="reds.red_money.redmoney"><span>{{reds.red_money.redmoney}}</span> 元宝</p>
+           <p class="text3" ng-show="reds.red_money.redmoney"><span>已存入余额，可直接提现</span></p>
+         </div>
+      </div>
+      <div class="details-center">
+          <p ng-show="reds.endtime.end_time > 0 && userInfo.id == reds.endtime.lost_id">
+              {{reds.endtime.red_num}}个红包共{{reds.endtime.total_money}}元宝,{{reds.endtime.time}}被抢光
+          </p>
+          <p ng-show="reds.endtime.end_time > 0 && userInfo.id != reds.endtime.lost_id">
+              {{reds.endtime.red_num}}个红包{{reds.endtime.time}}被抢光
+          </p>
+          <p ng-show="reds.endtime.end_time < 0 && userInfo.id == reds.endtime.lost_id">
+              已领取{{reds.endtime.num}}/{{reds.endtime.red_num}}个,共{{reds.endtime.los_money}}/{{reds.endtime.total_money}}元宝
+          </p>
+          <p ng-show="reds.endtime.end_time < 0 && userInfo.id != reds.endtime.lost_id">
+              已领取{{reds.endtime.num}}/{{reds.endtime.red_num}}个
+          </p>
+      </div>
+      <div class="details-bottom">
+        <ul>
+          <li ng-repeat="red in reds.set" ng-class="red.zhonglei == 0 ? 'lei' : ''">
+            <img ng-src="{{red.img || 'img/account/user.png'}}">
+            <div class="name">
+              <p>{{red.name || red.user_name}}</p>
+              <p class="time">{{red.time*1000 | date: 'HH:mm:ss'}}</p>
+            </div>
+            <div class="money">
+                <p><span>{{red.redmoney}}</span>元宝</p>
+                <p ng-show="red.zhonglei == 0" style="color: red"><span>{{red.lost_money}}</span>元宝</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+   
+    </ion-content>
+
+</ion-view>

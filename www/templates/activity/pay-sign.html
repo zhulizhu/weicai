@@ -1,0 +1,41 @@
+<ion-view view-title="消费签到">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content id="pay-sign">
+        <div class="top">
+            <img ng-src="{{mess.img}}">
+            <div class="grade" ng-click="openModal()">
+            签到日历
+            </div>
+        </div>
+        <div class="text-box">
+            <img class="tu1" src="img/home/tu1.png">
+            <img src="img/home/top1.jpg">
+            <div class="cont cont1" >
+                <button ng-click="goSignok()">立即签到</button>
+                <button ng-click="signSends()">签到抽奖</button>
+            </div>
+            <img src="img/home/top2.jpg">
+
+        </div>
+        <div class="text-box">
+            <img class="tu2" src="img/home/tu2.png">
+            <img src="img/home/top1.jpg">
+            <div class="cont" >
+                <h4 ng-bind="mess.title"></h4>
+                <p><span class="f1">◆</span> 达成签到消费金额：<span ng-bind="mess.money"></span></p>
+                <p><span class="f1">◆</span> 活动对象：<span ng-bind="mess.object">平台所有会员</span></p>
+                <p><span class="f1">◆</span>每日签到赠送金额：<span ng-bind="mess.min"></span>~<span ng-bind="mess.max"></span></p>
+
+                <p class="f2"><span class="f1">◆</span> 活动时间：<span >{{mess.start_time*1000 | date:'yyyy-MM-dd'}} ~ {{mess.end_time*1000 | date:'yyyy-MM-dd'}}</span></p>
+                <div class="text1" ng-bind-html="content"></div>
+            </div>
+            <img src="img/home/top2.jpg">
+        </div>
+
+
+
+    </ion-content>
+
+</ion-view>

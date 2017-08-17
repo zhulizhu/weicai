@@ -1,0 +1,62 @@
+<ion-view view-title="投注详情">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="bet-detail" >
+        <div class="list" style="border-bottom:4px solid #ebebeb;">
+            <div class="item item-avatar">
+                <img ng-src="{{detail.img_url}}">
+                <h2><span ng-bind="detail.title">北京PK10</span>第 <span ng-bind="detail.actionNo">212333</span>期</h2>
+                <p ng-class="detail.yinli > 0 ? 'green' : 'red'">¥{{detail.yinli || '0.000'}}</p>
+            </div>
+        </div>
+        <div class="list list1" style="border-bottom:4px solid #ebebeb;">
+            <div class="item item-divider" style="background-color: #f8f8f8;">
+                基本信息
+            </div>
+            <div class="item">
+               <div class="pull-left">投注金额</div>
+                <div class="pull-right item-active" >{{detail.momey}}</div>
+            </div>
+            <div class="item">
+                <div class="pull-left">订单编号</div>
+                <div class="pull-right" ng-bind="detail.wjorderId">123456789</div>
+            </div>
+            <div class="item">
+                <div class="pull-left">下单时间</div>
+                <div class="pull-right" >{{detail.actionTime*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</div>
+            </div>
+            <div class="item">
+                <div class="pull-left">投注玩法</div>
+                <div class="pull-right" >{{detail.groupName}}</div>
+            </div>
+
+        </div>
+        <div class="list list1" style="border-bottom:4px solid #ebebeb;">
+            <div class="item">
+                <div class="pull-left">投注内容</div>
+                <div class="pull-right">{{detail.name}}</div>
+            </div>
+            <div class="item">
+                <div class="pull-left">开奖号码</div>
+                <div class="pull-right" ng-bind="detail.lotteryNo">06,20,02,02,02</div>
+            </div>
+        </div>
+        <div class="list list1" style="border-bottom:4px solid #ebebeb;">
+            <div class="item">
+                <div class="pull-left">中奖金额</div>
+                <div class="pull-right  " ng-bind="detail.bonus || '0.000'"  ng-class="detail.bonus > 0 ? 'green' : 'red'">19.500</div>
+            </div>
+            <div class="item">
+                <div class="pull-left">盈亏合计</div>
+                <div class="pull-right" ng-class="detail.yinli > 0 ? 'green' : 'red'">{{detail.yinli || '0.000'}}</div>
+            </div>
+            <div class="item">
+                <div class="pull-left">投注状态</div>
+                <div class="pull-right" ng-class="classShow(detail.select)">{{status[detail.select]}}</div>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-view>
+

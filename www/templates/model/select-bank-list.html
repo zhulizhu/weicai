@@ -1,0 +1,26 @@
+<ion-modal-view>
+    <ion-header-bar class="nav-bg">
+        <div class="buttons">
+            <button class="button button-clear ion-chevron-left white" ng-click="closeBankListModal()">
+            </button>
+        </div>
+        <h1 class="title nav-bg">选择银行卡</h1>
+    </ion-header-bar>
+    <ion-content class="con-bag" id="banksList">
+        <div class="account_header"
+             ng-repeat="userbank in userBanks track by $index" ng-click="selectBank(userbank)">
+            <div>
+                <div class="fl radios" >
+                    <i class="icon"   ng-class="userbank.isDefault == 1 ? 'ion-ios-checkmark':'ion-ios-circle-outline'">
+                    </i>
+                </div>
+                <div class="fl">
+                    <h5 ng-bind="userbank.bankName" ng-click="bankDefaults(userbank)"></h5>
+                    <p>
+                        <span style="font-size: 18px" ng-bind="userbank.account"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

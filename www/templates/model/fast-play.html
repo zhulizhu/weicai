@@ -1,0 +1,11 @@
+
+<ion-modal-view id="play" class="shade modal none ng-enter active ng-enter-active shaded">
+    <ion-content   scroll="false" class="mark-six-shade  has-header">
+        <div class="big-box" ng-click="closePlay()"></div>
+        <div class="cont">
+            <div class="rown" >
+                <div ng-repeat="category in categorys"  ng-click="chosePlay(category)">{{category.groupName}}</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

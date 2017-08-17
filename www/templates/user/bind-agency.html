@@ -1,0 +1,22 @@
+<ion-view view-title="绑定代理">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear nav-btn btn-right" ui-sref="tab.home" style="color: #fff">
+            跳过
+        </button>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" class="con-bag padding">
+        <table>
+            <tr>
+                <td>绑定代理ID</td>
+                <td><input type="text" placeholder="请输入代理ID" ng-model="data.agent_num" maxlength="11"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="fr submit" ng-click="bind_agency()">立即绑定</button></td>
+            </tr>
+        </table>
+    </ion-content>
+
+</ion-view>

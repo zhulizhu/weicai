@@ -1,0 +1,37 @@
+
+<ion-modal-view id="vote">
+    <ion-content scroll="false">
+        <div ></div>
+        <div class="vote-for debt-record-details" style="padding:0px;">
+            <h4 style="text-align: center;background-color: #f9f9f9;margin: 0!important;padding:10px 0;border-radius: 8px;">提现详情</h4>
+            <table style="padding: 0 10px;">
+                <col style="width: 36%" />
+                <col style="width: 64%" />
+                <tr>
+                    <td>提现方式：</td>
+                    <td>{{Withdraw.bankId}}</td>
+                </tr>
+                <tr>
+                    <td>提现金额：</td>
+                    <td>{{Withdraw.amount}}</td>
+                </tr>
+                <tr>
+                    <td>提现时间：</td>
+                    <td>{{Withdraw.actionTime}}</td>
+                </tr>
+                <tr>
+                    <td>提现状态：</td>
+                    <td>{{Withdraw.state}}</td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td>{{Withdraw.info}}</td>
+                </tr>
+            </table>
+            <div class="btnBox">
+                <button class="button" style="width: 40%;float: left;margin: 20px 10px;" ui-sref="withdraw-deposit" ng-click="closeModal()">再次提现</button> <button class="button" style="width: 40%;float: right;  margin: 20px 10px;" ng-click="closeModal()">关闭</button>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-modal-view>

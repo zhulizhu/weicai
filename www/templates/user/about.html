@@ -1,0 +1,44 @@
+<ion-view view-title="关于">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="about" class="con-bag">
+        <div class="about-header">
+            <img src="img/account/logo.png"/>
+            <div>
+                <h2>{{platform.webName}}</h2>
+                <span>当前版本:<span>V{{platform.version}}</span></span>
+            </div>
+        </div>
+        <ul>
+            <li>
+                平台官网<span data-tap-disabled="true">{{platform.webUrl}}</span>
+                <button ng-show="PLATFORM=='app'" class="fr" ng-click="copy(platform.webUrl)">复制</button>
+                <button ng-show="PLATFORM=='wap'" class="fr" ng-click="wxcopy(platform.webUrl)">复制</button>
+            </li>
+            <li>
+                客服QQ：<span  data-tap-disabled="true">{{platform.kefuQQ}}</span>
+                <button ng-show="PLATFORM=='app'" class="fr" ng-click="copy(platform.kefuQQ)">复制</button>
+                <button ng-show="PLATFORM=='wap'" class="fr" ng-click="wxcopy(platform.kefuQQ)">复制</button>
+            </li>
+            <li>
+                客服微信：<span data-tap-disabled="true">{{platform.kefuWeChat}}</span>
+                <button ng-show="PLATFORM=='app'" class="fr" ng-click="copy(platform.kefuWeChat)">复制</button>
+                <button ng-show="PLATFORM=='wap'" class="fr" ng-click="wxcopy(platform.kefuWeChat)">复制</button>
+            </li>
+        </ul>
+        <div class="cont">
+            <div class="cont-img">
+                <div>
+                    <img ng-src="{{platform.pt_qr}}" data-tap-disabled="true">
+                </div>
+                <h4>扫描此处二维码</h4>
+                <div class="load">
+                    <img ng-show="PLATFORM=='app'" src="img/home/share-load.png" ng-click="download(platform.pt_qr)">
+                    <a ng-show="PLATFORM=='wap'" href="{{platform.pt_qr}}" download="微彩在线"><img src="img/home/share-load.png"></a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-view>

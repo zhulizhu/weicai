@@ -1,0 +1,2174 @@
+[
+  {
+    "file": "config_app.js",
+    "hash": "d7ae6bfa60a1150575ef04c538f11756"
+  },
+  {
+    "file": "css/fast.three.css",
+    "hash": "5eef35e44b9695e83dd46421185b9d7b"
+  },
+  {
+    "file": "css/style.css",
+    "hash": "65509bbb934b20d1d2ffedb6b445f863"
+  },
+  {
+    "file": "img/account/account_bg.jpg",
+    "hash": "6712afcb75ffe98171340c0ebf34d2d2"
+  },
+  {
+    "file": "img/account/agency_background.png",
+    "hash": "1924f1214f942443b8312b76d21b4927"
+  },
+  {
+    "file": "img/account/agency_open.png",
+    "hash": "ca11ec474e35fbe3737a991f9ff91d59"
+  },
+  {
+    "file": "img/account/arrows.png",
+    "hash": "45ca535b4fc40082fee8a28e1da4015b"
+  },
+  {
+    "file": "img/account/bank.png",
+    "hash": "f8a344624110ddad4363591da8d44a8d"
+  },
+  {
+    "file": "img/account/biaoqing.png",
+    "hash": "2aec54695ccf0fb861289516f129cf11"
+  },
+  {
+    "file": "img/account/bind.png",
+    "hash": "c45c07b5f815d912736ba216589b3d4e"
+  },
+  {
+    "file": "img/account/caiwu.png",
+    "hash": "2e6cdc1f2fbfc32d24dcf0d8ca909d85"
+  },
+  {
+    "file": "img/account/clear.png",
+    "hash": "4bc2cb58a63a4e72f6aa7a6808559ef6"
+  },
+  {
+    "file": "img/account/code.png",
+    "hash": "d7b367bef10c021e2d54587e4eabe77c"
+  },
+  {
+    "file": "img/account/e.png",
+    "hash": "77eede3d4fcd95170fb3fdf7c88ee199"
+  },
+  {
+    "file": "img/account/exit.png",
+    "hash": "d1417a2fc4ea1d9d385e370facb40caf"
+  },
+  {
+    "file": "img/account/fenxiang.png",
+    "hash": "df3e771e55ae9b221f955c14422feeb9"
+  },
+  {
+    "file": "img/account/game.png",
+    "hash": "0a0981fdf32a455eafc783ba7e04daa8"
+  },
+  {
+    "file": "img/account/gjsz.png",
+    "hash": "84fb886316c91eab90e5cbac377f7c8b"
+  },
+  {
+    "file": "img/account/guanyu.png",
+    "hash": "11b875f4b9691a27991498053b967702"
+  },
+  {
+    "file": "img/account/houtai.png",
+    "hash": "db802046957e8c7976c66c2e892eaaf1"
+  },
+  {
+    "file": "img/account/huishui.png",
+    "hash": "6a21ffa9d485b08c6eb0227d627cccd9"
+  },
+  {
+    "file": "img/account/icom.png",
+    "hash": "99fc5ef917003ee1139e5e95a6b4bf95"
+  },
+  {
+    "file": "img/account/jilu.png",
+    "hash": "8e65fb82eda2c23df564fc0c112b031c"
+  },
+  {
+    "file": "img/account/kaihuzhongxin.png",
+    "hash": "7743cda4021e4ff8cf55f7e0eecfc1ed"
+  },
+  {
+    "file": "img/account/logo.png",
+    "hash": "88bd19419d8b4c4309a1250b985f3d1c"
+  },
+  {
+    "file": "img/account/pen.png",
+    "hash": "f5e2f542621290a0dab59a3af88f1d63"
+  },
+  {
+    "file": "img/account/phone.png",
+    "hash": "2b5df2777714dfbd73c744a70367a82a"
+  },
+  {
+    "file": "img/account/qianbao_bg.png",
+    "hash": "38bd8e241d2d0f07d4dafa46efec1902"
+  },
+  {
+    "file": "img/account/qianbao.png",
+    "hash": "398ea785499dad2c4d16400341dc7363"
+  },
+  {
+    "file": "img/account/rizhi.png",
+    "hash": "c4b00ab38e35f0c3757a78b1ac8fd352"
+  },
+  {
+    "file": "img/account/select_jiantou.png",
+    "hash": "88b91f9306c14670206711ccc9802b4a"
+  },
+  {
+    "file": "img/account/service.png",
+    "hash": "faeaacd56af2019fa30849b45d67c852"
+  },
+  {
+    "file": "img/account/shezhi.png",
+    "hash": "d42a4dcd0ee271bda54387eac6e5f9fd"
+  },
+  {
+    "file": "img/account/tm_arrows.png",
+    "hash": "28caba1bfa8af7c63bce1fad5c313fcc"
+  },
+  {
+    "file": "img/account/tuiguang.png",
+    "hash": "1ce4447d7ccf7871d72ebe97e701a3f1"
+  },
+  {
+    "file": "img/account/user.png",
+    "hash": "4865fc4c4b21b98b5ecb937e7b6e5738"
+  },
+  {
+    "file": "img/account/wanjia.png",
+    "hash": "37e9c4cb0f238ee868833129188db6af"
+  },
+  {
+    "file": "img/account/wechat_register.png",
+    "hash": "8170e3361b9286661462c95e16493e55"
+  },
+  {
+    "file": "img/account/wechat.png",
+    "hash": "021ec516d95a615012539133f0370e71"
+  },
+  {
+    "file": "img/account/xiugai.png",
+    "hash": "7ca795b520a5cb241ddeeec76333ca38"
+  },
+  {
+    "file": "img/account/zhangbian.png",
+    "hash": "f654e99dcd750549ba2b63295522aed3"
+  },
+  {
+    "file": "img/cow-cow/cow_close.png",
+    "hash": "0b5dd6c99f2ffdeee472b90bda1a5bd0"
+  },
+  {
+    "file": "img/cow-cow/cow_fail.png",
+    "hash": "1207cc9a8ba08ef1bae58c6ad59ed0be"
+  },
+  {
+    "file": "img/cow-cow/cow_succ.png",
+    "hash": "02a5ac5d4e982078c6f48f0ead0d941e"
+  },
+  {
+    "file": "img/cow-cow/cow_zhuang.png",
+    "hash": "efe5e687fb3ff40f06d5b84110a91ccc"
+  },
+  {
+    "file": "img/cow-cow/getZhuang.png",
+    "hash": "9b133787d5d774b379d7d1ee927c7a2f"
+  },
+  {
+    "file": "img/cow-cow/qiangzhuang.png",
+    "hash": "2b7578aa56d757048fdc7c0ee997f27d"
+  },
+  {
+    "file": "img/erweima.png",
+    "hash": "19a1233d99c8118ba1e7dcc438357bbd"
+  },
+  {
+    "file": "img/fast-three/eight8.png",
+    "hash": "c3a79cf53b454c1b315b5584ee903419"
+  },
+  {
+    "file": "img/fast-three/fast-icon_03.png",
+    "hash": "e2f8c668b26f3ab0ea50a91ae30fa408"
+  },
+  {
+    "file": "img/fast-three/fast-icon_05.png",
+    "hash": "4598c8992a2df15fd914ceb69944659a"
+  },
+  {
+    "file": "img/fast-three/fast-icon_09.png",
+    "hash": "c35fa7d0d3fbd915a7868b9e1df4e59a"
+  },
+  {
+    "file": "img/fast-three/info.png",
+    "hash": "9f4f30034c928a61ac6e1b3903cf90c3"
+  },
+  {
+    "file": "img/fast-three/saiz1.png",
+    "hash": "5f0328d0afbef7dfd79c3fb0babee573"
+  },
+  {
+    "file": "img/fast-three/saiz1check.png",
+    "hash": "b471f8f46c6913eb004eaf049690d624"
+  },
+  {
+    "file": "img/fast-three/saiz2.png",
+    "hash": "aea9765d7c9324c677f780ed9bd7bb8a"
+  },
+  {
+    "file": "img/fast-three/saiz2check.png",
+    "hash": "525634b4290c68121a1c189f10213586"
+  },
+  {
+    "file": "img/fast-three/saiz3.png",
+    "hash": "a8530c371c19ff1f329bd53530acc16c"
+  },
+  {
+    "file": "img/fast-three/saiz3check.png",
+    "hash": "89fbb03506e06240b4e668daed3589c2"
+  },
+  {
+    "file": "img/fast-three/saiz4.png",
+    "hash": "8e1cb776db409c04fe1848a1d456f106"
+  },
+  {
+    "file": "img/fast-three/saiz4check.png",
+    "hash": "0bc350bb881282a26626175a41ea5007"
+  },
+  {
+    "file": "img/fast-three/saiz5.png",
+    "hash": "100cdb5aa2d118bfa72773e2bfbd76a3"
+  },
+  {
+    "file": "img/fast-three/saiz5check.png",
+    "hash": "eeedd256d50fea89b10308bee9ad4b5e"
+  },
+  {
+    "file": "img/fast-three/saiz6.png",
+    "hash": "e4f308cb2f9ff12f27e86c91b3d78a50"
+  },
+  {
+    "file": "img/fast-three/saiz6check.png",
+    "hash": "cdd793023092876209c901a6d8c09dbd"
+  },
+  {
+    "file": "img/fast-three/subscript.png",
+    "hash": "ec2fd6754a6684d6a88274d65cca9df1"
+  },
+  {
+    "file": "img/fast-three/three_bg.jpg",
+    "hash": "b76fbbf6fffca36551da4ec9fda1a445"
+  },
+  {
+    "file": "img/fast-three/three_bg.png",
+    "hash": "034dbaf90b85d3ef001d681afaad0538"
+  },
+  {
+    "file": "img/game/lei.png",
+    "hash": "6ff0a5af77ff06a0219e286f55d4f34f"
+  },
+  {
+    "file": "img/game/loading.gif",
+    "hash": "5a9e22384e27eb4dd9b91a41e5c209c5"
+  },
+  {
+    "file": "img/game/long-brass.png",
+    "hash": "c7cb5a92c7333864f74c373e2aff6b09"
+  },
+  {
+    "file": "img/game/long-diamond.png",
+    "hash": "f4ab6616e08372292a98221325f77796"
+  },
+  {
+    "file": "img/game/long-extreme.png",
+    "hash": "fc7757de730559c6187e159d7e574061"
+  },
+  {
+    "file": "img/game/long-gold.png",
+    "hash": "fb26c8a458386e8b296b37d9745df505"
+  },
+  {
+    "file": "img/game/long-great-master.png",
+    "hash": "d2a8f0199f9e6fd0e8bd7bea85d37eb2"
+  },
+  {
+    "file": "img/game/long-platinum.png",
+    "hash": "1299f0f5fe7fc1b7a64199bda1756296"
+  },
+  {
+    "file": "img/game/long-silver.png",
+    "hash": "63080074ce136bc0325b792c6241849e"
+  },
+  {
+    "file": "img/game/shizhong.png",
+    "hash": "0ffa043fc40d8c857c5673da7d4dd4a9"
+  },
+  {
+    "file": "img/game/wide-brass.png",
+    "hash": "fbb078c77bff6ef99053ceebe89714c0"
+  },
+  {
+    "file": "img/game/wide-diamond.gif",
+    "hash": "70ce3d61dc7c2aaf93bc08c88c11d4df"
+  },
+  {
+    "file": "img/game/wide-extreme.gif",
+    "hash": "8243cd3d607961376fbd28063f94b6f1"
+  },
+  {
+    "file": "img/game/wide-gold.png",
+    "hash": "7700389dfc1a89489e06adf45e5f9232"
+  },
+  {
+    "file": "img/game/wide-great-master.gif",
+    "hash": "10268225d168123e79ae6d9c0849d2aa"
+  },
+  {
+    "file": "img/game/wide-platinum.gif",
+    "hash": "3fcee8694a5afefff9f6cc0e4f215d82"
+  },
+  {
+    "file": "img/game/wide-silver.png",
+    "hash": "b9f510a7b4af0b3d59312fd4698b9f92"
+  },
+  {
+    "file": "img/home/activity-banner.jpg",
+    "hash": "d378b33ec8ec7d829d4bf186282a9663"
+  },
+  {
+    "file": "img/home/bank-bg.png",
+    "hash": "1b9e382f6c660ce80d911119a8e43a88"
+  },
+  {
+    "file": "img/home/banner1.jpg",
+    "hash": "cf5898514203584f975c921465876989"
+  },
+  {
+    "file": "img/home/beijing-person.png",
+    "hash": "5b8ce325f638eb25bff818004a86abf9"
+  },
+  {
+    "file": "img/home/beijing28-1.png",
+    "hash": "7cc8d1d2f57ce74029d9b6bbd6b73e63"
+  },
+  {
+    "file": "img/home/beijing28-2.png",
+    "hash": "73e07d08ba53732821596f5e9e510c29"
+  },
+  {
+    "file": "img/home/beijing28-3.png",
+    "hash": "5aa922b9d7666df88c9c8c951f8ca560"
+  },
+  {
+    "file": "img/home/bg.png",
+    "hash": "5c0c2fd1c895421c18ca9fc5df2b0f61"
+  },
+  {
+    "file": "img/home/bg1.png",
+    "hash": "84cd3900558e22e82865d26cbb8b718f"
+  },
+  {
+    "file": "img/home/bottom-henxiang.png",
+    "hash": "8f69d2d1b51a150210a8ab09d5758a4f"
+  },
+  {
+    "file": "img/home/bottom-xian1.png",
+    "hash": "4bf9415b3edd4b53c244c8dcda60b69b"
+  },
+  {
+    "file": "img/home/bottom-xian2.png",
+    "hash": "0f1515b380fc95ea5f413fd96f71159b"
+  },
+  {
+    "file": "img/home/bottom-xian3.png",
+    "hash": "01150e83726ffb7ebac66cf60f8ceac5"
+  },
+  {
+    "file": "img/home/bottom-xuxiankaung1.png",
+    "hash": "cab5a51c4455c2f42b9ecf0f925959d0"
+  },
+  {
+    "file": "img/home/bottom-xuxiankuang2.png",
+    "hash": "a5d28aac4a1ee6ba488ed10491b38a7c"
+  },
+  {
+    "file": "img/home/changjianwenti.jpg",
+    "hash": "74bedf05dc6405e60ab5ebe1af3cc158"
+  },
+  {
+    "file": "img/home/clock.png",
+    "hash": "d5dffb9ca56e70a6801f41c09e538682"
+  },
+  {
+    "file": "img/home/close.png",
+    "hash": "c264dadf8bd56a41e149ab81e5e581bc"
+  },
+  {
+    "file": "img/home/copper_cash.gif",
+    "hash": "137fd747130f1f777c57d205e45c12b4"
+  },
+  {
+    "file": "img/home/cunqukuan.jpg",
+    "hash": "1c2d1403cff77a29d624f81b55c6697b"
+  },
+  {
+    "file": "img/home/customer-service.png",
+    "hash": "53c221be2f9660f20bec178a07f8b539"
+  },
+  {
+    "file": "img/home/daoren.png",
+    "hash": "64d08d96ca94d87f2e5def0fe24793db"
+  },
+  {
+    "file": "img/home/dianji.png",
+    "hash": "e7ba54be0cd56fb22857785b3af197ca"
+  },
+  {
+    "file": "img/home/fasong.png",
+    "hash": "94b58103123fd260702ff3f2afeb7bae"
+  },
+  {
+    "file": "img/home/grade-top.jpg",
+    "hash": "e914c8b137aa54fc422f76973f559529"
+  },
+  {
+    "file": "img/home/grade-top.png",
+    "hash": "4ba7b42e1f52c16ca079e5ff09da9dc1"
+  },
+  {
+    "file": "img/home/gua1.png",
+    "hash": "ec7d4b7469d10ded44a4b207fbcf4a3d"
+  },
+  {
+    "file": "img/home/history_lottery.png",
+    "hash": "b7e3b80d1f175888e6b6b5ca8ed042a4"
+  },
+  {
+    "file": "img/home/home_28.png",
+    "hash": "3ca56255c575055dc44818c1aecf78d2"
+  },
+  {
+    "file": "img/home/home_alert.png",
+    "hash": "1496518e7488c84f28cd9e4c0a12bf54"
+  },
+  {
+    "file": "img/home/home_banner.png",
+    "hash": "83e640d3ba410a25fb9f297c5bd00da4"
+  },
+  {
+    "file": "img/home/home_bg.jpg",
+    "hash": "18e838500d0a4b5ad82fc229bab0bda7"
+  },
+  {
+    "file": "img/home/home_bg.png",
+    "hash": "64e454b8bea312394030983ffc0ddd5c"
+  },
+  {
+    "file": "img/home/home_download.png",
+    "hash": "7d02b102d60e9a2cb3e9f5edc456fa43"
+  },
+  {
+    "file": "img/home/home_fresh.png",
+    "hash": "5f354d98aded107700c7c200bf7dfc2c"
+  },
+  {
+    "file": "img/home/home_hongkong.png",
+    "hash": "242587f03d4c9397e3d02b7b3c08d901"
+  },
+  {
+    "file": "img/home/home_img.png",
+    "hash": "cfec61252e9aa21163608f4070ec54d5"
+  },
+  {
+    "file": "img/home/home_k3.png",
+    "hash": "2f3925c5744cd6019cee6035bee40615"
+  },
+  {
+    "file": "img/home/home_kf.png",
+    "hash": "8b0b83a7e9d1c547dc3c90869548c5aa"
+  },
+  {
+    "file": "img/home/home_pk10.png",
+    "hash": "cd45e1504aa8ce896de8f92171848070"
+  },
+  {
+    "file": "img/home/home_ssc.png",
+    "hash": "1914960b72331f47d4745e4d0776ed61"
+  },
+  {
+    "file": "img/home/homeadv.png",
+    "hash": "eab80c1a372b30283fda62c14b2340ed"
+  },
+  {
+    "file": "img/home/hongbao-bg.png",
+    "hash": "833dae179c762b90379036d5b1c83df9"
+  },
+  {
+    "file": "img/home/hongbao.png",
+    "hash": "166114fd73623a9595f51b26c6d50854"
+  },
+  {
+    "file": "img/home/icon1.png",
+    "hash": "ef5d0c57ead9a52dd80e15218c6bc953"
+  },
+  {
+    "file": "img/home/icon2.png",
+    "hash": "f0169c21ed944e35cd826912ac0d38a9"
+  },
+  {
+    "file": "img/home/icon3.png",
+    "hash": "0c83fb7af092a589b142761939d39a91"
+  },
+  {
+    "file": "img/home/icon4.png",
+    "hash": "5848ce9dfe816972d77601ff7af71084"
+  },
+  {
+    "file": "img/home/jiahao.png",
+    "hash": "add6e04df6e69bd083965722dc698fac"
+  },
+  {
+    "file": "img/home/jianada.png",
+    "hash": "548ec38aa21b0e28d71c6c93b99c6796"
+  },
+  {
+    "file": "img/home/jin50.png",
+    "hash": "c80a99be8c7ce5f1e4ab92227cb11cd4"
+  },
+  {
+    "file": "img/home/jin51.png",
+    "hash": "64658993ccbfc8d5619b6b7b19d68faa"
+  },
+  {
+    "file": "img/home/jin52.png",
+    "hash": "6fd87fd962b88e927cd25d9b1249ce8e"
+  },
+  {
+    "file": "img/home/jin53.png",
+    "hash": "7bd2a397154fb9e28882aa02adcb5b4d"
+  },
+  {
+    "file": "img/home/kai.png",
+    "hash": "3e28020722b1555f04dc1d1fe3e26972"
+  },
+  {
+    "file": "img/home/kefu.png",
+    "hash": "0a410bfc6a993abd30e1fbd190965a04"
+  },
+  {
+    "file": "img/home/kefu1.png",
+    "hash": "2d1b06cd268619b8d2f1987d735501b1"
+  },
+  {
+    "file": "img/home/kuangxuan.png",
+    "hash": "9c14d8cedfaebc7417fe373948d2c1ba"
+  },
+  {
+    "file": "img/home/lingdang.png",
+    "hash": "5a0ace95397e8924c1b5383b109a355f"
+  },
+  {
+    "file": "img/home/lingquhongbao.png",
+    "hash": "8f0290aa2e417a3834427f674da0774f"
+  },
+  {
+    "file": "img/home/meiri.jpg",
+    "hash": "21f32f53f9cce45f429db9a82e188fb2"
+  },
+  {
+    "file": "img/home/pcdandan.png",
+    "hash": "fab82fb7d22909ee03122260ad814203"
+  },
+  {
+    "file": "img/home/pengyouquan.png",
+    "hash": "8ba2b53d5de9fc55d34a4bf9c87af7a1"
+  },
+  {
+    "file": "img/home/pin.png",
+    "hash": "9ccf18826cb2f69b5e75d6ba6da60215"
+  },
+  {
+    "file": "img/home/pk10.png",
+    "hash": "cd1089ef8136117c61159ee4a4a64a5c"
+  },
+  {
+    "file": "img/home/playing_method1.png",
+    "hash": "8c69ae35ed4b18fc69102b78019753e9"
+  },
+  {
+    "file": "img/home/playing_method2.png",
+    "hash": "41ff1ce71c8bc45eb40055432fcef175"
+  },
+  {
+    "file": "img/home/qianbao.png",
+    "hash": "be7d8d35c816eb9a1d6cf2b58fef94b8"
+  },
+  {
+    "file": "img/home/qiandao.jpg",
+    "hash": "aea72aefb08795ddcb3fc53643bcebfe"
+  },
+  {
+    "file": "img/home/qiandao.png",
+    "hash": "0b6e0b2a0a3211a34eaccf2a0903e5be"
+  },
+  {
+    "file": "img/home/recharge_icon.png",
+    "hash": "4143120b3059fbd43ac4090f93678310"
+  },
+  {
+    "file": "img/home/red_packet.png",
+    "hash": "035b701f75f0f681fa38f7cd69f3427d"
+  },
+  {
+    "file": "img/home/rili.png",
+    "hash": "b372ec547613d80c422a24c12606257c"
+  },
+  {
+    "file": "img/home/room-clock.png",
+    "hash": "63d43903a8460eec91a9099c8af87a38"
+  },
+  {
+    "file": "img/home/room-face.png",
+    "hash": "4e928e0e45eb92a09f13ed4974839d97"
+  },
+  {
+    "file": "img/home/room-go.png",
+    "hash": "5925078629f3bbc7a03314f3b12be7e6"
+  },
+  {
+    "file": "img/home/room-list-1.png",
+    "hash": "ee3ef610b3e0a7d271a1cbd9d7331d36"
+  },
+  {
+    "file": "img/home/room-list-2.png",
+    "hash": "5032b6b7a4cf641031eba9a366c8bde2"
+  },
+  {
+    "file": "img/home/room-list-3.png",
+    "hash": "5c5557a2bd6c5081c685ab7865b0ea88"
+  },
+  {
+    "file": "img/home/room-list-4.png",
+    "hash": "f8242f0d769fd22cf81c23b882eed79d"
+  },
+  {
+    "file": "img/home/room-person.png",
+    "hash": "4ebcefd62b0867b38cd2886b65ede993"
+  },
+  {
+    "file": "img/home/room-play.png",
+    "hash": "e7c3daf40b6881451ad1d3ea12534b8b"
+  },
+  {
+    "file": "img/home/room-record.png",
+    "hash": "ea9399b43cee6b26efa8406037855a32"
+  },
+  {
+    "file": "img/home/send.png",
+    "hash": "78524f0fa419125dabe611f9e79a0e5b"
+  },
+  {
+    "file": "img/home/service.png",
+    "hash": "c10435452ac8769e1479883955c0e39d"
+  },
+  {
+    "file": "img/home/share-erweima.png",
+    "hash": "f1b7e0fe69124ced583119d191fd056b"
+  },
+  {
+    "file": "img/home/share-load.png",
+    "hash": "a3decdef9225903690a24b25eadab8e5"
+  },
+  {
+    "file": "img/home/shishicai.png",
+    "hash": "2c26a9c0b3edd48ebe8bbd386fb965dc"
+  },
+  {
+    "file": "img/home/shuangjian.png",
+    "hash": "7f237e7d07cc990f5cc5ac2a962b435a"
+  },
+  {
+    "file": "img/home/shuaxin.png",
+    "hash": "ed0bea34c6857342cd29995ae9d3951b"
+  },
+  {
+    "file": "img/home/shuzhan.png",
+    "hash": "276b385792de00e47fac6798530ee4bf"
+  },
+  {
+    "file": "img/home/shuzhan1.png",
+    "hash": "dfd0f483673512a84f0706decf814913"
+  },
+  {
+    "file": "img/home/top1.jpg",
+    "hash": "dd6249f94e98a124512f19bf9bf72116"
+  },
+  {
+    "file": "img/home/top2.jpg",
+    "hash": "3c1bd92db5a8c07b109a7ed91182551a"
+  },
+  {
+    "file": "img/home/touxiang.png",
+    "hash": "cbf4501f6d1af8d71632c77a7ee29e8a"
+  },
+  {
+    "file": "img/home/touzhu.png",
+    "hash": "83ec5f9451bea3249979c53ddfe2dd97"
+  },
+  {
+    "file": "img/home/tu1.png",
+    "hash": "f9297da65bf359ceaf8f1cc4446f9cf4"
+  },
+  {
+    "file": "img/home/tu2.png",
+    "hash": "dd26ee82bbbe6e43bde09f2972248096"
+  },
+  {
+    "file": "img/home/wallet_bg.png",
+    "hash": "6e712ccf44b2f2fc3bfa9e7bdbeb9cc4"
+  },
+  {
+    "file": "img/home/wallet-bank.png",
+    "hash": "2fbe4dbf9b016a9863a41f1a4ef18c37"
+  },
+  {
+    "file": "img/home/wallet-deposit-record.png",
+    "hash": "b3536f7e9c66d19cfdeada1f55921f16"
+  },
+  {
+    "file": "img/home/wallet-deposit.png",
+    "hash": "04a12faf1caed91d06b3ed3ac84e5f19"
+  },
+  {
+    "file": "img/home/wallet-recharge.png",
+    "hash": "b70dfd6491d4a946cb91c3aeb273091b"
+  },
+  {
+    "file": "img/home/wallet-record.png",
+    "hash": "b4c8d0e43c72072cf2af495e05103c8e"
+  },
+  {
+    "file": "img/home/wallet.png",
+    "hash": "0214fc32cdfbdd12c02212706d181694"
+  },
+  {
+    "file": "img/home/weixin.png",
+    "hash": "a6d3ebc786d9ceb9d6ded21c3cf41d01"
+  },
+  {
+    "file": "img/home/wenhao.png",
+    "hash": "f3472484bb5cd4f07043ddf4fc3952aa"
+  },
+  {
+    "file": "img/home/withdraw _icon.png",
+    "hash": "6c23acfedafa808aa7b48f57d7f3d990"
+  },
+  {
+    "file": "img/home/xiala.png",
+    "hash": "a999f7791260c6048f47d50d9ab7ecd3"
+  },
+  {
+    "file": "img/home/xian1.png",
+    "hash": "f9e4cca85f47d6b9b36695a60bb0ae88"
+  },
+  {
+    "file": "img/home/xian2.png",
+    "hash": "a5531a62bae0a0ccdcd65703164a20f9"
+  },
+  {
+    "file": "img/home/xian3.png",
+    "hash": "015b183d82efab37e80dfd710d9fcb52"
+  },
+  {
+    "file": "img/home/xianggangcai.png",
+    "hash": "8b03e35d2d262f1273b8fb16a965b10c"
+  },
+  {
+    "file": "img/home/xiaofei.jpg",
+    "hash": "1a3a7e60cdbdbc79a52ae884d8dca74f"
+  },
+  {
+    "file": "img/home/xiaoxi.png",
+    "hash": "7361f021f20ef2635ca9c5b677e1038a"
+  },
+  {
+    "file": "img/home/xuxianjia.png",
+    "hash": "866bb94858428621369438e2e82d8ba2"
+  },
+  {
+    "file": "img/home/xuxiankuang.png",
+    "hash": "8fcf4c8b7834831fbc8cabf8bef6bcec"
+  },
+  {
+    "file": "img/home/xuxianren.png",
+    "hash": "8a1e18ef0052d12c95370811ccc31781"
+  },
+  {
+    "file": "img/home/xuxianxia.png",
+    "hash": "c1e318e81a285077b7f0790fb0bcf783"
+  },
+  {
+    "file": "img/home/youhuihuodong.jpg",
+    "hash": "617b2d4f8e9a5d55d5f40c3817f623ae"
+  },
+  {
+    "file": "img/home/youjiantou.png",
+    "hash": "f28f23127b61b22f896e5cc4f6af1f23"
+  },
+  {
+    "file": "img/home/youjiantouyellow.png",
+    "hash": "307e8bd8ce03bb4f65bd6eadb279b128"
+  },
+  {
+    "file": "img/home/yue.png",
+    "hash": "f079f27854630f658d02d075b9378c13"
+  },
+  {
+    "file": "img/home/zhuce.jpg",
+    "hash": "82260c488ba74a053fe9efa6281038aa"
+  },
+  {
+    "file": "img/home/zoushi.jpg",
+    "hash": "97fb5dd3833691e54b0e0e79f3a97932"
+  },
+  {
+    "file": "img/home/zst.png",
+    "hash": "0d95fb17ba3035682527fc96681c54bd"
+  },
+  {
+    "file": "img/home/zuojiantou.png",
+    "hash": "8a511544f684f25a5821a6308282f0ce"
+  },
+  {
+    "file": "img/home/zuojiantouyellow.png",
+    "hash": "8c42e9abbb40fb9009880c7ce97c66ae"
+  },
+  {
+    "file": "img/Loading-1.gif",
+    "hash": "a8ffa830b939776b9d3dc02947b8cfc2"
+  },
+  {
+    "file": "img/login/account.png",
+    "hash": "5a30c78058a4f384551a701e6f5cdea6"
+  },
+  {
+    "file": "img/login/close.png",
+    "hash": "21ea67e05f87275ae71e881672ce3899"
+  },
+  {
+    "file": "img/login/greetings.png",
+    "hash": "00386265bc30f5129ae3070c8752d9b3"
+  },
+  {
+    "file": "img/login/id.png",
+    "hash": "b852837a07dd275a44df30302b91ab47"
+  },
+  {
+    "file": "img/login/login_bg.png",
+    "hash": "d8edb615010f4c2f93cbcf1f3b220e13"
+  },
+  {
+    "file": "img/login/pwd.png",
+    "hash": "6e1f0ecd6be7b6c083a31e8444d8aee9"
+  },
+  {
+    "file": "img/login/qq.png",
+    "hash": "fd88290addd459d5df8c400f5fc8f1ea"
+  },
+  {
+    "file": "img/login/title_bg.png",
+    "hash": "3e6db035083ea7650ed3a861f2d187d5"
+  },
+  {
+    "file": "img/login/wechat.png",
+    "hash": "5965aebadf21e3cfdf43eb59a2cdb3f0"
+  },
+  {
+    "file": "img/mark-six/twl_zodiac.png",
+    "hash": "e8cd0f7edc32e920a7a41feb5d9ecc1a"
+  },
+  {
+    "file": "img/recharge/alipay.png",
+    "hash": "df026fa0cb69fd8ce97fba2ccd5dedac"
+  },
+  {
+    "file": "img/recharge/recharge_hint.png",
+    "hash": "73519ce5f85eb7aaf0d596915af0684f"
+  },
+  {
+    "file": "img/recharge/unionpay.png",
+    "hash": "fdcedb20a00b028e42e67143461c8a32"
+  },
+  {
+    "file": "img/recharge/wechat.png",
+    "hash": "8e6a33d9e5c980946ac3e21277c48795"
+  },
+  {
+    "file": "img/red/afk.png",
+    "hash": "4997f5e5910d2d08f96e4b8c42d345d8"
+  },
+  {
+    "file": "img/red/afl.png",
+    "hash": "a5600a97ebda725ec5a7450a038eeec1"
+  },
+  {
+    "file": "img/red/afm.png",
+    "hash": "40f8a328f9d73b22811962baecaf9d6f"
+  },
+  {
+    "file": "img/red/afn.png",
+    "hash": "220dbc6147244b11c64a678dfdc18240"
+  },
+  {
+    "file": "img/red/afo.png",
+    "hash": "be649b6d3ebe10e29fc0747f6cc06857"
+  },
+  {
+    "file": "img/red/afp.png",
+    "hash": "6138a1b5e2b4d883e702c845dea303e8"
+  },
+  {
+    "file": "img/tabs/account_0.png",
+    "hash": "c9d137bd6d983e255922f43bdc435716"
+  },
+  {
+    "file": "img/tabs/account_1.png",
+    "hash": "93ea9b5728c6d34c2e81e2ed2bf7f4ea"
+  },
+  {
+    "file": "img/tabs/dynamic_0.png",
+    "hash": "804c51bf20d6c983da1ba73f1c3de67c"
+  },
+  {
+    "file": "img/tabs/dynamic_1.png",
+    "hash": "27e5a9abe1ee61fabc301b48dd3830d2"
+  },
+  {
+    "file": "img/tabs/home_0.png",
+    "hash": "e690652311d3f1dbb22120f92072004a"
+  },
+  {
+    "file": "img/tabs/home_1.png",
+    "hash": "549a24e3e8d61ba73c966d91e9c7a577"
+  },
+  {
+    "file": "img/tabs/member_0.png",
+    "hash": "fc24540f333864e9822cfec0a725918f"
+  },
+  {
+    "file": "img/tabs/member_1.png",
+    "hash": "fcf14cfe74ce3e0e0050298140dc7c37"
+  },
+  {
+    "file": "img/tabs/money_0.png",
+    "hash": "32f194345788e34dac3aa5f1957c569e"
+  },
+  {
+    "file": "img/tabs/money_1.png",
+    "hash": "f9f21747693520aae560d9d42616980d"
+  },
+  {
+    "file": "img/tabs/team_0.png",
+    "hash": "bde6d91a72fd3658a0c59a71f270157a"
+  },
+  {
+    "file": "img/tabs/team_1.png",
+    "hash": "627f2c04326daf9fe0fcd8c7b68bad97"
+  },
+  {
+    "file": "img/tabs/turn_0.png",
+    "hash": "8f67d5b178c2418d5861ea59863523e7"
+  },
+  {
+    "file": "img/tabs/turn_1.png",
+    "hash": "609ed7814f2346dda3016ae8cf59cc3c"
+  },
+  {
+    "file": "img/tabs/wallet_0.png",
+    "hash": "bb24013046344bd2bcc3825ef7c51496"
+  },
+  {
+    "file": "img/tabs/wallet_1.png",
+    "hash": "f075eabfab4ae5707a6d99560cb45c36"
+  },
+  {
+    "file": "index_wap.html",
+    "hash": "c0e2d32476dd632afb39c393192e345a"
+  },
+  {
+    "file": "index_wx.html",
+    "hash": "07b384f6dc8f225919ec08ff9c522c7e"
+  },
+  {
+    "file": "index.html",
+    "hash": "0ca92f90542b71589b2592802e87e8e2"
+  },
+  {
+    "file": "js/activity/activity.module.js",
+    "hash": "32bcd59882c563f1454b7c1de854e734"
+  },
+  {
+    "file": "js/activity/day.keep.controller.js",
+    "hash": "a2cfc28396065d240fd7984e92854f0f"
+  },
+  {
+    "file": "js/activity/pay.sign.controller.js",
+    "hash": "6b98afbcbab72bcd4c3750338fae1d4b"
+  },
+  {
+    "file": "js/activity/register.send.controller.js",
+    "hash": "ff091f55789aaf3d76d8e66f158fbab4"
+  },
+  {
+    "file": "js/app.js",
+    "hash": "4a1f58879c07e818ef99dff38995a776"
+  },
+  {
+    "file": "js/controllers.js",
+    "hash": "d786b0dd33db70432974fa716ab95254"
+  },
+  {
+    "file": "js/fast-three/canada.history.lottery.controller.js",
+    "hash": "c921fd2f7fee4f0f407a4efc24966d60"
+  },
+  {
+    "file": "js/fast-three/fast.history.lottery.controller.js",
+    "hash": "9d0a15378886e1f2bab08a366fc24b34"
+  },
+  {
+    "file": "js/fast-three/fast.room.new.controller.js",
+    "hash": "6dba67e7a8d6e5efc7216983c229eba5"
+  },
+  {
+    "file": "js/fast-three/fast.three.module.js",
+    "hash": "c0c7ac0ed9da425f60f9b38c03dacbba"
+  },
+  {
+    "file": "js/fast-three/luck.history.lottery.controller.js",
+    "hash": "b81dbb4ba0ba088acdf1a87c241957d5"
+  },
+  {
+    "file": "js/fast-three/mark.six.history.lottery.controller.js",
+    "hash": "46ffa887e697f66a49c60eee502827e4"
+  },
+  {
+    "file": "js/fast-three/pk.history.lottery.controller.js",
+    "hash": "943ddb1223d7d823ead4d65d937e84bc"
+  },
+  {
+    "file": "js/fast-three/ssc.history.lottery.controller.js",
+    "hash": "3b6cd831df5a877a46246c7f9561536c"
+  },
+  {
+    "file": "js/ios9.patch.js",
+    "hash": "b5be3a77a22e3866ac0a5afc0050a4c6"
+  },
+  {
+    "file": "js/services.js",
+    "hash": "6f9d409633021c728b34e69e6780b079"
+  },
+  {
+    "file": "js/tabs/account.controller.js",
+    "hash": "ee8e2fd8791d4618bab93813294af791"
+  },
+  {
+    "file": "js/tabs/dynamic.controller.js",
+    "hash": "f2fdd34f2e3dc53bb315a953178eac49"
+  },
+  {
+    "file": "js/tabs/home.controller.js",
+    "hash": "720d0094ac99c7d7c40eb20333e70a7c"
+  },
+  {
+    "file": "js/tabs/recharge.controller.js",
+    "hash": "aadc9e0218adf1b69d30ad83b019088e"
+  },
+  {
+    "file": "js/tabs/tab.controller.js",
+    "hash": "8706e32835bfe0577237a94712ba969c"
+  },
+  {
+    "file": "js/tabs/tab.module.js",
+    "hash": "aeb58f819731c4387ce7a9e024be37c2"
+  },
+  {
+    "file": "js/user/about.controller.js",
+    "hash": "ad30230bd8ced0fd692700e93876ccc4"
+  },
+  {
+    "file": "js/user/acsent.controller.js",
+    "hash": "67aef1f85e5663b4f0fbdf7883748eaa"
+  },
+  {
+    "file": "js/user/add.member.controller.js",
+    "hash": "de9ee5a52c1ead3dddfcbc6baf90f926"
+  },
+  {
+    "file": "js/user/add.referral.links.controller.js",
+    "hash": "93702c2d7e27e8632f56c83850b1ccbd"
+  },
+  {
+    "file": "js/user/advanced.setup.controller.js",
+    "hash": "e0e8b903f3bbf8d88ecb0377b2117b12"
+  },
+  {
+    "file": "js/user/alipay.transfer.controller.js",
+    "hash": "b08315b3fd2822a4eceb350934219e5f"
+  },
+  {
+    "file": "js/user/ascent.ruler.controller.js",
+    "hash": "fe75594bdfe93669cfec75e594bb5fb8"
+  },
+  {
+    "file": "js/user/bank.card.controller.js",
+    "hash": "ef7c904bbad75eb1be1d4ffb774878c1"
+  },
+  {
+    "file": "js/user/bet.detail.controller.js",
+    "hash": "0270d479234f3543f27ab80d54427883"
+  },
+  {
+    "file": "js/user/bind.agency.controller.js",
+    "hash": "bc1d732ed1c56b472d8fd90e7cf7aa0b"
+  },
+  {
+    "file": "js/user/binding.account.controller.js",
+    "hash": "7b22a1ab0a121da391f8ff0621052dc6"
+  },
+  {
+    "file": "js/user/change.login.password.controller.js",
+    "hash": "b0c45d2337173ca2af00303658a3d9cf"
+  },
+  {
+    "file": "js/user/change.tx.password.controller.js",
+    "hash": "7b9ff45d3ed8fbfb59a0b41701b0316a"
+  },
+  {
+    "file": "js/user/choice.alipay.controller.js",
+    "hash": "683265314cfba3cb73dbfdb7fdc9f06d"
+  },
+  {
+    "file": "js/user/common.problems.controller.js",
+    "hash": "13a0a1c063c44fccc4bd9b9af0e2159e"
+  },
+  {
+    "file": "js/user/customer.service.controller.js",
+    "hash": "8f03a9e1b22f87ecf8bb6f5c96bee36d"
+  },
+  {
+    "file": "js/user/debt.record.controller.js",
+    "hash": "907f73713a609843c404c4dd1b0e6021"
+  },
+  {
+    "file": "js/user/deposit.record.controller.js",
+    "hash": "1661e8dbaef7d5a86a9e40a043f2e87e"
+  },
+  {
+    "file": "js/user/earnings.ruler.controller.js",
+    "hash": "b4fcfac76d884c02bac22f10c367db82"
+  },
+  {
+    "file": "js/user/earnings.rulers.controller.js",
+    "hash": "1b66ca8c7a62f134c5e5de7b5c70576d"
+  },
+  {
+    "file": "js/user/favorable.activity.controller.js",
+    "hash": "259ae9cbab028d345f10e22766f0eefb"
+  },
+  {
+    "file": "js/user/game.record.controller.js",
+    "hash": "cf60cda43adcadbc166324943251cc93"
+  },
+  {
+    "file": "js/user/login.controller.js",
+    "hash": "a933f7555464dce9af38ed74577c2ec5"
+  },
+  {
+    "file": "js/user/lower.bet.controller.js",
+    "hash": "7cc385b005a7424cb1ae0f8d40078d44"
+  },
+  {
+    "file": "js/user/lower.money.controller.js",
+    "hash": "363fa7b340142535b82dcf39cdff7c38"
+  },
+  {
+    "file": "js/user/member.list.controller.js",
+    "hash": "e4a8e4687855647579d9ffde8b94edb5"
+  },
+  {
+    "file": "js/user/message.advertisement.controller.js",
+    "hash": "d1f57e7927db7ece686855e821d466a1"
+  },
+  {
+    "file": "js/user/message.details.controller.js",
+    "hash": "0861dacf6fd3c1a2b9b732bcf45c0087"
+  },
+  {
+    "file": "js/user/modified.data.controller.js",
+    "hash": "d569633a1d10f856d8a2d3b8ab06525f"
+  },
+  {
+    "file": "js/user/more.register.controller.js",
+    "hash": "70cc75dcfe83fa8b72c5a2d4dd7d12ab"
+  },
+  {
+    "file": "js/user/my.msg.controller.js",
+    "hash": "e6ba17632295b7d5647907aff1ae5442"
+  },
+  {
+    "file": "js/user/peilv.controller.js",
+    "hash": "2d32865dc13f871eb954f759d12a37fa"
+  },
+  {
+    "file": "js/user/phone.binding.controller.js",
+    "hash": "3f6fb0facd26830b147dfb593de3ee12"
+  },
+  {
+    "file": "js/user/play.regulation.controller.js",
+    "hash": "990ba1788efd88c5bf7bcb2bc6ab3507"
+  },
+  {
+    "file": "js/user/referral.links.controller.js",
+    "hash": "fc119e1381c24afc1221bcc962566d8d"
+  },
+  {
+    "file": "js/user/register.controller.js",
+    "hash": "c28ecc26fa339949aeeb5f2bdc584260"
+  },
+  {
+    "file": "js/user/registration.protocol.controller.js",
+    "hash": "112a962ce90647cf9fece4a269fe60c6"
+  },
+  {
+    "file": "js/user/retrieve.password.controller.js",
+    "hash": "591f2720a487fa90ae46e77acb668f58"
+  },
+  {
+    "file": "js/user/serve.on.off.controller.js",
+    "hash": "9f7be066c524d1d148d3de4442a87d1e"
+  },
+  {
+    "file": "js/user/set.controller.js",
+    "hash": "d98e01efe4412448ac46347e2502e293"
+  },
+  {
+    "file": "js/user/team.statistics.controller.js",
+    "hash": "ba2a08f78b4a1d82d7ee89d1bd71e80b"
+  },
+  {
+    "file": "js/user/transfer.accounts.controller.js",
+    "hash": "33872abb46727eb7451149fcd8f6bce3"
+  },
+  {
+    "file": "js/user/user.bank.list.controller.js",
+    "hash": "9b20a0e0acd9431af1e03924e70ef26a"
+  },
+  {
+    "file": "js/user/user.code.controller.js",
+    "hash": "d6e6fd4c9f2cfe651529e505ea12ffea"
+  },
+  {
+    "file": "js/user/user.module.js",
+    "hash": "4c025bebc0f0791d3800966153b4a1cc"
+  },
+  {
+    "file": "js/user/user.wallet.controller.js",
+    "hash": "c349084dd7a4e80e89fecc11e1081539"
+  },
+  {
+    "file": "js/user/wechat.recharge.controller.js",
+    "hash": "71ba1f9780c864daeb8875b1a81ecd58"
+  },
+  {
+    "file": "js/user/withdraw.deposit.controller.js",
+    "hash": "bcfccec50849c8d23539fde38ff1db69"
+  },
+  {
+    "file": "js/user/withdraw.deposit.password.controller.js",
+    "hash": "d4170c49845a32052872a66439951d71"
+  },
+  {
+    "file": "js/user/zdy.customer.service.controller.js",
+    "hash": "9d91fbf8b475a42d165f54de7549662e"
+  },
+  {
+    "file": "js/wf_list.js",
+    "hash": "82ec8c189d24791e74381160e5da5b5d"
+  },
+  {
+    "file": "js/yike.mobile.js",
+    "hash": "8fa365b8238350bb1d10de7d54b17b69"
+  },
+  {
+    "file": "js/yike.pcdd.js",
+    "hash": "e19ef0da9f22d74ba97418e9a9104dd1"
+  },
+  {
+    "file": "js/yike/ionic-toast.js",
+    "hash": "0c787e0d847dc115a734315b74132742"
+  },
+  {
+    "file": "js/yike/yike.back.js",
+    "hash": "06b09beb5e724d6d28ec533244b8a393"
+  },
+  {
+    "file": "js/yike/yike.js",
+    "hash": "0468fd75d8b33db0ce91dab862704116"
+  },
+  {
+    "file": "js/yike/yike.sub.menu.js",
+    "hash": "0a564b56f3cfb48fddbb60f943a58bdd"
+  },
+  {
+    "file": "js/yike/yike.utils.js",
+    "hash": "fc24dd0bac150be5050f2fd1321b9ff9"
+  },
+  {
+    "file": "lib/angular-local-storage/angular-local-storage.min.js",
+    "hash": "9ec08e16dd3f514349adb081955f00b5"
+  },
+  {
+    "file": "lib/av/av-dev.js",
+    "hash": "c1ec89367d0550da591c31bd8255d3e1"
+  },
+  {
+    "file": "lib/av/av-mini.js",
+    "hash": "d05966fcebe37b3258214b26a4c8615c"
+  },
+  {
+    "file": "lib/ionic/css/ionic.css",
+    "hash": "2bc80e3b61f144f769cc32f1effae3c3"
+  },
+  {
+    "file": "lib/ionic/css/ionic.min.css",
+    "hash": "4b7b222199796dbdfe9536516623bef2"
+  },
+  {
+    "file": "lib/ionic/fonts/ionicons.eot",
+    "hash": "2c2ae068be3b089e0a5b59abb1831550"
+  },
+  {
+    "file": "lib/ionic/fonts/ionicons.svg",
+    "hash": "c037dbbc0e6790f30e824a50010df5fb"
+  },
+  {
+    "file": "lib/ionic/fonts/ionicons.ttf",
+    "hash": "24712f6c47821394fba7942fbb52c3b2"
+  },
+  {
+    "file": "lib/ionic/fonts/ionicons.woff",
+    "hash": "05acfdb568b3df49ad31355b19495d4a"
+  },
+  {
+    "file": "lib/ionic/js/angular-ui/angular-ui-router.js",
+    "hash": "749a18f80f375e3049975f190a7bfc4e"
+  },
+  {
+    "file": "lib/ionic/js/angular-ui/angular-ui-router.min.js",
+    "hash": "04c594b762aba521277ee747b28745d5"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-animate.js",
+    "hash": "9385b61d5fbebd5b25ab313def614381"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-animate.min.js",
+    "hash": "71a13fcafc6dd1842745494a3cf43962"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-resource.js",
+    "hash": "711753d2e17e6871f57474d0ebfbb152"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-resource.min.js",
+    "hash": "ebe5a10de15c3b9b25b49b5d84102973"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-sanitize.js",
+    "hash": "305a6f71693bdf21e21cd09f24b2c4d6"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-sanitize.min.js",
+    "hash": "9f8ca450f716142c9a06790953fb2532"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular.js",
+    "hash": "28c75087388cf69bbaabd3a954d73138"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular.min.js",
+    "hash": "9a495e66b349fd238c80c7446529be1f"
+  },
+  {
+    "file": "lib/ionic/js/ionic-angular.js",
+    "hash": "ad1dd7b5dbec712472d919c4cab92bcf"
+  },
+  {
+    "file": "lib/ionic/js/ionic-angular.min.js",
+    "hash": "b9a31e0275a439f971384bd95efc4413"
+  },
+  {
+    "file": "lib/ionic/js/ionic.bundle.js",
+    "hash": "91d992cad8cbefde8a1119bb6ce016ac"
+  },
+  {
+    "file": "lib/ionic/js/ionic.bundle.min.js",
+    "hash": "b0c0a063943df5b0a041febc00db0f20"
+  },
+  {
+    "file": "lib/ionic/js/ionic.js",
+    "hash": "30869fd3e9cb12c7568713c49c24204f"
+  },
+  {
+    "file": "lib/ionic/js/ionic.min.js",
+    "hash": "9e82abe674c959f3176ffe57a7a15f89"
+  },
+  {
+    "file": "lib/ionic/js/ng-cordova.js",
+    "hash": "67646479e1c85597eb5d44f9dcb465e1"
+  },
+  {
+    "file": "lib/ionic/scss/_action-sheet.scss",
+    "hash": "641a6c4d93de9f8ef97a74b8fb05460e"
+  },
+  {
+    "file": "lib/ionic/scss/_animations.scss",
+    "hash": "002489f48d018dc8940f8654655e5bf1"
+  },
+  {
+    "file": "lib/ionic/scss/_backdrop.scss",
+    "hash": "dcd98e45b01eef39c9294c9cd1afe982"
+  },
+  {
+    "file": "lib/ionic/scss/_badge.scss",
+    "hash": "0e63788ec8330522f551d446a3ed126a"
+  },
+  {
+    "file": "lib/ionic/scss/_bar.scss",
+    "hash": "9882697e97de48cce62af2192529ea1b"
+  },
+  {
+    "file": "lib/ionic/scss/_button-bar.scss",
+    "hash": "32c4878b1b2a9fabd7bd8471b4e41ff5"
+  },
+  {
+    "file": "lib/ionic/scss/_button.scss",
+    "hash": "34b1f0b7f41f177cda3847bb2bb34ef1"
+  },
+  {
+    "file": "lib/ionic/scss/_checkbox.scss",
+    "hash": "a3a749cda32b6476f1cb0156f5bc7769"
+  },
+  {
+    "file": "lib/ionic/scss/_form.scss",
+    "hash": "d822a4d00e59dce718cd3d9490286c0f"
+  },
+  {
+    "file": "lib/ionic/scss/_grid.scss",
+    "hash": "698a511eaf9e9a663f6574e47d7d0b67"
+  },
+  {
+    "file": "lib/ionic/scss/_items.scss",
+    "hash": "3370739a7cc5846b33d88d76c5c8788c"
+  },
+  {
+    "file": "lib/ionic/scss/_list.scss",
+    "hash": "9cd09308294d95cad189632b3879289a"
+  },
+  {
+    "file": "lib/ionic/scss/_loading.scss",
+    "hash": "bd8b6377e3538026ca4e9cbbae2f36f5"
+  },
+  {
+    "file": "lib/ionic/scss/_menu.scss",
+    "hash": "8fc75ac00dc7a3ee7430f85443dd161a"
+  },
+  {
+    "file": "lib/ionic/scss/_mixins.scss",
+    "hash": "769122330a7226bbede7aa505756204a"
+  },
+  {
+    "file": "lib/ionic/scss/_modal.scss",
+    "hash": "1e31caa1ce8a55ae16251815019ede28"
+  },
+  {
+    "file": "lib/ionic/scss/_platform.scss",
+    "hash": "d4db57f6f7969eac07d6fb7bcd230230"
+  },
+  {
+    "file": "lib/ionic/scss/_popover.scss",
+    "hash": "7f0fbc3b20b0c1a369a5939d180745a3"
+  },
+  {
+    "file": "lib/ionic/scss/_popup.scss",
+    "hash": "7047f9e8e877f8f99a99efa0b7d014b8"
+  },
+  {
+    "file": "lib/ionic/scss/_progress.scss",
+    "hash": "4a575dd12a15c98b04fbaed60f73078f"
+  },
+  {
+    "file": "lib/ionic/scss/_radio.scss",
+    "hash": "315e22e8ae59730c2304f0af80f06fa5"
+  },
+  {
+    "file": "lib/ionic/scss/_range.scss",
+    "hash": "f04c360b9fa6aa665c46d36c0656666b"
+  },
+  {
+    "file": "lib/ionic/scss/_refresher.scss",
+    "hash": "a3059615cf1273e3f1424b25efae143b"
+  },
+  {
+    "file": "lib/ionic/scss/_reset.scss",
+    "hash": "a3b8bc37d3c5c5a405620e17d1e384af"
+  },
+  {
+    "file": "lib/ionic/scss/_scaffolding.scss",
+    "hash": "ca62253716985f9026f06f889f73aba5"
+  },
+  {
+    "file": "lib/ionic/scss/_select.scss",
+    "hash": "15897b3f421ea68dba8c2c10a8965d3a"
+  },
+  {
+    "file": "lib/ionic/scss/_slide-box.scss",
+    "hash": "2c14e7c6c282d6f93e6b3bf23ed75a32"
+  },
+  {
+    "file": "lib/ionic/scss/_slides.scss",
+    "hash": "a87fe48ceab601af409f2d0b40bb5651"
+  },
+  {
+    "file": "lib/ionic/scss/_spinner.scss",
+    "hash": "c3c66f453d5150cc8b35c73696caa73f"
+  },
+  {
+    "file": "lib/ionic/scss/_tabs.scss",
+    "hash": "0bd441bb1c6b21288a14324d279e15ae"
+  },
+  {
+    "file": "lib/ionic/scss/_toggle.scss",
+    "hash": "c9843ebac3ad29966c490625ba1dc0d1"
+  },
+  {
+    "file": "lib/ionic/scss/_transitions.scss",
+    "hash": "1c4987f4472d206d42df89073982d84a"
+  },
+  {
+    "file": "lib/ionic/scss/_type.scss",
+    "hash": "279295ad75ca9035a13ae24a42ccff7e"
+  },
+  {
+    "file": "lib/ionic/scss/_util.scss",
+    "hash": "4f9798a66f8a62637f14554f830f6f82"
+  },
+  {
+    "file": "lib/ionic/scss/_variables.scss",
+    "hash": "d24f2a5ece9394d30dc2d7a407e08f0d"
+  },
+  {
+    "file": "lib/ionic/scss/ionic.scss",
+    "hash": "dd5e3ba25adcd78cdc4c265ded21654e"
+  },
+  {
+    "file": "lib/ionic/scss/ionicons/_ionicons-font.scss",
+    "hash": "233ff533fb31f37c977ef23099dae69a"
+  },
+  {
+    "file": "lib/ionic/scss/ionicons/_ionicons-icons.scss",
+    "hash": "4e43190a2522fbe07da8bd34957755e5"
+  },
+  {
+    "file": "lib/ionic/scss/ionicons/_ionicons-variables.scss",
+    "hash": "e470a67a4a1fa6077f26c2f3969449af"
+  },
+  {
+    "file": "lib/ionic/scss/ionicons/ionicons.scss",
+    "hash": "84318ada280ad2eefeb1d6c729937d53"
+  },
+  {
+    "file": "lib/ionic/version.json",
+    "hash": "0cc8e172d236307b4292310316cf625c"
+  },
+  {
+    "file": "lib/jquery/jquery-2.1.4.min.js",
+    "hash": "b0dc11d0a434aafe88908c7f33d71095"
+  },
+  {
+    "file": "lib/jquery/jquery.qrcode.min.js",
+    "hash": "c31ae1b9ebebb5ed4742e6b0f6aaa648"
+  },
+  {
+    "file": "lib/mobiscroll/css/mobiscroll.custom-2.5.2.min.css",
+    "hash": "68f9c893fb3ae794fc68801b21f263de"
+  },
+  {
+    "file": "lib/mobiscroll/css/wp_icons_light.png",
+    "hash": "84fa76758fa30fd599f02287cb6262ed"
+  },
+  {
+    "file": "lib/mobiscroll/css/wp_icons.png",
+    "hash": "56ab3a7eef615f93e51e17ca573acf37"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/mobiscroll.android-2.5.1.css",
+    "hash": "464e9dd43133c2cdd6941852242f1828"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/mobiscroll.android-ics-2.5.2.css",
+    "hash": "de82869beacb2d9cf7b690da8910b02d"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/mobiscroll.animation-2.5.2.css",
+    "hash": "ab44aa277716ff834928700056a34d37"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/mobiscroll.core-2.5.2.css",
+    "hash": "ece069215bc3857768f04de6aef58a22"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/mobiscroll.ios-2.5.1.css",
+    "hash": "9391d9ada420dcc8502635c504433cb9"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/mobiscroll.jqm-2.5.1.css",
+    "hash": "de00ef330326231e3ba8fb375b61ef9a"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/mobiscroll.sense-ui-2.5.1.css",
+    "hash": "3c6bf4ce3acac2085b4d5aa54483ccf0"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/mobiscroll.wp-2.5.2.css",
+    "hash": "5e10ecb80e1f3acee2480104d92186f2"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/wp_icons_light.png",
+    "hash": "84fa76758fa30fd599f02287cb6262ed"
+  },
+  {
+    "file": "lib/mobiscroll/dev/css/wp_icons.png",
+    "hash": "56ab3a7eef615f93e51e17ca573acf37"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.android-2.5.1.js",
+    "hash": "6ae8cca6304bb6919c5125f5cc0262f2"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.android-ics-2.5.2.js",
+    "hash": "4f47f64244b7a4525bd3a3de4f38da1d"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.core-2.5.2-zh.js",
+    "hash": "39d8d6fde76a003420b1700f75ac6168"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.core-2.5.2.js",
+    "hash": "eff5e20382a839607a8b4290c84ccf6b"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.datetime-2.5.1-zh.js",
+    "hash": "903c43702f3815b51d3add1cc477943e"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.datetime-2.5.1.js",
+    "hash": "e54b9612ae70afabe6e5caae2f9d8178"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.ios-2.5.1.js",
+    "hash": "2c085cd9b6e28c04dafb95b1c6b089cb"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.jqm-2.5.1.js",
+    "hash": "5d471bfa013196e5ab727a78ab55d185"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.list-2.5.1.js",
+    "hash": "dd7d4fc116e83a4c75f40b100caeb30a"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.select-2.5.1.js",
+    "hash": "7f1a5057c5efe392593feccee12dfc9b"
+  },
+  {
+    "file": "lib/mobiscroll/dev/js/mobiscroll.wp-2.5.2.js",
+    "hash": "1f2acd977e66461e285e8bd96c75a445"
+  },
+  {
+    "file": "lib/mobiscroll/js/mobiscroll.custom-2.5.2.min.js",
+    "hash": "96cdc0346f7a6f4e5c3e382bdce1bb00"
+  },
+  {
+    "file": "lib/moment/moment.min.js",
+    "hash": "3a22f0762c13e6872a54c65fd03e8b02"
+  },
+  {
+    "file": "lib/ng-file-upload/ng-file-upload-shim.min.js",
+    "hash": "06288546d59d3e43a01bd85e2c17a18c"
+  },
+  {
+    "file": "lib/ng-file-upload/ng-file-upload.min.js",
+    "hash": "b465220e106409f10e4b9e7c4ae7066c"
+  },
+  {
+    "file": "lib/ng-onload/ng-onload.min.js",
+    "hash": "dd2d61b2ef117494f60545b27d9ca6e9"
+  },
+  {
+    "file": "lib/ocLazyLoad/ocLazyLoad.min.js",
+    "hash": "2d6ca127f217c83867dc9848a56a78e1"
+  },
+  {
+    "file": "lib/swiper/swiper.min.css",
+    "hash": "3a731d5a64a9cf9052fcdf4bd5af621e"
+  },
+  {
+    "file": "lib/swiper/swiper.min.js",
+    "hash": "05b46655d357eb39a4a99fbe79a8f7e9"
+  },
+  {
+    "file": "lib/web-socket/swfobject.js",
+    "hash": "84e07fa8222e5bf3f356cd7cec454b61"
+  },
+  {
+    "file": "lib/web-socket/web_socket.js",
+    "hash": "4a6afa3b964ec314b9f11d04e80aef61"
+  },
+  {
+    "file": "manifest.json",
+    "hash": "ed31eec617c3faa0199341144ee94912"
+  },
+  {
+    "file": "service-worker.js",
+    "hash": "e2b605a503b27a9cec3225d168237786"
+  },
+  {
+    "file": "templates/activity/day-keep.html",
+    "hash": "b15e16f35347282757f30b70372bf414"
+  },
+  {
+    "file": "templates/activity/pay-sign.html",
+    "hash": "c18a03735a01815a6fb4ae313951eb16"
+  },
+  {
+    "file": "templates/activity/register-send.html",
+    "hash": "fdea08323a9cbdf6e361f638f87addc4"
+  },
+  {
+    "file": "templates/fast-three/canada-history-lottery.html",
+    "hash": "52205ad9eba61e36609096c75fd0c308"
+  },
+  {
+    "file": "templates/fast-three/fast-history-lottery.html",
+    "hash": "43bdaf50e73891177b94b1f667e642a3"
+  },
+  {
+    "file": "templates/fast-three/fast-room-new.html",
+    "hash": "50e48c01e7a016b2257a7455e976a612"
+  },
+  {
+    "file": "templates/fast-three/lucky-history-lottery.html",
+    "hash": "52205ad9eba61e36609096c75fd0c308"
+  },
+  {
+    "file": "templates/fast-three/mark-six-history-lottery.html",
+    "hash": "ea0c7353c4734e57954cb6a8401d5e93"
+  },
+  {
+    "file": "templates/fast-three/pk-history-lottery.html",
+    "hash": "7a017ca203de75c82af1e86412ac6709"
+  },
+  {
+    "file": "templates/fast-three/ssc-history-lottery.html",
+    "hash": "c360ba3be6c5fa5d4eb5c2beb9fda084"
+  },
+  {
+    "file": "templates/model/award-grade.html",
+    "hash": "bd9dd9ac2fa6fa72057b0468374ba903"
+  },
+  {
+    "file": "templates/model/bottom-pour.html",
+    "hash": "2439844dffd8f897072e8482bc60e168"
+  },
+  {
+    "file": "templates/model/debit-record-details.html",
+    "hash": "257b735eee9e4a84f728501363c1fd14"
+  },
+  {
+    "file": "templates/model/deposit-record-detail.html",
+    "hash": "cd0d7dc3aed527265b7f54bb4daabb58"
+  },
+  {
+    "file": "templates/model/enter-room.html",
+    "hash": "47bb9b4af23e9f942b14d271151d62b2"
+  },
+  {
+    "file": "templates/model/fast-affirm-bet.html",
+    "hash": "bec698664c0eb6c01c8f7d6e4fa3a58e"
+  },
+  {
+    "file": "templates/model/fast-cathectic-two.html",
+    "hash": "784ea8f4ddf69834d60092adfbe234c5"
+  },
+  {
+    "file": "templates/model/fast-cathectic.html",
+    "hash": "f66de788297e419aa736a5d249b3c001"
+  },
+  {
+    "file": "templates/model/fast-eight-two.html",
+    "hash": "85bcd36e8f2e3831697bf432db942e44"
+  },
+  {
+    "file": "templates/model/fast-eight.html",
+    "hash": "6b97d1a816c19c9e14947e15be70d02d"
+  },
+  {
+    "file": "templates/model/fast-menu.html",
+    "hash": "9b23ad2cc515939b3875416c6cce91a1"
+  },
+  {
+    "file": "templates/model/fast-play.html",
+    "hash": "4ca723587b956c1269133a4704cff56a"
+  },
+  {
+    "file": "templates/model/fast-room-menu.html",
+    "hash": "5a42abddd9d0bb0adbe9dbf7c1358ff7"
+  },
+  {
+    "file": "templates/model/fast-room-new-modal.html",
+    "hash": "28f2adfa254ae52bcac47f5a1ccef807"
+  },
+  {
+    "file": "templates/model/fast-three-cathectic.html",
+    "hash": "514bd4791de5a02d3e8a8e4447663e4e"
+  },
+  {
+    "file": "templates/model/fast-three-vote.html",
+    "hash": "b8788c27cfc7756e81b07232404ae147"
+  },
+  {
+    "file": "templates/model/home_content.html",
+    "hash": "7d7b4e64f89aabaa0b628726ac0352f0"
+  },
+  {
+    "file": "templates/model/home_kf.html",
+    "hash": "c1e6dfc13c05164fabfa03294f4b10af"
+  },
+  {
+    "file": "templates/model/home-enter.html",
+    "hash": "395f9bc7d26de6ae26172e3515bcec42"
+  },
+  {
+    "file": "templates/model/home-menu.html",
+    "hash": "1aa55acd56cb5bc77c537f1a560f81ff"
+  },
+  {
+    "file": "templates/model/loss-explain.html",
+    "hash": "e3fb5d8bb2f6e32da849309818cfc6bb"
+  },
+  {
+    "file": "templates/model/lower-bet-detail.html",
+    "hash": "2368ef5b478717d6bffa50f2d360971c"
+  },
+  {
+    "file": "templates/model/lower-money-detail.html",
+    "hash": "404d1e4d2ee02a073c321beea082ab7f"
+  },
+  {
+    "file": "templates/model/member-list-detail.html",
+    "hash": "0562dbcf72dcef97f72cdef6cf7425cb"
+  },
+  {
+    "file": "templates/model/personne-intro.html",
+    "hash": "f52fe2d74f60582d65c407074233b103"
+  },
+  {
+    "file": "templates/model/recharge-hint.html",
+    "hash": "e31b752bc5a0eb3a02e7b5e2e0b6e1c1"
+  },
+  {
+    "file": "templates/model/room-menu.html",
+    "hash": "c3413081d1307b0d3191e24085fd0d06"
+  },
+  {
+    "file": "templates/model/room-red-menu.html",
+    "hash": "e279f129ab2b7683adfe65c74118d5ab"
+  },
+  {
+    "file": "templates/model/select-bank-list.html",
+    "hash": "2346d0ba3cddb69db7e20daa7fa4f2a4"
+  },
+  {
+    "file": "templates/model/share-menu.html",
+    "hash": "1d0504b3bb5fdfef4d03a177251647b4"
+  },
+  {
+    "file": "templates/model/sign-calendar.html",
+    "hash": "e7521f62c6776ed77a9a7b8ae5fbc557"
+  },
+  {
+    "file": "templates/model/to-vote-for.html",
+    "hash": "dabe2fb5712ba798e566cf2c2413b6fa"
+  },
+  {
+    "file": "templates/model/transfer-accounts-detail.html",
+    "hash": "2e513bc9cee498a062c3140cb6b9f14a"
+  },
+  {
+    "file": "templates/tab-account.html",
+    "hash": "d7e99152d26949e6b0314e0d398b40d2"
+  },
+  {
+    "file": "templates/tab-dynamic.html",
+    "hash": "9f8af44f1ea1f567b09ffbb34d8b53ad"
+  },
+  {
+    "file": "templates/tab-home.html",
+    "hash": "afef189bd0fdd1d26cd46af0286dd488"
+  },
+  {
+    "file": "templates/tab-recharge.html",
+    "hash": "172cc84a6e456bc0b85b297b9d7c590c"
+  },
+  {
+    "file": "templates/tabs.html",
+    "hash": "d417c83141f84352ef5d29a3c54fa3f6"
+  },
+  {
+    "file": "templates/transition-page.html",
+    "hash": "764dcea1a4e1b73c6e8f6aeaf0f8b926"
+  },
+  {
+    "file": "templates/user/about.html",
+    "hash": "11d49e39b48f36546f6e3a6af5e5e75f"
+  },
+  {
+    "file": "templates/user/add-member.html",
+    "hash": "2e7be58387b8904cacf23dabca15beb4"
+  },
+  {
+    "file": "templates/user/add-referral-links.html",
+    "hash": "97989da87a44b75376dbbff38377f388"
+  },
+  {
+    "file": "templates/user/advanced-setup.html",
+    "hash": "929d53a602576db2f3d743e99b83e2b9"
+  },
+  {
+    "file": "templates/user/alipay-transfer.html",
+    "hash": "4071cc7a535a3bec74e7d9eb29a756c4"
+  },
+  {
+    "file": "templates/user/ascent-ruler.html",
+    "hash": "0b166df6c22c2646a53012369714447a"
+  },
+  {
+    "file": "templates/user/ascent.html",
+    "hash": "6f31400ef78025b480e3a008277ea6e8"
+  },
+  {
+    "file": "templates/user/bank-card-list.html",
+    "hash": "caf5cc120d1fc1a730f7165c2d1129fb"
+  },
+  {
+    "file": "templates/user/bank-card.html",
+    "hash": "71b05eced48dfa6dd80be52bf4f255a4"
+  },
+  {
+    "file": "templates/user/bet-detail.html",
+    "hash": "5d33fe6024dc15a12b85b033544dc099"
+  },
+  {
+    "file": "templates/user/bind-agency.html",
+    "hash": "ae87162f821e742461239570630ce544"
+  },
+  {
+    "file": "templates/user/binding-account.html",
+    "hash": "ee5f1061c9160e4ce0b901e576b18bb8"
+  },
+  {
+    "file": "templates/user/change-login-password.html",
+    "hash": "cc48a53fe54a2d975214666bf26c5210"
+  },
+  {
+    "file": "templates/user/change-tx-password.html",
+    "hash": "0e2e687884801ec6183821c461775234"
+  },
+  {
+    "file": "templates/user/choice-alipay.html",
+    "hash": "9af99a56a7f258d8a40943e08d4a2dad"
+  },
+  {
+    "file": "templates/user/choice-bank.html",
+    "hash": "47033015af1d7d60a3147ef814365f80"
+  },
+  {
+    "file": "templates/user/common-problems.html",
+    "hash": "f181c909f94825740fa575061818ed08"
+  },
+  {
+    "file": "templates/user/customer-service.html",
+    "hash": "a723f352db01723d94eede778b54da4b"
+  },
+  {
+    "file": "templates/user/debt-record.html",
+    "hash": "1bc1fb18184efa91f4a6aff520004609"
+  },
+  {
+    "file": "templates/user/deposit-information.html",
+    "hash": "d20870ef04ef7f245dd29955d55c519a"
+  },
+  {
+    "file": "templates/user/deposit-record.html",
+    "hash": "4176cec5606d2dc3467b3d2d280430b3"
+  },
+  {
+    "file": "templates/user/earnings-ruler.html",
+    "hash": "93c891c1a323c274e3aae34a6cd04322"
+  },
+  {
+    "file": "templates/user/earnings-rulers.html",
+    "hash": "327103e707217ae44085521fd17c75f5"
+  },
+  {
+    "file": "templates/user/favorable-activity.html",
+    "hash": "cf6ec679933b920ccea12f5f5d4e6ef4"
+  },
+  {
+    "file": "templates/user/game-record-page.html",
+    "hash": "bc07cd3402000392a8d8dfbf1bf722c0"
+  },
+  {
+    "file": "templates/user/game-record.html",
+    "hash": "f35063bc6cfbde63956da2effba675a8"
+  },
+  {
+    "file": "templates/user/get-red-sweep.html",
+    "hash": "c9052d6a7f292e711c60f9bbd295a1b9"
+  },
+  {
+    "file": "templates/user/login.html",
+    "hash": "548f65680c1553508b95833dad938478"
+  },
+  {
+    "file": "templates/user/lower-bet.html",
+    "hash": "a19c279183fd79e00b0b58f0b8aace7b"
+  },
+  {
+    "file": "templates/user/lower-money.html",
+    "hash": "68c631ae912b19195fd950caa90d3850"
+  },
+  {
+    "file": "templates/user/member-list.html",
+    "hash": "35f0f0635f81b7cf49250b2c4ba6e4f3"
+  },
+  {
+    "file": "templates/user/message-advertisement.html",
+    "hash": "0fa7d2bfc56fda698a84a6b887e4324a"
+  },
+  {
+    "file": "templates/user/message-details.html",
+    "hash": "5914adaa576b8e159d44f73b851779f0"
+  },
+  {
+    "file": "templates/user/modified-data.html",
+    "hash": "1ba596f5246951f5348fa365e52b0b06"
+  },
+  {
+    "file": "templates/user/more-register.html",
+    "hash": "c434c9afceb9b348dfee9c67f85c3530"
+  },
+  {
+    "file": "templates/user/my-msg.html",
+    "hash": "cb6cb1ea82ec64a032d41f38dfabea49"
+  },
+  {
+    "file": "templates/user/phone-binding.html",
+    "hash": "20b1c80d4e08f8121c966f98d02cf46c"
+  },
+  {
+    "file": "templates/user/play-regulation.html",
+    "hash": "8300f83062735663370a67ca481b42b7"
+  },
+  {
+    "file": "templates/user/recharge.html",
+    "hash": "3e2878d23f4dcb292f9c40d7043df68e"
+  },
+  {
+    "file": "templates/user/red-details.html",
+    "hash": "3fdfc592bc02d283c90b18b2b13e683c"
+  },
+  {
+    "file": "templates/user/red-sweep.html",
+    "hash": "e3ce31903a983ebe9ded8326b5169a1d"
+  },
+  {
+    "file": "templates/user/referral-links.html",
+    "hash": "bbbafb6b65dd16f9fdbb10ed1e1443f8"
+  },
+  {
+    "file": "templates/user/register.html",
+    "hash": "4469cb0afaf476a2f6d1885659595d6e"
+  },
+  {
+    "file": "templates/user/registration-protocol.html",
+    "hash": "81a3f72eb2da37bae171811720555a03"
+  },
+  {
+    "file": "templates/user/retrieve-password.html",
+    "hash": "b101c35107a73c00355251eae92aef77"
+  },
+  {
+    "file": "templates/user/serve-on-off.html",
+    "hash": "7f09a9abced92a4d10b3ff5c68294b44"
+  },
+  {
+    "file": "templates/user/set.html",
+    "hash": "e6e5ea620ea0b7dadccf6b7c411a004d"
+  },
+  {
+    "file": "templates/user/team-statistics.html",
+    "hash": "1fe23b04cb4566e28422134bd0cf5977"
+  },
+  {
+    "file": "templates/user/transfer-accounts.html",
+    "hash": "1e0e00b4b670123e213b98fbe79f2870"
+  },
+  {
+    "file": "templates/user/trend-chart.html",
+    "hash": "a5ee7b35f6ce6909fd5a279d06694dee"
+  },
+  {
+    "file": "templates/user/user-code.html",
+    "hash": "802e62d2a2190ecdcfa37ce2b10ddeb1"
+  },
+  {
+    "file": "templates/user/wallet.html",
+    "hash": "8905c1a5164dd92657e95337c5f923cd"
+  },
+  {
+    "file": "templates/user/wechat-recharge.html",
+    "hash": "5142ad0f58ca6c94ca3c91d3fa0d1a70"
+  },
+  {
+    "file": "templates/user/withdraw-deposit-password.html",
+    "hash": "49ea4054df14948713bced31cc78be7b"
+  },
+  {
+    "file": "templates/user/withdraw-deposit.html",
+    "hash": "82fe43526b074791a286e3473dced3e0"
+  },
+  {
+    "file": "templates/user/zdy-customer-service.html",
+    "hash": "52f3c744a060a9a97cf4fc668dee32cd"
+  }
+]

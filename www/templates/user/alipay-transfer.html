@@ -1,0 +1,61 @@
+<ion-view view-title="充值">
+  <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+  </ion-nav-buttons>
+  <ion-content class="padding con-bag" id="alipay-transfer">
+    <div class="list">
+
+      <a class="item ">
+        <div class="top">
+          <button class="button button-small button-assertive">
+            收款人信息
+          </button>
+        </div>
+        <div class="left">
+          <div class="box">
+            <p>收款账号：<span data-tap-disabled="true" class="two">{{account.name}}</span></p>
+            <button ng-show="PLATFORM=='app'" class="button button-outline button-positive" ng-click="copy(account.user_name)"> 复制</button>
+            <button ng-show="PLATFORM=='wap'" class="button button-outline button-positive" ng-click="wxcopy(account.user_name)"> 复制</button>
+
+          </div>
+          <div class="box">
+            <p>收款户名：<span data-tap-disabled="true" class="two">{{account.open_name}}</span></p>
+            <button ng-show="PLATFORM=='app'" class="button button-outline button-positive" ng-click="copy(account.name)"> 复制</button>
+            <button ng-show="PLATFORM=='wap'" class="button button-outline button-positive" ng-click="wxcopy(account.user_name)"> 复制</button>
+
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="infor">
+      <h4>请填写您的转账信息</h4>
+      <form action="">
+        <div class="list list-inset">
+          <p>{{account.types}}户名</p>
+          <label class="item item-input">
+            <input type="text" placeholder="请填写您此次转账使用的{{account.types}}户名" ng-model="formValue.name">
+          </label>
+          <p>{{account.types}}账号</p>
+          <label class="item item-input">
+            <input type="text" placeholder="请填写您此次转账使用的{{account.types}}账号" ng-model="formValue.account">
+          </label>
+          <p>转账金额</p>
+          <label class="item item-input">
+            <input type="tel" placeholder="请填写您此次转账的金额（{{account.rechargeMin + '-' +account.rechargeMax}}）" ng-model="formValue.money">
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="text">
+      <p ng-bind-html="content"></p>
+    </div>
+    <div class="step">
+      <h4>转账二维码:</h4>
+      <div><img ng-src="{{account.img_url}}" width="100%" data-tap-disabled="true" style="-webkit-user-select: auto !important;"></div>
+    </div>
+    <button class="button button-full" ng-click="submit()">
+      提交
+    </button>
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,44 @@
+<ion-view view-title="走势图">
+  <ion-nav-buttons side="left">
+    <yike-back></yike-back>
+  </ion-nav-buttons>
+  <div class="bar bar-subheader" id="trend-chart">
+    <div class="lists-title">
+      <ul class="row">
+        <li class="col col-20">期号</li>
+        <li class="col col-9">值</li>
+        <li class="col col-9">大</li>
+        <li class="col col-9">小</li>
+        <li class="col col-9">单</li>
+        <li class="col col-9">双</li>
+        <li class="col col-9">大单</li>
+        <li class="col col-9">小单</li>
+        <li class="col col-9">大双</li>
+        <li class="col col-9">小双</li>
+      </ul>
+    </div>
+  </div>
+  <ion-content class="con-bag has-subheader" id="trends">
+    <ion-refresher pulling-icon="ion-load-d" on-refresh="refresh()" refreshing-text="正在加载中.." refreshing-icon="ion-loading-b">
+    </ion-refresher>
+    <div class="lists-body">
+      <ul class="row" ng-repeat="trend in trendChart">
+        <li class="col col-20">{{trend.real_period}}</li>
+        <li class="col col-9 trend-text">{{trend.sum}}</li>
+        <li class="col col-9" ng-class="trend.odds_content.is_big == '大' ? 'trend-size' : ''">{{trend.odds_content.is_big == '大' ? '大' : ''}}</li>
+        <li class="col col-9 " ng-class="trend.odds_content.is_big == '小' ? 'trend-size' : ''">{{trend.odds_content.is_big == '小' ? '小' : ''}}</li>
+        <li class="col col-9 " ng-class="trend.odds_content.is_single == '单' ? 'trend-double' : ''">{{trend.odds_content.is_single == '单' ? '单' : ''}}</li>
+        <li class="col col-9 " ng-class="trend.odds_content.is_single == '双' ? 'trend-double' : ''">{{trend.odds_content.is_single == '双' ? '双' : ''}}</li>
+        <li class="col col-9" ng-class="trend.odds_content.is_big_single == '大单' ? 'trend-double-big' : ''">{{trend.odds_content.is_big_single == '大单' ? '大单' : ''}}</li>
+        <li class="col col-9 " ng-class="trend.odds_content.is_big_single == '小单' ? 'trend-double-big' : ''">{{trend.odds_content.is_big_single == '小单' ? '小单' : ''}}</li>
+        <li class="col col-9 " ng-class="trend.odds_content.is_big_single == '大双' ? 'trend-double-big' : ''">{{trend.odds_content.is_big_single == '大双' ? '大双' : ''}}</li>
+        <li class="col col-9 " ng-class="trend.odds_content.is_big_single == '小双' ? 'trend-double-big' : ''">{{trend.odds_content.is_big_single == '小双' ? '小双' : ''}}</li>
+      </ul>
+    </div>
+    <p style="padding-top: 30%" ng-show="records.length == 0">暂无走势数据</p>
+    <p style="text-align: center; margin-top: 10px;" ng-hide="!noMoreItemsAvailable || records.length == 0">已加载完全部数据</p>
+    <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+  </ion-content>
+
+</ion-view>
+

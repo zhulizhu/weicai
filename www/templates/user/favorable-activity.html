@@ -1,0 +1,63 @@
+<ion-view view-title="优惠活动">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content id="activity">
+        <!--<div class="swiper-container activity-swiper-container">-->
+            <!--<div class="swiper-wrapper">-->
+                <!--<div class="swiper-slide index-swiper-slide" ng-repeat="banner in banners" >-->
+                    <!--<a ng-href="{{banner.link_url}}"><img ng-src="{{banner.img_url}}" width="100%" /></a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-pagination"></div>-->
+        <!--</div>-->
+        <div class="top">
+            <img src="img/home/activity-banner.jpg">
+        </div>
+        <div class="list">
+            <div class="item"  ng-repeat="list in lists">
+                <div class="itm-img">
+                    <img ng-src="{{list.img}}">
+                    <p ng-bind="list.title">注册送彩金</p>
+                </div>
+                <div class="bott">
+                    <p>{{list.time*1000 | date: 'yyyy-MM-dd'}}</p>
+                    <button ng-click="pageGo(list)">立即参加</button>
+                </div>
+            </div>
+            <!--<div class="item"  >-->
+                <!--<div class="itm-img">-->
+                    <!--<img src="img/home/meiri.jpg">-->
+                    <!--<p>每日首冲彩金相赠</p>-->
+                <!--</div>-->
+                <!--<div class="bott">-->
+                    <!--<p>2017-10-05</p>-->
+                    <!--<button  ui-sref="day-keep">立即参加</button>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item"  >-->
+                <!--<div class="itm-img">-->
+                    <!--<img src="img/home/xiaofei.jpg">-->
+                    <!--<p>消费越高，反馈越高</p>-->
+                <!--</div>-->
+                <!--<div class="bott">-->
+                    <!--<p>2017-10-05</p>-->
+                    <!--<button ng-click="tishi()">立即参加</button>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item"  >-->
+                <!--<div class="itm-img">-->
+                    <!--<img src="img/home/qiandao.jpg">-->
+                    <!--<p>消费签到，日日大礼</p>-->
+                <!--</div>-->
+                <!--<div class="bott">-->
+                    <!--<p>2017-10-05</p>-->
+                    <!--<button ui-sref="pay-sign">立即参加</button>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+
+
+    </ion-content>
+
+</ion-view>

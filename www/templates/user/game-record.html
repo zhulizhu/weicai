@@ -1,0 +1,57 @@
+<ion-view view-title="游戏记录">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" >
+        <ion-refresher pulling-icon="ion-load-d" on-refresh="refresh()" refreshing-text="正在加载中.." refreshing-icon="ion-loading-b">
+        </ion-refresher>
+        <ul class="search">
+            <li class="bank-type game-type">
+                <div>游戏类型</div>
+                <div>
+                    <select ng-model="game.id" ng-options="game.id as game.title  for game in gameType"></select>
+                </div>
+            </li>
+            <li>
+                <div>开始时间</div>
+                <div><input style="background-color: #ebebeb" type="text" name="start-date" id="start-date4" placeholder="请选择开始时间" onfocus="this.blur()"/></div>
+            </li>
+            <li>
+                <div>结束时间</div>
+                <div>
+                    <input style="background-color: #ebebeb" type="text" name="end-date" id="end-date4" placeholder="请选择结束时间" onfocus="this.blur()"/>
+                </div>
+            </li>
+            <li class="submit">
+                <div ><button  ng-click="refresh()">确定</button></div>
+            </li>
+        </ul>
+        <div class="record">
+            <div class="row">
+                <div class="col col-25" ng-class="state.id==1?'active1':' '" ng-click="select(1)">全部</div>
+                <div class="col col-25" ng-class="state.id==2?'active1':' '" ng-click="select(2)">未开奖</div>
+                <div class="col col-25" ng-class="state.id==3?'active1':' '" ng-click="select(3)">未中奖</div>
+                <div class="col col-25" ng-class="state.id==4?'active1':' '" ng-click="select(4)">中奖</div>
+            </div>
+            <div class="row row1">
+                <div class="col col-25" >游戏</div>
+                <div class="col col-25">开奖号码</div>
+                <div class="col col-25" >投注方案</div>
+                <div class="col col-25">状态</div>
+            </div>
+            <div class="list">
+                <div class="item" ui-sref="bet-detail({id:record.id})" ng-repeat="record in recordList" >
+                   <p >{{record.title}}{{record.groupName}}</p>
+                   <p ng-bind="record.lotteryNo || '-,-,-,-,-'">05,03,03,02,02,02,02,02,0,</p>
+                   <p ng-bind="record.name">双</p>
+                   <p  ng-class="classShow(record.select)">{{status[record.select]}}</p>
+                </div>
+            </div>
+        </div>
+        <p ng-show="recordList.length == 0" style="padding-top: 30%;text-align: center">暂无游戏记录</p>
+        <p style="text-align: center; margin-top: 10px;" ng-hide="!noMoreItemsAvailable || recordList.length == 0">已加载完全部数据</p>
+        <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+    </ion-content>
+
+</ion-view>
+                   

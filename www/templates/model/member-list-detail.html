@@ -1,0 +1,55 @@
+
+<ion-modal-view id="vote">
+    <ion-content scroll="false">
+        <div ></div>
+        <div class="vote-for debt-record-details" style="padding:0px;">
+            <h4 style="text-align: center;background-color: #f9f9f9;margin: 0!important;padding:10px 0;border-radius: 8px;">会员详情</h4>
+            <table style="padding: 0 10px;">
+                <col style="width: 36%" />
+                <col style="width: 64%" />
+                <tr>
+                    <td>登陆账号：</td>
+                    <td>{{recordDtail.username}}</td>
+                </tr>
+                <tr>
+                    <td>用户类型：</td>
+                    <td>{{recordDtail.style}}</td>
+                </tr>
+                <tr>
+                    <td>账户余额：</td>
+                    <td>{{recordDtail.coin}}</td>
+                </tr>
+                <tr>
+                    <td>返点：</td>
+                    <td>{{recordDtail.fanDian}}</td>
+                </tr>
+                <tr>
+                    <td>入款总数：</td>
+                    <td>{{recordDtail.rukuan}}</td>
+                </tr>
+                <tr>
+                    <td>出款总数：</td>
+                    <td>{{recordDtail.chukuan}}</td>
+                </tr>
+                <tr>
+                    <td>活动奖励：</td>
+                    <td>{{recordDtail.reward}}</td>
+                </tr>
+                <tr>
+                    <td>在线状态：</td>
+                    <td ng-if="recordDtail.isOnline==0">下线</td>
+                    <td ng-if="recordDtail.isOnline==1">在线</td>
+                    <td ng-if="recordDtail.isOnline==2">全部</td>
+                </tr>
+                <tr>
+                    <td>注册时间：</td>
+                    <td>{{recordDtail.regTime*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+                </tr>
+            </table>
+            <div class="btnBox">
+                <button class="button" style="width: 70%;float: none;margin:20px 15%" ng-click="closeModal()">关闭</button>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-modal-view>

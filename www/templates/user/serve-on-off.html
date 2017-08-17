@@ -1,0 +1,14 @@
+<ion-view view-title="客服开关">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="about" class="con-bag">
+        <div class="list">
+            <ion-toggle ng-model="serveTypes.checked"
+                        ng-change="serveOnOff()">
+               {{serveTypes.checked ? '关闭客服' : '打开客服'}}
+            </ion-toggle>
+        </div>
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,87 @@
+<ion-view view-title="游戏大厅">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear nav-btn btn-right" ng-click="openHomeServe()">
+      <img src="img/home/service.png"/>
+    </button>
+  </ion-nav-buttons>
+  <ion-content id="home" style="background: url('img/home/bgtu.jpg') no-repeat;background-size: 100%;">
+    <div class="swiper-container index-swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide index-swiper-slide" ng-repeat="banner in banners track by banner.id" >
+          <a ><img ng-src="{{banner.img_url}}" width="100%" /></a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="home_adv">
+      <div class="container-note">
+        <div class="swiper-wrapper" style="width:100%;height:40px;" ng-click="isLogin('message-advertisement',{type:1})">
+          <div class="swiper-slide swiper-no-swiping" ng-repeat="item in dContent.list track by $index" ng-if="$index < 3">
+           {{item.title}}
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #fff">
+        <div class="row row-wrap row1" >
+          <div class="col-25"   ng-click="isLogin('wallet')">
+            <div class="home_detail">
+              <img src="img/home/cunqukuan.jpg">
+              <p>钱包</p>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="home_detail"   ng-click="isLogin('favorable-activity')">
+              <img src="img/home/youhuihuodong.jpg">
+              <p>优惠活动</p>
+            </div>
+          </div>
+          <div class="col-25"  ng-click="isLogin('tab.dynamic')">
+            <div class="home_detail">
+              <img src="img/home/zoushi.jpg">
+              <p>走势</p>
+            </div>
+          </div>
+          <div class="col-25" ng-click="isLogin('common-problems')">
+            <div class="home_detail">
+              <img src="img/home/changjianwenti.jpg">
+              <p>常见问题</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home_content">
+      <div class="tit">
+        <div class="qq"></div>
+        <p>彩种</p>
+      </div>
+      <div class="row row-wrap row2">
+        <div class="col-50" style="padding:10px 0 !important;border-bottom:1px solid #ebebeb;background-color: #fff" ng-repeat="game in gameLists track by game.id"  ng-click="isLogin('fast-room-new',{id: game.id,name:game.name})">
+          <div class="home_content_detail">
+            <img ng-src="{{game.img_url}}">
+            <div class="detail">
+              <p style="font-size: 14px;">{{game.title}}</p>
+              <p style="color:#757575;margin-top: 5px;" ng-show="game.closeTime">{{game.closeTime}}</p>
+              <p style="color:#757575;margin-top: 5px;" ng-hide="game.closeTime"><ion-spinner icon="ios-small"></ion-spinner></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="home_content">-->
+      <!--<div class="tit">-->
+        <!--<div class="qq"></div>-->
+        <!--<p>最新中奖</p>-->
+      <!--</div>-->
+      <!--<div class="newest-swiper-container" style="height: 160px;overflow: hidden;">-->
+        <!--<div class="swiper-wrapper">-->
+          <!--<div class="swiper-slide swiper-no-swiping" ng-repeat="n in news">-->
+            <!--恭喜会员<span ng-bind="n.username">576759</span>【<span ng-bind="n.title">576759</span>】中奖<span ng-bind="n.bonus">576759</span>元-->
+            <!--&lt;!&ndash;恭喜会员{{n.username}}【{{n.title}}】中奖{{n.bonus}}元&ndash;&gt;-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,47 @@
+
+<ion-modal-view id="vote" class="sign-calendar">
+    <ion-content scroll="false">
+        <div ></div>
+
+        <div class="vote-for debt-record-details" >
+            <div class="cont">
+                <div class="top">
+                    <div class="top-gua"></div>
+                    <p><span style="text-align: left;display: block;float: left;padding:5px;" ng-bind="dateTime.years"></span><span style="padding:5px;display: inline-block">
+                        <span  ng-bind="months[dateTime.month]"></span>签到</span> <span ng-click="closeModal()" style="text-align: right;display: block;float: right;font-size: 20px;padding:5px 10px;" >×</span></p>
+                </div>
+                <div class="day1">
+                    <div class="row2 row1">
+                        <div ng-repeat="da in dateTime.weeksList track by $index" ng-bind="da">周日</div>
+                    </div>
+                    <div class="row2">
+                        <div ng-class="classShow(d)"
+                             ng-repeat="d in dateTime.days track by $index" ng-bind="d">1</div>
+                    </div>
+
+                </div>
+                <div class="num">
+                    <img class="f1-gou1" src="img/home/gua1.png">
+                    <img class="f1-gou2" src="img/home/gua1.png">
+                    <p>已连续签到 <span ng-bind="signs.day">0</span> 天</p>
+                    <button ng-click="goSignok()">立刻签到</button>
+                    <div class="clear"></div>
+
+                </div>
+                <div class="f1" ng-repeat="list in lists track by $index">
+
+                    <p ng-bind="list.title"></p>
+                    <p class="p1">彩金×<span ng-bind="list.money">50</span></p>
+                    <img class="f1-img" src='img/home/jin5{{$index}}.png'>
+                    <button class="draw" ng-show="list.state==2" ng-disabled="true">已领取</button>
+                    <button ng-show="list.state==1" ng-click="getConsign(list.id)">未领取</button>
+                    <button class="draw" ng-show="list.state==0" ng-disabled="true">未领取</button>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </ion-content>
+
+</ion-modal-view>

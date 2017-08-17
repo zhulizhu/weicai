@@ -1,0 +1,26 @@
+<ion-view view-title="修改资料">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" class="con-bag padding">
+        <ul>
+            <li>
+                <div>账号</div>
+                <div style="text-align: left">{{userinfo.username}}</div>
+            </li>
+
+            <li>
+                <div>昵称</div>
+                <div><input type="text" placeholder="请输入7位以下昵称" maxlength="7" ng-model="user.nickname"/></div>
+            </li>
+            <!--<li>-->
+                <!--<div>个签</div>-->
+                <!--<div><input type="text" placeholder="请输入个签" maxlength="50" ng-model="user.autograph"/></div>-->
+            <!--</li>-->
+            <li class="submit">
+                <div ><button ng-click="modificatioInformation()">确定</button></div>
+            </li>
+        </ul>
+    </ion-content>
+
+</ion-view>

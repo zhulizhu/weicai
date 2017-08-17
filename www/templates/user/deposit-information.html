@@ -1,0 +1,82 @@
+<ion-view view-title="填写存款信息">
+ <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+  <ion-content class="padding con-bag" id="deposit-information">
+<div class="list">
+
+    <a class="item " href="#">
+    <div class="top">
+    <button class="button button-small button-assertive">
+  收款人信息
+</button>
+</div>
+    <div class="left">
+          <div class="box">
+      <p>银行：<span class="two">中国工商银行</span></p>
+  
+      </div>
+       <div class="box">
+      <p>收款人：<span class="two">杨光宇</span></p>
+      <button class="button button-outline button-positive"> 复制</button>
+      </div>
+      <div class="box">
+      <p>账号：<span class="two">6217253411114068928</span></p>
+      <button class="button button-outline button-positive"> 复制</button>
+      </div>
+       <div class="box">
+      <p>开户行：<span class="two">天津空港经济区空港第一支行</span></p>
+       <button class="button button-outline button-positive"> 复制</button>
+       </div>
+      </div>
+    </a>
+
+</div>
+
+<div class="infor">
+
+  <h4>请填写您的汇款信息</h4>
+  <form action="">
+  <div class="list list-inset">
+  <p>银行名称</p>
+  <label class="item item-input">
+    <input type="text" placeholder="请填写您汇款时使用银行卡所属的银行">
+  </label>
+    <p>存款人姓名</p>
+  <label class="item item-input">
+    <input type="text" placeholder="请填写您汇款时使用银行卡的户名">
+  </label>
+    <p>存款人账号</p>
+  <label class="item item-input">
+    <input type="number" placeholder="请填写您汇款时使用银行卡卡号后4位">
+  </label>
+     <p>存款金额</p>
+  <label class="item item-input">
+    <input type="number" placeholder="请填写您此次汇款的金额（100-5000000）">
+  </label>
+     <p>存款方式</p>
+  <label class="item item-input">
+    <select>
+      <option>网银转账</option>
+      <option>ATM自动柜员机</option>
+     <option>ATM现金入款</option>
+     <option>银行柜台</option>
+    </select>
+  </label>
+</div>
+
+  </form>
+</div>
+<div class="text">
+  <p>*请勿存入非整数金额（样例 1000.32, 5000.88元），以免延误财务查收</p>
+    <p>*转账完成后请保留单据作为核对证明</p>
+      <p>*请确实填写转账金额与时间</p>
+        <p>*每笔转账请提交一次</p>
+        <p>*若您使用ATM存款，请填写ATM所属分行，会加快您的款项到账时间</p>
+</div>
+<button class="button button-full">
+  提交
+</button>
+  </ion-content>
+
+</ion-view>

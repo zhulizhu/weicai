@@ -1,0 +1,58 @@
+/**
+ * Created by frank on 2016/8/30.
+ */
+(function () {
+    'use strict';
+    angular
+        .module('user.module', [
+            'login.controller',
+            'register.controller',
+            'bank.card.controller',
+            'game.record.controller',
+            'alipay.transfer.controller',
+            'set.controller',
+            'withdraw.deposit.password.controller',
+            'change.tx.password.controller',
+            'change.login.password.controller',
+            'modified.data.controller',
+            'debt.record.controller',
+            'about.controller',
+            'user.wallet.controller',
+            'deposit.record.controller',
+            'user.bank.list.controller',
+            'message.details.controller',
+            'my.mes.controller',
+            'withdraw.deposit.controller',
+            'retrieve.password.controller',
+            'user.massge.controller',
+          'registration.protocol.controller',
+          'choicealipay.controller',
+          'transfer.accounts.controller',
+          'wechat.recharge.controller',
+          'user.earnings.controller',
+          'earnings.ruler.controller',
+          'peilv.controller',
+          'customer.service.controller',
+          'ascent.ruler.controller',
+          'acsent.controller',
+          'earnings.rulers.controller',
+          'user.code.controller',
+            'zdy.customer.service.controller',
+            'bet.detail.controller',
+            'member.list.controller',
+            'add.member.controller',
+            'referral.links.controller',
+            'add.referral.links.controller',
+            'team.statistics.controller',
+            'lower.money.controller',
+            'lower.bet.controller',
+            'common.problems.controller',
+            'message.advertisement.controller',
+            'play.regulation.controller',
+            'serve.on.off.controller',
+            'favorable.activity.controller',
+            'advanced.setup.controller',
+            'more.register.controller',
+            'binding.account.controller'
+        ]);
+})();

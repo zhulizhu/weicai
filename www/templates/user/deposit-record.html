@@ -1,0 +1,22 @@
+<ion-view view-title="提现记录">
+ <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+  <ion-content class=" con-bag" id="deposit-record">
+      <ion-refresher pulling-icon="ion-load-d" on-refresh="refresh()" refreshing-text="正在加载中.." refreshing-icon="ion-loading-b">
+      </ion-refresher>
+      <div class="list">
+          <div class="item" ng-repeat="record in records"  ng-click="openModal(record)">
+              <div class="row">
+                  <div class="col-33" ng-bind="record.bankId">中国建设银行</div>
+                  <div class="col-33" ng-bind="record.amount">-1000.000</div>
+                  <div class="col-33" ng-bind="record.state">审核中</div>
+              </div>
+          </div>
+      </div>
+      <p style="padding-top: 30%;text-align: center" ng-show="records.length == 0">暂无提现记录</p>
+      <p style="text-align: center; margin-top: 10px;" ng-hide="!noMoreItemsAvailable || records.length == 0">已加载完全部数据</p>
+      <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+  </ion-content>
+
+</ion-view>

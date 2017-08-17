@@ -1,0 +1,12 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+platforms/
+plugins/
+.idea/
+/.idea
+weicaizaixian_dowload/
+www/lib/yike/release.js
+www/lib/yike/templates.js
+www/dist/

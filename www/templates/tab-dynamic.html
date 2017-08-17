@@ -1,0 +1,44 @@
+<ion-view view-title="历史开奖">
+  <ion-content class="padding con-bag" id="lucky-history-lottery" style="  background: url('img/home/bgtu.jpg') no-repeat;
+  background-size: 100%;">
+    <ul class="lucky-history-lottery">
+      <li ng-repeat="list in allHistoryLotteryList track by list.id" ng-class="liClass(list.name)" ng-click="pageGo(list)">
+        <h5>
+          <div class="fl" ng-bind="list.title"></div>
+          <div class="fr">第{{list.number}}期&nbsp;&nbsp;&nbsp;{{list.time*1000 | date : 'yyyy-MM-dd'}}</div>
+        </h5>
+        <div class="qiu" ng-show="list.name == 'pcdd' || list.name == 'jnd28-odds'">
+          <div ng-bind="list.dataNumber[0]"></div>
+          <div>+</div>
+          <div ng-bind="list.dataNumber[1]"></div>
+          <div>+</div>
+          <div ng-bind="list.dataNumber[2]"></div>
+          <div>=</div>
+          <div ng-class="class_show(list.he,list.name)" ng-bind="list.he"></div>
+        </div>
+        <div class="qiu" ng-show="list.name == 'bjpk10-odds' || list.name == 'cqssc-odds' || list.name == 'ffc-odds'">
+          <div ng-repeat="num in list.dataNumber track by $index" ng-bind="num"></div>
+        </div>
+        <div class="hk-qiu" ng-show="list.name == 'lhc-odds'">
+          <div ng-repeat="num in list.dataNumber track by $index"  ng-show="$index < 6">
+            <div ng-bind="num" ng-class="class_show(num,list.name)"></div>
+          </div>
+          <div class="jia">
+            <div>+</div>
+          </div>
+          <div>
+            <div ng-bind="list.dataNumber[6]"></div>
+          </div>
+        </div>
+      </li>
+      <!--<li class="cqnc-all">-->
+        <!--<div class="qiu">-->
+          <!--<div>-->
+            <!--<img src="img/game/youzi.png" />-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</li>-->
+    </ul>
+  </ion-content>
+
+</ion-view>

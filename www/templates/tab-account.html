@@ -1,0 +1,55 @@
+<ion-view view-title="个人中心" hide-nav-bar="true">
+  <ion-content class="con-bag" id="account" style="  background: url('img/home/bgtu.jpg') no-repeat;
+  background-size: 100%;">
+    <div class="account_header">
+          <h4>个人中心</h4>
+          <div class="touxiang">
+            <img ng-show="PLATFORM=='app' || PLATFORM=='wechat'" ng-src="{{user.avatar || 'img/account/user.png'}}"   ng-click="addAttachment()" />
+            <img ng-show="PLATFORM=='wap'" ng-src="{{user.avatar || 'img/account/user.png'}}"  ngf-pattern="image/*" accept="image/*"
+            ngf-max-size="10MB" ngf-resize="{width: 200, height: 200}" ngf-select="upload($file)"/>
+            <span ui-sref="modified-data">
+              {{user.nickname || user.username}}
+              <i class="icon ion-edit"></i>
+            </span>
+          </div>
+          <div class="row">
+            <div class="col" >
+              {{user.score || '0'}}<br>当前积分
+            </div>
+            <div class="col">
+              {{user.profit || '0.000'}}<br>当日盈亏
+            </div>
+            <div class="col" ng-show="user.daiLi == 1">
+              {{user.fanDian || '0.000'}}<br>返点系数
+            </div>
+          </div>
+      </div>
+    <ul>
+      <li ui-sref="wallet" class="qianbao">
+        我的钱包<span>{{user.coin || '0.000'}}元</span><i class="icon ion-ios-arrow-right fr"></i>
+      </li>
+      <li ui-sref="more-register" class="wechat-register" ng-show="PLATFORM=='wechat'">
+        注册账号<i class="icon ion-ios-arrow-right fr"></i>
+      </li>
+      <li ui-sref="debt-record" nav-direction="forward" class="huishui">
+        帐变记录<i class="icon ion-ios-arrow-right fr"></i>
+      </li>
+      <li ui-sref="game-record" nav-direction="forward" class="youxi">
+        游戏记录<i class="icon ion-ios-arrow-right fr"></i>
+      </li >
+      <li ui-sref="member-list" nav-direction="forward" class="kaihu" ng-show="user.daiLi == 1">
+        代理中心<i class="icon ion-ios-arrow-right fr"></i>
+      </li >
+      <li ui-sref="message-advertisement"  class="zhangbian">
+        信息公告<i class="icon ion-ios-arrow-right fr"></i>
+      </li>
+      <li ui-sref="set" nav-direction="forward" class="shezhi">
+        我的设置<i class="icon ion-ios-arrow-right fr"></i>
+      </li>
+      <li ui-sref="about" nav-direction="forward" class="guanyu">
+        关于我们<i class="icon ion-ios-arrow-right fr"></i>
+      </li>
+    </ul>
+  </ion-content>
+
+</ion-view>

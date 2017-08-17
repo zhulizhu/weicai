@@ -1,0 +1,23 @@
+<ion-view view-title="充值记录">
+ <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+  <ion-content class="con-bag" id="transfer-accounts">
+    <ion-refresher pulling-icon="ion-load-d" on-refresh="refresh()" refreshing-text="正在加载中.." refreshing-icon="ion-loading-b">
+    </ion-refresher>
+        <div class="list">
+            <div class="item"  ng-click="openModal(r.id)" ng-repeat="r in recharge">
+              <div class="row">
+                  <div class="col-33">{{r.Pre_paid}}（{{r.online_to_offline}}）</div>
+                  <div class="col-33">+{{r.amount}}</div>
+                  <div class="col-33" ng-class="showClass(r.state)">{{state[r.state]}}</div>
+              </div>
+            </div>
+        </div>
+
+    <p ng-show="recharge.length == 0" style="padding-top: 30%;text-align: center" ng-cloak>暂无记录</p>
+    <p style="text-align: center; margin-top: 10px;" ng-hide="!noMoreItemsAvailable || recharge.length == 0">已加载完全部数据</p>
+    <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+  </ion-content>
+
+</ion-view>

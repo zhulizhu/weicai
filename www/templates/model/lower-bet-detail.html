@@ -1,0 +1,47 @@
+
+<ion-modal-view id="vote">
+    <ion-content scroll="false">
+        <div ></div>
+        <div class="vote-for debt-record-details" style="padding:0px;">
+            <h4 style="text-align: center;background-color: #f9f9f9;margin: 0!important;padding:10px 0;border-radius: 8px;">投注详情</h4>
+            <table style="padding: 0 10px;">
+                <col style="width: 36%" />
+                <col style="width: 64%" />
+                <tr>
+                    <td>登陆账号：</td>
+                    <td>{{bets.username}}</td>
+                </tr>
+                <tr>
+                    <td>彩种类型：</td>
+                    <td>{{bets.game_name}}</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td>玩法类型：</td>-->
+                    <!--<td>{{bets.info}}</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td >投注状态：</td>
+                    <td >{{bets.state}}</td>
+                </tr>
+                <tr>
+                    <td>投注金额：</td>
+                    <td style="color: #e62f15">{{bets.money}}</td>
+                </tr>
+                <tr>
+                    <td>盈亏总额：</td>
+                    <td ng-class="classShow(bets.profit)">{{bets.profit}}</td>
+                </tr>
+                <tr>
+                    <td>投注时间：</td>
+
+                    <td>{{bets.create_time*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+                </tr>
+
+            </table>
+            <div class="btnBox">
+                <button class="button" style="width: 70%;float: none;margin:20px 15%" ng-click="closeModal()">关闭</button>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-modal-view>

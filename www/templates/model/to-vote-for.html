@@ -1,0 +1,17 @@
+<ion-modal-view id="vote">
+  <div class="vote-for">
+    <ul class="list">
+      <li class="item item1"><span>确定跟投吗？</span></li>
+      <li class="item item2"><span>玩家:&nbsp;&nbsp;<i>{{throw.user_name}}</i></span></li>
+      <li class="item item2"><span>期数:&nbsp;&nbsp;<i>{{throw.period}}</i></span></li>
+      <li class="item item2"><span>类别:&nbsp;&nbsp;<i>{{throw.play_name}}</i></span></li>
+      <li class="item item2"><span>内容:&nbsp;&nbsp;<i>{{throw.odds}}</i></span></li>
+      <li class="item item2"><span>总注数:&nbsp;&nbsp;<i>1</i></span></li>
+      <li class="item item2"><span>金额:&nbsp;&nbsp;<i>{{throw.money}}</i></span></li>
+    </ul>
+   <div class="row">
+     <div class="col"><button class="vote-sure" ng-click="luckBottomPour('','gt')">确定</button></div>
+     <div class="col"><button class="vote-delete" ng-click="closeVoteModal()">取消</button></div>
+   </div>
+  </div>
+</ion-modal-view>

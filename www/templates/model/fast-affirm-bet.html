@@ -1,0 +1,52 @@
+
+<ion-modal-view id="affirm-bet" class="shade modal none ng-enter active ng-enter-active">
+    <!--   class="padding "-->
+    <ion-content scroll="false" class="mark-six-shade">
+        <div class="big-box" ></div>
+        <div class="cont">
+            <div class="top">
+                <h4><i class="ion-ios-arrow-left" ng-click="closeAffirm()"></i>确认注单</h4>
+            </div>
+            <div class="list">
+                <div class="item">
+                    <p class="content-item">项目</p>
+                    <p>赔率</p>
+                    <p class="content-beishu"><input type="tel" ng-model="playBeishu.allBeishu" ng-change="fastBs('all')"/></p>
+                    <p>删除</p>
+                </div>
+                <div class="swiper-container swiper-affirm" style="height: 128px">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="flex-wrap:wrap;height: auto;-webkit-box-sizing: border-box;box-sizing: border-box;" >
+                            <div class="item items" ng-repeat="item in guess.guess">
+                                <p ng-bind="item.playName" class="content-item"></p>
+                                <p ng-bind="'x'+item.odds"></p>
+                                <p class="content-beishu"><input type="tel" ng-model="item.beiShu" ng-change="fastBs('one',item)"/></p>
+                                <p ng-click="deleteOrder($index,item)"><i class="ion-ios-trash-outline"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar swiper-affirm-scrollbar"></div>
+                </div>
+            </div>
+            <h4 class="yue">余额：<span class="item-active" ng-bind="userInfo.coin"></span></h4>
+            <p class="biao-zhu">如赔率发生变化，按最新赔率投注</p>
+            <p class="money"><span ng-bind="guess.guess.length">6</span>注共<span class="item-active" ng-bind="guess.money">36</span>元，
+                最高奖金<span ng-bind="guess.bonus+'元'">1985.5元</span><!--，最高盈利<span class="item-active" ng-bind="guess.profit+'元'">98.5元</span>--></p>
+            <div class="row">
+                <div class="col col-50">
+                    注数：<span class="item-active" ng-bind="guess.guess.length">6</span>
+                </div>
+                <div class="col col-50">
+                    总额：<span class="item-active" ng-bind="guess.money">6</span>
+                </div>
+            </div>
+            <div class="btn-bar">
+                <button class="button button-left btn-active" ng-click="affirmBet()">确认投注</button>
+                <button class="button button-right" ng-click="cancelBet()">取消</button>
+            </div>
+        </div>
+
+    </ion-content>
+
+</ion-modal-view>

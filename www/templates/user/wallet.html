@@ -1,0 +1,40 @@
+<ion-view view-title="钱包">
+ <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+  <ion-content class="con-bag" id="wallet">
+    <div class="account_header">
+      <div>
+        <img src="img/home/wallet.png" class="fl"/>
+        <div class="fl">
+          <h5>钱包余额</h5>
+          <p><span class="fl">{{user.coin}} 元</span></p>
+        </div>
+        <div class="fr">
+          <i class="icon"></i>
+        </div>
+      </div>
+    </div>
+    <ul>
+      <li ng-click="isTX('bank')">
+        我的银行卡<i class="icon fr"></i>
+      </li>
+      <li ui-sref="recharge">充值<i class="icon fr"></i></li>
+      <li  ng-click="isTX('tx')">
+        提现<i class="icon  fr"></i>
+      </li>
+      <li ui-sref="transfer-accounts">
+        充值记录<i class="icon  fr"></i>
+      </li>
+
+      <li ui-sref="deposit-record">
+        提现记录<i class="icon  fr"></i>
+      </li>
+      <!--<li ui-sref="user-code">-->
+        <!--提现二维码<i class="icon fr"></i>-->
+      <!--</li>-->
+
+    </ul>
+  </ion-content>
+
+</ion-view>

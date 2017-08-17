@@ -1,0 +1,28 @@
+<ion-view view-title="设置">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content class="con-bag" id="set">
+        <ul>
+            <li ng-click="isTx()">
+                提现密码
+            </li>
+            <li ui-sref="bank-card">
+                绑定银行卡
+            </li>
+            <li ui-sref="change-login-password"  ng-show="PLATFORM=='app' || PLATFORM=='wap'">
+                修改密码
+            </li>
+            <li  ui-sref="serve-on-off" ng-show="false">
+                客服开关
+            </li>
+            <li  ui-sref="advanced-setup">
+                高级设置
+            </li>
+            <li ng-click="logout()" ng-show="PLATFORM=='app' || PLATFORM=='wap'">
+                退出
+            </li>
+        </ul>
+    </ion-content>
+
+</ion-view>

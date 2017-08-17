@@ -1,0 +1,82 @@
+<ion-view view-title="{{roomName}}">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear nav-btn btn-right" ng-click="openRedCustomerServiceModal()">
+            <img src="img/home/service.png"/>
+        </button>
+        <button class="button button-clear nav-btn" ng-click="openHomeMenuModal()">
+            <i class="icon ion-plus-round"></i>
+        </button>
+    </ion-nav-buttons>
+    <div class="bar bar-subheader red-sweep-header">
+        <div class="title" ng-click="userinfo()" ng-cloak><span>余额：</span><span>{{userInfo.money == '获取中' ? '获取中' : userInfo.money + '元宝'}}</span></div>
+    </div>
+    <ion-content  id="red-sweep" class="con-bag padding has-subheader has-footer" delegate-handle="red-content">
+         <div class="box-list" ng-repeat="red in reds" ng-class="roomClass(red)">
+             <div class="list-left" ng-hide="red.get_id || red.type == 'login'">
+                 <img ng-src="{{red.img || 'img/account/user.png'}}">
+             </div>
+             <h5 ng-hide="red.get_id || red.type == 'login'">
+                 <span ng-class="userInfo.id != red.user_id ? 'fl' : 'fr'">
+                     {{red.name || red.user_name}}
+                 </span>
+                 <div class="grade"  ng-class="user_level_show(red)" ng-hide="red.get_id || red.type == 'login'"><img ng-src="{{red.level_img}}" ng-show="userInfo.is_level == 1"> </div>
+             </h5>
+             <div class="list-right cl" ng-hide="red.get_id || red.type == 'login'">
+                 <div class="red-box" ng-click="openModal(red)">
+                     <div class="triangle_left" ></div>
+                     <div class="red-top" ng-hide="red.content">
+                         <img src="img/home/hongbao.png">
+                         <div class="text">
+                             <p>{{red.rednumber}}/{{red.leinumber}}</p>
+                             <p>领取红包</p>
+                         </div>
+                     </div>
+                     <p ng-show="red.content">
+                     <span>
+                         {{red.content}}
+                     </span>
+                     </p>
+                     <div class="red-bottom" ng-hide="red.content">
+                         <p>红包扫雷</p>
+                     </div>
+                 </div>
+             </div>
+             <ul class="cl" ng-show="red.rednumber">
+                 <li>
+                     <div>{{red.time*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</div>
+                 </li>
+             </ul>
+             <ul class="cl" ng-if="red.get_id">
+                 <li ng-if="red.lost_id == userInfo.id && red.get_id != userInfo.id">
+                     <div>{{red.getname || red.get_name}}领取了你的<span  ng-click="openRedDetailsModal(red.id)">红包</span></div>
+                 </li>
+                 <li ng-if="red.lost_id != userInfo.id && red.get_id == userInfo.id">
+                     <div>你领取{{red.lostname || red.lost_name}}的<span  ng-click="openRedDetailsModal(red.id)">红包</span></div>
+                 </li>
+                 <li ng-if="red.lost_id == userInfo.id && red.get_id == userInfo.id">
+                     <div>你领取自己发的<span  ng-click="openRedDetailsModal(red.id)">红包</span></div>
+                 </li>
+             </ul>
+             <ul class="cl login-welcome" ng-if="red.type == 'login'">
+                 <li>
+                     <span>欢迎</span>
+                     <img ng-src="{{red.room_img}}" ng-if="userInfo.is_level == 1"/>
+                     <span >{{red.client_name}}</span>
+                     <span >进入房间</span>
+                 </li>
+             </ul>
+       </div>
+    </ion-content>
+    <div class="bar bar-footer item-input-inset" id="red-sweep-footer">
+        <form action="" ng-submit="sendChat($event)">
+            <label class="item-input-wrapper">
+                <input type="text" ng-model="message.content" ng-disabled="ban == 1 ? true : false" placeholder="{{message.bear}}">
+            </label>
+        </form>
+<div class="button button-clear ico" ng-click="openRedSendModal()"><img src="img/home/red_packet.png"></div>
+</div>
+
+</ion-view>

@@ -1,0 +1,15 @@
+<div class="showShade" ng-click="closeMoney()"></div>
+<div class="fast-backed">
+  <span class="backed-close ion ion-close-round" ng-click="closeMoney()"></span>
+  <div class="backed-cont">
+    <p>玩法：{{playName}}</p>
+    <p>下单内容：<span>{{pour.content}}</span></p>
+    <p>总注数：<i>{{pour.num}}</i>注</p>
+    <p>倍数: <span>{{bottomPours.multiple}}</span>倍</p>
+  </div>
+  <div class="backed-money">
+    消耗：<i>{{pour.money}}</i>元宝
+  </div>
+  <div class="backed-confirm" ng-click="affirmBottomPour()">确认</div>
+</div>
+

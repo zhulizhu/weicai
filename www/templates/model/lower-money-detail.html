@@ -1,0 +1,42 @@
+
+<ion-modal-view id="vote">
+    <ion-content scroll="false">
+        <div ></div>
+        <div class="vote-for debt-record-details" style="padding:0px;">
+            <h4 style="text-align: center;background-color: #f9f9f9;margin: 0!important;padding:10px 0;border-radius: 8px;">下级流水详情</h4>
+            <table style="padding: 0 10px;">
+                <col style="width: 36%" />
+                <col style="width: 64%" />
+                <tr>
+                    <td>登陆账号：</td>
+                    <td>{{capital.username}}</td>
+                </tr>
+                <tr>
+                    <td>变动类型：</td>
+                    <td>{{capital.type_name}}</td>
+                </tr>
+                <tr>
+                    <td>变动金额：</td>
+                    <td>{{capital.coin}}</td>
+                </tr>
+                <tr>
+                    <td >变动后余额：</td>
+                    <td style="color: #e62f15">{{capital.user_coin}}</td>
+                </tr>
+                <tr>
+                    <td>変动时间：</td>
+                    <td>{{capital.create_time*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td>{{capital.info}}</td>
+                </tr>
+
+            </table>
+            <div class="btnBox">
+                <button class="button" style="width: 70%;float: none;margin:20px 15%" ng-click="closeModal()">关闭</button>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-modal-view>

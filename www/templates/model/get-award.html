@@ -1,0 +1,19 @@
+
+<ion-modal-view id="vote" class="sign-calendar">
+    <ion-content scroll="false">
+        <div ng-click="closeModals()"></div>
+
+        <div class="vote-for debt-record-details" >
+            <div class="cont">
+              <img ng-show="state1==-1" style="display: block;width: 100%;" src="img/home/weizhongjiang.png">
+            <div style="position: relative;" ng-show="state1==1">
+                <img  style="display: block;width: 100%;" src="img/home/zhongjiang.png">
+                <div ng-bind="messes" style="position: absolute;font-size: 24px;color:#ff673c;top:52%;left:25%;">20.00</div>
+            </div>
+            </div>
+
+
+        </div>
+    </ion-content>
+
+</ion-modal-view>

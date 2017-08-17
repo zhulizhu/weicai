@@ -1,0 +1,19 @@
+<ion-view view-title="高级设置">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="about" class="con-bag">
+        <div class="list">
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    投注后返回
+                </div>
+                <select ng-options="bet for bet in betBackType.type" ng-model="betBackType.value" ng-change="betBack()">
+                </select>
+            </label>
+
+        </div>
+    </ion-content>
+
+</ion-view>

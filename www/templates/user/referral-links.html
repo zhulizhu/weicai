@@ -1,0 +1,74 @@
+<ion-view view-title="推广链接获取">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right" >
+        <button class="button button-clear nav-btn btn-right" style="color:#fff;font-size: 12px;" ui-sref="add-referral-links">
+            新增推广链接
+        </button>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" style="background-color: #f1f1f1;">
+        <ion-refresher pulling-icon="ion-load-d" on-refresh="refresh()" refreshing-text="正在加载中.." refreshing-icon="ion-loading-b">
+        </ion-refresher>
+        <div class="top">
+            <p>用户类型</p>
+            <button ng-class="state.id==1?'active2':' '" ng-click="select(1)" style="border:none;background-color:#fff;padding:6px 12px;margin:5px 20px 4px">代理</button>
+            <button ng-class="state.id==3?'active2':' '" ng-click="select(3)" style="border:none;background-color:#fff;padding:6px 12px;">会员</button>
+        </div>
+        <ul class="search info links" ng-repeat="record in records" >
+            <li class="bank-type game-type">
+                <div>注册链接</div>
+                <div>
+                    <p ng-bind="record.url" data-tap-disabled="true" style="-webkit-user-select: auto !important;">http://localhost:8100/#/referral-linkshttp://localhost:8100/#/referral-links</p>
+                </div>
+            </li>
+            <li class="bank-type game-type">
+                <div>使用最大次数</div>
+                <div>
+                    <p ng-bind="record.maxAdd">9999</p>
+                </div>
+            </li>
+            <li class="bank-type game-type" ng-show="state.id==1">
+                <div>返点</div>
+                <div>
+                    <p ng-bind="record.fanDian">0.5</p>
+                </div>
+            </li>
+            <li class="submit sub"  style="overflow: hidden">
+                <div style="width: 100%!important;float: left;" ng-show="PLATFORM=='app'"><button   ng-click="urlContent(record.url)" >点击复制</button></div>
+                <div style="width: 100%!important;float: left;" ng-show="PLATFORM=='wap'"><button   ng-click="wxcopy(record.url)" >点击复制</button></div>
+                <div style="width: 100%!important;float: right;"><button   ng-click="deletLink(record.lid,$index)">删除链接</button></div>
+
+            </li>
+        </ul>
+        <p ng-show="records.length == 0 || records ==null" style="padding-top: 30%;text-align: center">暂无推广链接</p>
+        <p style="text-align: center; margin-top: 10px;" ng-hide="!noMoreItemsAvailable || records.length == 0 || records ==null">已加载完全部数据</p>
+        <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+
+
+    </ion-content>
+
+    <div class="tabs tabs-icon-top">
+        <a class="tab-item" href="#/tab/account">
+            <i class="icon ion-turn"></i>
+            个人中心
+        </a>
+        <a class="tab-item" href="#/team-statistics">
+            <i class="icon ion-team"></i>
+            团队统计
+        </a>
+        <a class="tab-item tab-active" href="#/member-list">
+            <i class="icon ion-member-active"></i>
+            会员列表
+        </a>
+        <a class="tab-item" href="#/lower-money">
+            <i class="icon ion-money"></i>
+            资金流水
+        </a>
+        <!--<a class="tab-item" href="#">-->
+            <!--<i class="icon ion-turn"></i>-->
+            <!--下级转点-->
+        <!--</a>-->
+    </div>
+</ion-view>
+

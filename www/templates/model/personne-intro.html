@@ -1,0 +1,28 @@
+<ion-modal-view id="personne-intro">
+    <ion-content class="padding" scroll="false">
+        <button class="button button-clear shou" ng-click="closeModal()"><img src="img/home/shuzhan.png"/></button>
+        <div class="intro-header">
+            <img ng-src="{{user.img || 'img/account/user.png'}}"/>
+           <h5>{{user.name || user.user_name}}</h5>
+        </div>
+        <div class="operation">
+            <button ng-click="goRecharge('recharge')">充值</button>
+            <button ng-click="goRecharge('tx')">提现</button>
+        </div>
+        <ul>
+            <li>
+                余额<span>{{user.money}}<span>元宝</span></span>
+            </li>
+            <li ng-click="goWallet()">
+                我的钱包
+            </li>
+            <li ui-sref="my-msg" ng-click="closeModal()">
+                我的消息
+            </li>
+        </ul>
+            <button class="button button-clear intro-arrows" ng-click="closeModal()">
+                <img src="img/home/shuangjian.png"/>
+            </button>
+    </ion-content>
+
+</ion-modal-view>

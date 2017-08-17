@@ -1,0 +1,33 @@
+<ion-view view-title="注册" hide-nav-bar="true">
+
+    <ion-content  id="login" scroll="false" class="register">
+        <div class="login-box">
+            <button class="button button-clear close" ng-click="goBack()">
+                <img src="img/login/close.png"/>
+            </button>
+            <h5>注册</h5>
+            <label>
+                <input type="text" placeholder="6~12位字母、数字组成的账号" ng-model="formValue.userName" maxlength="12">
+            </label>
+            <label>
+                <input type="password" placeholder="6~12位字符或数字组成的密码" ng-model="formValue.passWord" maxlength="12">
+            </label>
+            <label>
+                <input type="password" placeholder="6~12位字符或数字" ng-model="formValue.confirmPassWord" maxlength="12">
+            </label>
+            <!--<label>-->
+                <!--<input type="text" placeholder="介绍人ID(没有可不填)" ng-model="formValue.introduceId">-->
+            <!--</label>-->
+            <div>
+                <div class="fl" style="margin-top: 3px">
+                    <input type="checkbox" id="consent" ng-model="formValue.checked">
+                    <label for="consent" class="fl" ></label>
+                </div>
+                <span class="fl" ui-sref="registration-protocol" nav-direction="forward">《注册协议》</span>
+                <span class="fr" ui-sref="zdy-customer-service" nav-direction="forward">联系客服</span>
+            </div>
+            <button class="submit" ng-click="register()">注册</button>
+        </div>
+    </ion-content>
+
+</ion-view>

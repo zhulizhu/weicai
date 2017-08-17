@@ -1,0 +1,102 @@
+<ion-view view-title="团队统计">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="team-statistics" class="has-footer">
+       <div class="row">
+           <div class="col-33">
+               <p><span ng-bind="count.all">215</span></p>
+               <p>团队人数</p>
+           </div>
+           <div class="col-33">
+               <p><span ng-bind="count.isOnLine">1</span></p>
+               <p>在线人数</p>
+           </div>
+           <div class="col-33">
+               <p><span ng-bind="count.money">233555.52555</span></p>
+               <p>团队金额</p>
+           </div>
+       </div>
+        <div class="time">
+            <p><span>时间选择<input type="text" name="start-date" id="start-date3" placeholder="请选择开始时间" onfocus="this.blur()"/> 至<input type="text" name="end-date" id="end-date3" placeholder="请选择开始时间" onfocus="this.blur()"/></span> </p>
+        </div>
+        <div class="search">
+            <button ng-click="teamLists()">点击查询<i class="ion-ios-search-strong" style="font-size: 16px;margin-left: 5px;line-height: 35px;"></i></button>
+        </div>
+        <div class="list">
+            <div class="item" >
+                新注册用户
+              <span class="item-note" ng-bind="teamlist.new" ng-class="classShow(teamlist.new)">
+                  2222
+              </span>
+            </div>
+            <div class="item" >
+                返点金额
+              <span class="item-note" ng-bind="teamlist.fanDian" ng-class="classShow(teamlist.fanDian)">
+                  2222
+              </span>
+            </div>
+            <div class="item" >
+                中奖金额
+              <span class="item-note" ng-bind="teamlist.bonus" ng-class="classShow(teamlist.bonus)">
+                  2222
+              </span>
+            </div>
+            <!--<div class="item item-border" >-->
+                <!--派彩金额-->
+              <!--<span class="item-note">-->
+                  <!--2222-->
+              <!--</span>-->
+            <!--</div>-->
+            <div class="item" >
+                盈亏金额
+              <span class="item-note" ng-bind="teamlist.coin" ng-class="classShow(teamlist.coin)">
+                  2222
+              </span>
+            </div>
+            <div class="item item-border" >
+                充值金额
+              <span class="item-note" ng-bind="teamlist.amount" ng-class="classShow(teamlist.amount)">
+                  2222
+              </span>
+            </div>
+            <div class="item" >
+                提款金额
+              <span class="item-note" ng-bind="teamlist.memberCash" ng-class="classShow(teamlist.memberCash)">
+                  2222
+              </span>
+            </div>
+            <div class="item" >
+                活动奖励
+                <span class="item-note" ng-bind="teamlist.reward " ng-class="classShow(teamlist.reward)">
+                  2222
+              </span>
+            </div>
+        </div>
+
+
+    </ion-content>
+
+    <div class="tabs tabs-icon-top">
+        <a class="tab-item" href="#/tab/account">
+            <i class="icon ion-turn"></i>
+            个人中心
+        </a>
+        <a class="tab-item tab-active" href="#/team-statistics">
+            <i class="icon ion-team-active"></i>
+            团队统计
+        </a>
+        <a class="tab-item " href="#/member-list">
+            <i class="icon ion-member"></i>
+            会员列表
+        </a>
+        <a class="tab-item" href="#/lower-money">
+            <i class="icon ion-money"></i>
+            资金流水
+        </a>
+        <!--<a class="tab-item" href="#">-->
+            <!--<i class="icon ion-turn"></i>-->
+            <!--下级转点-->
+        <!--</a>-->
+    </div>
+</ion-view>

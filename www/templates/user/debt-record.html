@@ -1,0 +1,30 @@
+<ion-view view-title="账变记录">
+ <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+  <ion-content class="padding con-bag" id="debt-record">
+	  <ion-refresher pulling-icon="ion-load-d" on-refresh="refresh()" refreshing-text="正在加载中.." refreshing-icon="ion-loading-b">
+	  </ion-refresher>
+	  <table class="debt-header">
+		  <tr>
+			  <td>时间</td>
+			  <td>变动金额</td>
+			  <td>变动记录</td>
+		  </tr>
+	  </table>
+	  	<table class="debt-content">
+			<tr ng-repeat="record in records" ng-click="openModal(record)">
+				<td>
+					{{record.actionTime*1000  | date:'yyyy-MM-dd'}}<br />
+					{{record.actionTime*1000  | date:'HH:mm:ss'}}
+				</td>
+				<td ng-class="record.style == 0 ? 'red' : 'green'">{{record.style == 0 ? record.coin :  '+'+record.coin}}</td>
+				<td>{{record.info}}</td>
+			</tr>
+		</table>
+	  <p ng-show="records.length == 0" style="padding-top: 30%">暂无账变记录</p>
+	  <p style="text-align: center; margin-top: 10px;" ng-hide="!noMoreItemsAvailable || records.length == 0">已加载完全部数据</p>
+	  <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+  </ion-content>
+
+</ion-view>

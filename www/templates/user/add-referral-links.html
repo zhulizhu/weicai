@@ -1,0 +1,36 @@
+
+<ion-view view-title="新增推广链接">
+    <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-content  id="retrieve-password" style="background-color: #f1f1f1;">
+        <ul class="search info ">
+            <li class="bank-type game-type" >
+                <div>用户类型</div>
+                <div>
+                    <select  ng-model="addDate.userTypeId" ng-options="type.id as type.title  for type in userType"></select>
+                    <span >  </span>
+                </div>
+            </li>
+            <li class="bank-type game-type">
+                <div>使用最大次数</div>
+                <div>
+                    <input ng-model="addDate.maxNumber"  type="text"   placeholder="请填写次数" />
+                    <span>*最多可注册的用户数量</span>
+                </div>
+            </li>
+            <li class="bank-type game-type" ng-show="addDate.userTypeId == 1">
+                <div>返点</div>
+                <div>
+                    <input ng-model="addDate.fandian" type="text"   placeholder="请填写返点" />
+                </div>
+            </li>
+
+        </ul>
+        <div class="submit sub" >
+            <div><button   ng-click="addLink()">立即添加</button></div>
+        </div>
+    </ion-content>
+
+</ion-view>
+

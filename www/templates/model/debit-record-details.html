@@ -1,0 +1,36 @@
+<ion-modal-view id="vote">
+  <ion-content scroll="false">
+    <div ng-click="closeModal()" class="zb-model"></div>
+    <div class="vote-for debt-record-details">
+      <table>
+        <col style="width: 36%" />
+        <col style="width: 64%" />
+        <tr>
+          <td>登陆账号：</td>
+          <td>{{recordDtail.username}}</td>
+        </tr>
+        <tr>
+          <td>変动时间：</td>
+          <td>{{recordDtail.actionTime*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+        </tr>
+        <tr>
+          <td>変动类型：</td>
+          <td>{{recordDtail.info}}</td>
+        </tr>
+        <tr>
+          <td>变动金额：</td>
+          <td ng-class="recordDtail.style == 0 ? 'red' : 'green'">{{recordDtail.style == 0 ? record_details.coin :  '+'+record_details.coin}}</td>
+        </tr>
+        <tr>
+          <td>变动后余额：</td>
+          <td>{{recordDtail.userCoin}}</td>
+        </tr>
+        <tr>
+          <td>备注：</td>
+          <td>{{recordDtail.detail}}</td>
+        </tr>
+      </table>
+    </div>
+  </ion-content>
+
+</ion-modal-view>

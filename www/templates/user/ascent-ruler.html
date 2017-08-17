@@ -1,0 +1,33 @@
+<ion-view view-title="回水规则">
+ <ion-nav-buttons side="left">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+
+
+  <ion-content class="padding con-bag" id="ascent-ruler">
+<div ng-repeat="ba in backwater">
+  <div class="top-box">
+    <p class="pull-left">{{ba.name}}回水比例说明：</p>
+  </div>
+  <div class="row">
+    <div class="col col-70">{{back_type == 0 ? '消费':'盈亏'}}</div>
+    <div class="col col-30">回水比例</div>
+  </div>
+  <div class="scrol">
+    <div class="row" ng-repeat="se in ba.setting">
+      <div class="col col-70">{{se.rule_min}}~{{se.rule_max}}</div>
+      <div class="col col-30">{{se.pre}}%</div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom">
+  <h4>回水条件：</h4>
+    <p ng-bind-html="desc"></p>
+    <p class="black-co">回水到账后，请移至<a href="#" ui-sref="debt-record"> 账变记录 </a>查询</p>
+    <p class="red-co">符合条件，平台于0点~6点之间审核结算至您的账户，不支持提前结算</p>
+</div>
+
+  </ion-content>
+
+</ion-view>

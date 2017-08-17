@@ -1,0 +1,45 @@
+<ion-view view-title="提现" id="withdraw-deposit">
+ <ion-nav-buttons side="left" ng-click="goBack()">
+        <yike-back></yike-back>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right" >
+        <button class="button button-clear nav-btn btn-right" style="color:#fff;" ng-click="openBankListModal()">
+            选择银行卡
+        </button>
+    </ion-nav-buttons>
+  <ion-content class="con-bag padding">
+    <div class="top_box">
+      <div class="name">
+        <span>{{formValue.defaultBank.bankName}}</span>
+        (<span>{{formValue.defaultBank.account}}</span>)
+      </div>
+      <div class="bank">
+        <span>{{bankName}}</span>
+      </div>
+    </div>
+    <div class="text">
+      <h5>提现须知</h5>
+      <div class="cont">
+        <p ng-bind="content.notice"></p>
+      </div>
+    </div>
+    <div class="text">
+      <h5>提醒</h5>
+      <div class="cont">
+         <p>您的余额为<span>{{content.coin}}</span>元宝</p>
+         <p>每日有<span class="mun"> {{content.free}} </span>次免费提现机会，当前还剩<span class="mun"> {{content.freeCash}} </span>次</p>
+         <p>超过则每次收取<span class="mun">{{content.counter}}%</span>的手续费</p>
+      </div>
+    </div>
+    <div class="chek">
+      <input type="tel"  ng-model="formValue.money" placeholder="请输入整数提现金额">
+    </div>
+      <div class="chek">
+      <input type="password"  ng-model="formValue.psw" placeholder="请输入提现密码">
+    </div>
+        <button class="button button-full" ng-click="depositApply()">
+  确认提现
+</button>
+  </ion-content>
+
+</ion-view>
